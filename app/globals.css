@@ -1,0 +1,200 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @layer base {
+  section {
+    @apply py-[5px];
+  }
+} */
+
+@layer components {
+  .container {
+    @apply max-w-[1440px] w-full px-5 mx-auto;
+  }
+
+  .btn {
+    @apply bg-primaryColor py-[15px] px-[35px] rounded-[50px] text-white font-[600]
+    mt-[38px];
+  }
+
+  .heading {
+    @apply text-[44px] leading-[54px] font-[700];
+  }
+
+  .text-para {
+    @apply text-[18px] leading-[30px] font-[400] text-textColor mt-[18px];
+  }
+
+  .form_label {
+    @apply text-textColor font-semibold text-[16px] leading-7 mb-2;
+  }
+
+  .form_input {
+    @apply w-full px-4 py-3 border border-solid border-[#0066ff61] focus:outline-none focus:border-primaryColor text-headingColor text-[16px] leading-7 placeholder:text-textColor cursor-pointer rounded-md;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .container {
+    @apply w-full;
+  }
+
+  /* section {
+    @apply py-[35px];
+  } */
+}
+
+@media only screen and (max-width: 768px) {
+  .heading {
+    @apply text-[26px] leading-[36px];
+  }
+
+  .text-para {
+    @apply text-[16px] leading-7 mt-3;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*scroll bar */
+body::-webkit-scrollbar {
+  background: rgb(120, 252, 164);
+  width: 16px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #06038d;
+  /* border-radius: 50px; */
+  /* border: 3px solid orange; creates padding around scroll thumb */
+}
+
+body::-webkit-scrollbar-track {
+  margin-top: 4px;
+  margin-bottom: 4px;
+  background-color: #00affa;
+}
+
+/* Container for all scrollbar buttons */
+body::-webkit-scrollbar-button {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+/* Single button */
+body::-webkit-scrollbar-button:single-button {
+  background-color: rgb(120, 252, 164);
+  display: block;
+  border-style: solid;
+  height: 12px;
+  width: 16px;
+}
+
+/* Decrement button */
+body::-webkit-scrollbar-button:single-button:vertical:decrement {
+  margin-bottom: 2px;
+  border-width: 0 8px 8px 8px;
+  border-color: transparent transparent #2a2929 transparent;
+}
+
+body::-webkit-scrollbar-button:single-button:vertical:decrement:hover {
+  border-color: transparent transparent #000000 transparent;
+}
+
+/* Increment button */
+body::-webkit-scrollbar-button:single-button:vertical:increment {
+  margin: 0 0 2px 2px;
+  border-width: 8px 8px 0 8px;
+  border-color: #2a2929 transparent transparent transparent;
+}
+
+body::-webkit-scrollbar-button:vertical:single-button:increment:hover {
+  border-color: #000000 transparent transparent transparent;
+}
+
+.bg-blur {
+  background: transparent;
+  backdrop-filter: blur(200px);
+
+  /* border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37); */
+}
+
+.custom-svg {
+  width: 100%; /* Set SVG width to 100% of parent container */
+  height: auto; /* Maintain aspect ratio */
+}
+
+#spinLogo {
+  animation: spin 15s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.border-gradient-color {
+  border-width: 4px;
+  border-style: solid;
+  border-color: rgb(221, 240, 99);
+  border-radius: 50em;
+}
+
+.border-gradient-radial {
+  border-width: 4px;
+  border-style: solid;
+  border-image: linear-gradient(
+    to right,
+    rgba(180, 58, 177, 1) 0%,
+    rgba(29, 253, 243, 1) 50%,
+    rgba(229, 252, 69, 1) 100%
+  );
+  border-image-slice: 1; /* Ensure the entire border is covered by the gradient */
+
+  border-radius: 50em;
+}
+
+.botton-gradient {
+  border: 10px solid transparent;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+
+  background: linear-gradient(transparent, transparent) padding-box,
+    linear-gradient(to right, darkblue, darkorchid) border-box;
+}
+
+.animateRight {
+  animation: slideInRight 1s forwards;
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.animateLeft {
+  animation: slideInLeft 1s forwards;
+}
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}

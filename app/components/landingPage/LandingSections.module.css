@@ -1,0 +1,50 @@
+.animateLeft {
+  animation: slideInLeft 1s forwards;
+}
+@keyframes slideInLeft {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(200%);
+  }
+}
+
+/* Lottie SVGs animations */
+.rightInOut {
+  transform: translateX(200%);
+}
+.animateRight {
+  /* if you change duration here| then need to change it in setTimeOut */
+  animation: opacityIn 5s forwards, slideInRight 5s forwards;
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(-200%);
+  }
+  80% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes opacityIn {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/* Lottie SVGs animations */
