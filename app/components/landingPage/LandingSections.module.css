@@ -26,7 +26,7 @@
   20% {
     transform: translateX(-200%);
   }
-  80% {
+  70% {
     transform: translateX(-200%);
   }
   100% {
@@ -47,4 +47,10 @@
     opacity: 0;
   }
 }
+
+.lottieContainer {
+  height: 600px;
+  overflow: hidden;
+}
+
 /* Lottie SVGs animations */
