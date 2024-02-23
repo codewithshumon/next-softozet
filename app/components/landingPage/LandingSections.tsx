@@ -11,7 +11,6 @@ import creative from '@/public/svg-animations/creative/gaphic-desk.json';
 
 import LandingText from './LandingText';
 import styles from './LandingSections.module.css';
-import Button from '../global/Button';
 
 const LandingSections = () => {
   const [animationIn, setAnimationIn] = useState(false);
@@ -33,10 +32,10 @@ const LandingSections = () => {
   }, [count]);
 
   return (
-    <div className="">
-      <div className="w-full h-screen overflow-hidden py-[100px] select-none">
-        <div className="w-full h-full container flex flex-row gap-5 items-center justify-between">
-          <section className={`w-full`}>
+    <div className=" w-full">
+      <div className="w-full h-screen overflow-hidden select-none">
+        <div className="w-full h-full container flex flex-col md:flex-row gap-2 md:gap-5 items-center justify-around md:justify-between ">
+          <section className={`w-full sm:h-[4/2]`}>
             {count === 1 && (
               <div className="">
                 <LandingText

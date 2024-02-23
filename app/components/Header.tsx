@@ -51,16 +51,18 @@ const Header = () => {
   return (
     <header
       ref={headerRef}
-      className="absolute top-0 z-20 p-5 w-full h-[100px] "
+      className="absolute  top-0 z-20 p-2 md:p-5 w-full h-[50px] md:h-[100px]"
     >
       <div className="container text-white flex items-center justify-between">
         <nav className="flex items-center gap-3">
           <SvgLogo width={50} height={50} />
           <Link href={'/'}>
-            <span className="text-[24px] leading-7 font-[800]">SOFTOZET</span>
+            <span className="text-[12px] md:text-[24px] leading-7 font-[800]">
+              SOFTOZET
+            </span>
           </Link>
         </nav>
-        <div className="w-[50%] h-full flex justify-center rounded-full">
+        <div className="hidden sm:flex w-[50%] h-full  justify-center rounded-full">
           <div className="w-fit flex flex-row justify-between px-4 py-2 items-center gap-5 border-gradient-color">
             {navMenus.map((menu, index) => (
               <nav
@@ -84,7 +86,7 @@ const Header = () => {
             className=" px-2 py-[1px] cursor-pointer select-none"
           />
         </nav>
-        <span className="md:hidden" onClick={toggleMenu}>
+        <span className="block md:hidden" onClick={toggleMenu}>
           <BiMenu className="w-6 h-6 cursor-pointer" />
         </span>
       </div>

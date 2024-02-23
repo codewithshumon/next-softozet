@@ -5,7 +5,7 @@ import VideoSection from './components/landingPage/VideoSection';
 export default function Home() {
   return (
     <main>
-      <section className="absolute z-10 w-full h-screen  ">
+      <section className="absolute z-10 w-full h-full  ">
         <LandingSections />
         <VideoSection />
       </section>
