@@ -1,14 +1,37 @@
-.animateLeft {
-  animation: slideInLeft 1s forwards;
+/* Landing Text Animation */
+.textLine {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  height: 10%;
+  overflow: hidden;
+}
+
+.textAnimation {
+  line-height: 110%;
+  width: 100%;
+  height: fit-content;
+}
+
+.animateText {
+  transform: translateY(-50px);
+  animation: slideInLeft 6s forwards;
 }
 @keyframes slideInLeft {
-  from {
-    transform: translateX(0);
+  0% {
+    transform: translateY(-50px);
   }
-  to {
-    transform: translateX(200%);
+  30% {
+    transform: translateY(0);
+  }
+  70% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(50px);
   }
 }
+/* Landing Text Animation */
 
 /* Lottie SVGs animations */
 .rightInOut {
@@ -16,7 +39,7 @@
 }
 .animateRight {
   /* if you change duration here| then need to change it in setTimeOut */
-  animation: opacityIn 5s forwards, slideInRight 5s forwards;
+  animation: opacityIn 6s forwards, slideInRight 6s forwards;
 }
 
 @keyframes slideInRight {
@@ -49,7 +72,15 @@
 }
 
 .lottieContainer {
-  height: 600px;
+  /* height: 600px !important; */
+  padding: 20px !important;
+
+  overflow: hidden;
+}
+.lottieBigContainer {
+  /* height: 600px !important; */
+  padding: 50px !important;
+
   overflow: hidden;
 }
 

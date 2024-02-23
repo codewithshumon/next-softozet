@@ -21,7 +21,7 @@ import {
 
 const VideoSection = () => {
   return (
-    <div className="w-full h-[900px] container bg-black">
+    <div className="w-full h-screen container bg-black">
       <Lottie animationData={manDesk} loop={true} className="w-full h-full" />
     </div>
   );

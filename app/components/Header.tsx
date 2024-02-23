@@ -5,7 +5,8 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { BiMenu } from 'react-icons/bi';
 
-import SvgLogo from './SvgLogo';
+import SvgLogo from './global/SvgLogo';
+import Button from './global/Button';
 
 const navMenus = [
   { path: '/home', display: 'HOME' },
@@ -50,7 +51,7 @@ const Header = () => {
   return (
     <header
       ref={headerRef}
-      className="absolute top-0 z-20 p-5 w-full h-[200px] "
+      className="absolute top-0 z-20 p-5 w-full h-[100px] "
     >
       <div className="container text-white flex items-center justify-between">
         <nav className="flex items-center gap-3">
@@ -77,7 +78,11 @@ const Header = () => {
         </div>
 
         <nav className="text-[12px] leading-7 font-[600] border-[3px] border-solid botton-gradient">
-          <span className=" px-3 py-2">FREE CONSULTATION</span>
+          <Button
+            onClick={() => {}}
+            title="FREE CONSULTATION"
+            className=" px-2 py-[1px] cursor-pointer select-none"
+          />
         </nav>
         <span className="md:hidden" onClick={toggleMenu}>
           <BiMenu className="w-6 h-6 cursor-pointer" />
