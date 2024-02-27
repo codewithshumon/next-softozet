@@ -19,7 +19,7 @@ const navMenus = [
 ];
 
 const Header = () => {
-  const [showSidebar, setShowSidebar] = useState(false);
+  const [showSidebar, setShowSidebar] = useState(null);
   const pathname = usePathname();
   const headerRef = useRef<HTMLDivElement>(null);
   const menuRef = useRef<HTMLDivElement>(null);
@@ -42,6 +42,11 @@ const Header = () => {
       window.removeEventListener('scroll', handleScroll);
     };
   };
+
+  //setting "showSidebar null" then set false. to void auto play on reload
+  useEffect(() => {
+    setShowSidebar(false);
+  }, []);
 
   useEffect(() => {
     handleStickyHeader();
@@ -96,27 +101,41 @@ const Header = () => {
           <BiMenu className="w-6 h-6 cursor-pointer" />
         </span>
       </div>
-      {showSidebar && (
-        <div className=" fixed inset-0 w-full h-screen bg-white/40">
-          <div
-            className={
-              showSidebar ? Styles.bigContainerIn : Styles.bigContainerOut
-            }
-          >
-            <div className="md:hidden fixed top-0 right-0 w-[95%] h-screen rounded-l-full bg-[#243887] p-7 pr-0 overflow-hidden">
-              <div
-                className={`${
-                  showSidebar
-                    ? Styles.smallContainerIn
-                    : Styles.smallContainerOut
-                } w-full h-full`}
-              >
-                <div className=" w-full h-full rounded-l-full bg-[#8c27e5]"></div>
+
+      <div
+        onClick={toggleMenu}
+        className={`${
+          showSidebar ? 'fixed inset-0 w-full h-screen bg-white/40' : ''
+        }`}
+      >
+        <div
+          className={`${
+            showSidebar ? Styles.bigContainerIn : Styles.bigContainerOut
+          } translate-x-[100%]`}
+        >
+          <div className="md:hidden fixed top-0 right-0 w-[95%] h-screen rounded-l-full bg-[#243887] p-7 pr-0 overflow-hidden">
+            <div
+              className={`${
+                showSidebar ? Styles.smallContainerIn : Styles.smallContainerOut
+              } w-full h-full translate-x-[100%]`}
+            >
+              <div className=" w-full h-full rounded-l-full bg-[#8c27e5]">
+                <div className=" w-full h-full">
+                  <div className=" w-full h-full">
+                    <div className=" hidden xs:flex text-[12px]  leading-7 font-[600] border-[3px] border-solid botton-gradient">
+                      <Button
+                        onClick={() => {}}
+                        title="FREE CONSULTATION"
+                        className=" px-2 py-[1px] cursor-pointer select-none"
+                      />
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      )}
+      </div>
     </header>
   );
 };
