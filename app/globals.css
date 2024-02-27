@@ -71,6 +71,10 @@
   box-sizing: border-box;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 /*scroll bar */
 body::-webkit-scrollbar {
   background: rgb(120, 252, 164);
@@ -207,4 +211,10 @@ body::-webkit-scrollbar-button:vertical:single-button:increment:hover {
   to {
     transform: translateX(0);
   }
+}
+
+.not-found {
+  /* height: 600px !important; */
+  padding: 50px !important;
+  bottom: 100px !important;
 }

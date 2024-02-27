@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      screens: {
+        xs: '440px',
+      },
       backgroundImage: {
         'gradient-radial':
           'radial-gradient(circle, rgba(35,72,255,1) 0%, rgba(0,0,0,1) 100%)',

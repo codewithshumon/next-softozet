@@ -1,0 +1,47 @@
+.bigContainerIn {
+  animation: bigContainerIn 1s forwards;
+}
+@keyframes bigContainerIn {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.smallContainerIn {
+  animation: smallContainerIn 2s forwards;
+}
+@keyframes smallContainerIn {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.bigContainerOut {
+  animation: bigContainerOut 1s forwards;
+}
+@keyframes bigContainerOut {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.smallContainerOut {
+  animation: smallContainerOut 2s forwards;
+}
+@keyframes smallContainerOut {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
