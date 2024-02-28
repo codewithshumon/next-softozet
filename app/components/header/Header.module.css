@@ -11,6 +11,18 @@
 }
 
 .smallContainerIn {
+  animation: smallContainerIn 1.5s forwards;
+}
+@keyframes smallContainerIn {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.menuContainerIn {
   animation: smallContainerIn 2s forwards;
 }
 @keyframes smallContainerIn {
@@ -35,6 +47,17 @@
 }
 
 .smallContainerOut {
+  animation: smallContainerOut 1.5s forwards;
+}
+@keyframes smallContainerOut {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+.menuContainerOut {
   animation: smallContainerOut 2s forwards;
 }
 @keyframes smallContainerOut {
