@@ -19,7 +19,8 @@ const navMenus = [
 ];
 
 const Header = () => {
-  const [showSidebar, setShowSidebar] = useState(null);
+  const [showSidebar, setShowSidebar] = useState(false);
+  const [closeSidebar, setCloseSidebar] = useState(false);
   const pathname = usePathname();
   const headerRef = useRef<HTMLDivElement>(null);
   const menuRef = useRef<HTMLDivElement>(null);
@@ -43,20 +44,19 @@ const Header = () => {
     };
   };
 
-  //setting "showSidebar null" then set false. to void auto play on reload
-  useEffect(() => {
-    setShowSidebar(false);
-  }, []);
-
   useEffect(() => {
     handleStickyHeader();
 
     return () => window.removeEventListener('scroll', handleStickyHeader);
   });
 
-  const toggleMenu = () => {
-    menuRef.current?.classList.toggle('show-menu');
-    setShowSidebar(!showSidebar);
+  const hadleShowSidebar = () => {
+    setShowSidebar(true);
+    setCloseSidebar(false);
+  };
+  const handleCloseSidebar = () => {
+    setShowSidebar(false);
+    setCloseSidebar(true);
   };
 
   return (
@@ -97,26 +97,26 @@ const Header = () => {
             className=" px-2 py-[1px] cursor-pointer select-none"
           />
         </nav>
-        <span className="block md:hidden" onClick={toggleMenu}>
+        <span className="block md:hidden" onClick={hadleShowSidebar}>
           <BiMenu className="w-6 h-6 cursor-pointer" />
         </span>
       </div>
 
       <div
-        onClick={toggleMenu}
+        onClick={handleCloseSidebar}
         className={`${
           showSidebar ? 'fixed inset-0 w-full h-screen bg-white/40' : ''
         }`}
       >
         <div
-          className={`${
-            showSidebar ? Styles.bigContainerIn : Styles.bigContainerOut
+          className={`${showSidebar ? Styles.bigContainerIn : ''} ${
+            closeSidebar ? Styles.bigContainerOut : ''
           } translate-x-[100%]`}
         >
           <div className="md:hidden fixed top-0 right-0 w-[95%] h-screen rounded-l-full bg-[#243887] p-7 pr-0 overflow-hidden">
             <div
-              className={`${
-                showSidebar ? Styles.smallContainerIn : Styles.smallContainerOut
+              className={`${showSidebar ? Styles.smallContainerIn : ''} ${
+                closeSidebar ? Styles.smallContainerOut : ''
               } w-full h-full translate-x-[100%]`}
             >
               <div className=" w-full h-full rounded-l-full bg-[#8c27e5]">
