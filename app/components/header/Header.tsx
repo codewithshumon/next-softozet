@@ -146,7 +146,7 @@ const Header = () => {
             </div>
           </div>
 
-          <nav className=" hidden xs:flex text-[12px]  leading-7 font-[600] border-[3px] border-solid botton-gradient">
+          <nav className=" hidden md:flex text-[12px]  leading-7 font-[600] border-[3px] border-solid botton-gradient">
             <Button
               onClick={() => {}}
               title="FREE CONSULTATION"

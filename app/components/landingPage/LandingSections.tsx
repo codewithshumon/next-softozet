@@ -35,7 +35,7 @@ const LandingSections = () => {
     <div className=" w-full">
       <div className="w-full h-screen overflow-hidden select-none">
         <div className="w-full h-full container flex flex-col md:flex-row gap-2 md:gap-5 items-center justify-around md:justify-between ">
-          <section className={`w-full sm:h-[4/2]`}>
+          <section className={`w-full h-full flex items-center justify-center`}>
             {count === 1 && (
               <div className="">
                 <LandingText
@@ -103,12 +103,12 @@ const LandingSections = () => {
             )}
           </section>
 
-          <section className=" w-full h-[4/3] flex items-center justify-center">
-            <div className="w-full h-[2/1]">
+          <section className=" w-full h-full ">
+            <div className="w-full h-full flex items-center justify-center">
               <div
                 className={`${
                   animationIn ? styles.animateRight : 'opacity-0'
-                } pt-[5%] `}
+                } `}
               >
                 {count === 1 && (
                   <div
@@ -117,8 +117,7 @@ const LandingSections = () => {
                     <Lottie
                       animationData={web}
                       loop={true}
-                      height={500}
-                      width={500}
+                      className="!w-[300px] xs:!w-[400px] md:!w-[600px]"
                     />
                   </div>
                 )}
@@ -130,9 +129,13 @@ const LandingSections = () => {
               >
                 {count === 2 && (
                   <div
-                    className={`${styles.rightInOut} ${styles.lottieContainer} mt-[10%]`}
+                    className={`${styles.rightInOut} ${styles.lottieContainer} `}
                   >
-                    <Lottie animationData={mobile} loop={true} />
+                    <Lottie
+                      animationData={mobile}
+                      loop={true}
+                      className="!w-[250px] xs:!w-[350px] md:!w-[500px]"
+                    />
                   </div>
                 )}
               </div>
@@ -143,9 +146,13 @@ const LandingSections = () => {
               >
                 {count === 3 && (
                   <div
-                    className={`${styles.rightInOut} ${styles.lottieBigContainer}`}
+                    className={`${styles.rightInOut} ${styles.lottieBigContainer} `}
                   >
-                    <Lottie animationData={social} loop={true} />
+                    <Lottie
+                      animationData={social}
+                      loop={true}
+                      className="!w-[250px] xs:!w-[350px] md:!w-[550px]"
+                    />
                   </div>
                 )}
               </div>
@@ -156,9 +163,13 @@ const LandingSections = () => {
               >
                 {count === 4 && (
                   <div
-                    className={`${styles.rightInOut} ${styles.lottieContainer} mt-[10%]`}
+                    className={`${styles.rightInOut} ${styles.lottieContainer}`}
                   >
-                    <Lottie animationData={seo} loop={true} />
+                    <Lottie
+                      animationData={seo}
+                      loop={true}
+                      className="!w-[250px] xs:!w-[350px] md:!w-[550px]"
+                    />
                   </div>
                 )}
               </div>
@@ -169,9 +180,13 @@ const LandingSections = () => {
               >
                 {count === 5 && (
                   <div
-                    className={`${styles.rightInOut} ${styles.lottieBigContainer} mt-[10%]`}
+                    className={`${styles.rightInOut} ${styles.lottieBigContainer} `}
                   >
-                    <Lottie animationData={creative} loop={true} />
+                    <Lottie
+                      animationData={creative}
+                      loop={true}
+                      className="!w-[250px] xs:!w-[350px] md:!w-[450px]"
+                    />
                   </div>
                 )}
               </div>
