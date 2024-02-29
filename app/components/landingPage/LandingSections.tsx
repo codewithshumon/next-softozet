@@ -3,14 +3,23 @@
 import { useState, useEffect } from 'react';
 import Lottie from 'lottie-react';
 
-import web from '@/public/svg-animations/web/web-animation.json';
-import mobile from '@/public/svg-animations/mobile/mobile-first.json';
-import social from '@/public/svg-animations/social/social-first.json';
-import seo from '@/public/svg-animations/seo/group-seo.json';
-import creative from '@/public/svg-animations/creative/gaphic-desk.json';
+import {
+  webFirst,
+  webSingleMan,
+  mobileFirst,
+  girlMobile,
+  socialFirst,
+  socialSecond,
+  groupSeo,
+  seoRanking,
+  graphiDesk,
+  manDesk,
+} from '@/public/svg-animations';
 
 import LandingText from './LandingText';
 import styles from './LandingSections.module.css';
+import LandingServiceLottie from './landingService/LandingServiceLottie';
+import LandingServiceText from './landingService/LandingServiceText';
 
 const LandingSections = () => {
   const [animationIn, setAnimationIn] = useState(false);
@@ -33,6 +42,7 @@ const LandingSections = () => {
 
   return (
     <div className=" w-full">
+      {/* landing screen section */}
       <div className="w-full h-screen overflow-hidden select-none">
         <div className="w-full h-full container flex flex-col md:flex-row gap-2 md:gap-5 items-center justify-around md:justify-between ">
           <section className={`w-full h-full flex items-center justify-center`}>
@@ -115,7 +125,7 @@ const LandingSections = () => {
                     className={`${styles.rightInOut} ${styles.lottieContainer} `}
                   >
                     <Lottie
-                      animationData={web}
+                      animationData={webFirst}
                       loop={true}
                       className="!w-[300px] xs:!w-[400px] md:!w-[600px]"
                     />
@@ -132,7 +142,7 @@ const LandingSections = () => {
                     className={`${styles.rightInOut} ${styles.lottieContainer} `}
                   >
                     <Lottie
-                      animationData={mobile}
+                      animationData={mobileFirst}
                       loop={true}
                       className="!w-[250px] xs:!w-[350px] md:!w-[500px]"
                     />
@@ -149,7 +159,7 @@ const LandingSections = () => {
                     className={`${styles.rightInOut} ${styles.lottieBigContainer} `}
                   >
                     <Lottie
-                      animationData={social}
+                      animationData={socialFirst}
                       loop={true}
                       className="!w-[250px] xs:!w-[350px] md:!w-[550px]"
                     />
@@ -166,7 +176,7 @@ const LandingSections = () => {
                     className={`${styles.rightInOut} ${styles.lottieContainer}`}
                   >
                     <Lottie
-                      animationData={seo}
+                      animationData={groupSeo}
                       loop={true}
                       className="!w-[250px] xs:!w-[350px] md:!w-[550px]"
                     />
@@ -183,7 +193,7 @@ const LandingSections = () => {
                     className={`${styles.rightInOut} ${styles.lottieBigContainer} `}
                   >
                     <Lottie
-                      animationData={creative}
+                      animationData={graphiDesk}
                       loop={true}
                       className="!w-[250px] xs:!w-[350px] md:!w-[450px]"
                     />
@@ -194,6 +204,27 @@ const LandingSections = () => {
           </section>
         </div>
       </div>
+      {/* landing screen section */}
+
+      {/* landing service section */}
+      <div>
+        <div>
+          <section>
+            <div>
+              <div>
+                <LandingServiceLottie
+                  animation={webSingleMan}
+                  className="!w-[400px]"
+                />
+              </div>
+              <div>
+                <LandingServiceText />
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      {/* landing service section */}
     </div>
   );
 };
