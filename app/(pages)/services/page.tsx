@@ -1,5 +1,6 @@
 import ServiceLottie from '@/app/components/services/ServiceLottie';
 import ServiceText from '@/app/components/services/ServiceText';
+import { ServiceData } from '@/app/constant/serviceData';
 
 import {
   webSingleMan,
@@ -19,16 +20,20 @@ const ServicesPage = () => {
     <section className="w-full h-full">
       <div className="w-full h-full flex flex-row xl:flex-col items-center">
         <div className="w-full h-full relative">
-          <div className="container absolute inset-0 flex flex-row justify-between">
-            <div className=" w-screen h-screen">
+          <div className="container absolute inset-0 flex flex-col md:flex-row justify-between gap-2 md:gap-5">
+            <div className=" h-full my-auto">
               <ServiceText
-                title="WEB APPLICATION DEVELOPMENT"
-                subTitle=""
-                text=""
+                title={ServiceData.webServiceData.title}
+                subTitle={ServiceData.webServiceData.subTitle}
+                text={ServiceData.webServiceData.text}
               />
             </div>
-            <div className=" w-screen h-screen">
-              <ServiceLottie animation={webSmall} className="!w-[400px]" />
+
+            <div className="mx-auto">
+              <ServiceLottie
+                animation={webSmall}
+                className="!p-2 md:!p-5 !w-[300px] xs:!w-[400px] md:!w-[600px]"
+              />
             </div>
           </div>
           <div className="w-screen h-screen bg-[#114231]"></div>
@@ -36,15 +41,18 @@ const ServicesPage = () => {
 
         <div className="w-full h-full relative">
           <div className="container absolute inset-0 flex flex-row justify-between">
-            <div className=" w-screen h-screen">
+            <div className=" ">
               <ServiceText
-                title="WEB APPLICATION DEVELOPMENT"
-                subTitle=""
-                text=""
+                title={ServiceData.webServiceData.title}
+                subTitle={ServiceData.webServiceData.subTitle}
+                text={ServiceData.webServiceData.text}
               />
             </div>
-            <div className=" w-screen h-screen">
-              <ServiceLottie animation={mobileSecond} className="!w-[400px]" />
+            <div className=" ">
+              <ServiceLottie
+                animation={mobileSecond}
+                className="!p-2 md:!p-5 !w-[300px] xs:!w-[400px] md:!w-[600px]"
+              />
             </div>
           </div>
           <div className="w-screen h-screen bg-[#2dbb89]"></div>
@@ -54,13 +62,16 @@ const ServicesPage = () => {
           <div className="container absolute inset-0 flex flex-row justify-between">
             <div className=" w-screen h-screen">
               <ServiceText
-                title="WEB APPLICATION DEVELOPMENT"
-                subTitle=""
-                text=""
+                title={ServiceData.webServiceData.title}
+                subTitle={ServiceData.webServiceData.subTitle}
+                text={ServiceData.webServiceData.text}
               />
             </div>
-            <div className=" w-screen h-screen">
-              <ServiceLottie animation={socialThird} className="!w-[400px]" />
+            <div className=" ">
+              <ServiceLottie
+                animation={socialThird}
+                className="!p-2 md:!p-5 !w-[300px] xs:!w-[400px] md:!w-[600px]"
+              />
             </div>
           </div>
           <div className="w-screen h-screen bg-[#2d5fca]"></div>
@@ -68,15 +79,18 @@ const ServicesPage = () => {
 
         <div className="w-full h-full relative">
           <div className="container absolute inset-0 flex flex-row justify-between">
-            <div className=" w-screen h-screen">
+            <div className=" ">
               <ServiceText
-                title="WEB APPLICATION DEVELOPMENT"
-                subTitle=""
-                text=""
+                title={ServiceData.webServiceData.title}
+                subTitle={ServiceData.webServiceData.subTitle}
+                text={ServiceData.webServiceData.text}
               />
             </div>
-            <div className=" w-screen h-screen">
-              <ServiceLottie animation={seoMan} className="!w-[400px]" />
+            <div className="">
+              <ServiceLottie
+                animation={seoMan}
+                className="!p-2 md:!p-5 !w-[300px] xs:!w-[400px] md:!w-[600px]"
+              />
             </div>
           </div>
           <div className="w-screen h-screen bg-[#4d35d8]"></div>
@@ -84,15 +98,18 @@ const ServicesPage = () => {
 
         <div className="w-full h-full relative">
           <div className="container absolute inset-0 flex flex-row justify-between">
-            <div className=" w-screen h-screen">
+            <div className=" ">
               <ServiceText
-                title="WEB APPLICATION DEVELOPMENT"
-                subTitle=""
-                text=""
+                title={ServiceData.webServiceData.title}
+                subTitle={ServiceData.webServiceData.subTitle}
+                text={ServiceData.webServiceData.text}
               />
             </div>
-            <div className=" w-screen h-screen">
-              <ServiceLottie animation={twoCreative} className="!w-[400px]" />
+            <div className=" ">
+              <ServiceLottie
+                animation={twoCreative}
+                className="!p-2 md:!p-5 !w-[300px] xs:!w-[400px] md:!w-[600px]"
+              />
             </div>
           </div>
           <div className="w-screen h-screen bg-[#d331c5]"></div>

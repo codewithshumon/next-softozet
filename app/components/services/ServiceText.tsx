@@ -8,8 +8,8 @@ interface ServiceTextProps {
 
 const ServiceText: React.FC<ServiceTextProps> = ({ title, subTitle, text }) => {
   return (
-    <div className="w-full h-full">
-      <div className=" text-white">
+    <div className="w-[90%] mx-auto h-full flex flex-col items-center text-white">
+      <div className="">
         <h1>{title}</h1>
         <h2>{subTitle}</h2>
       </div>
