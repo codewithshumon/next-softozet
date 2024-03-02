@@ -17,22 +17,21 @@ import {
 
 const ServicesPage = () => {
   return (
-    <section className="w-full h-full">
-      <div className="w-full h-full flex flex-row xl:flex-col items-center">
+    <section className="w-full h-full ">
+      <div className="w-full h-full flex flex-col dssdsdfasmd:flex-row  items-center justify-around ">
         <div className="w-full h-full relative">
-          <div className="container absolute inset-0 flex flex-col md:flex-row justify-between gap-2 md:gap-5">
-            <div className=" h-full my-auto">
+          <div className="container absolute inset-0 flex flex-col md:flex-row justify-between gap-2 md:gap-5 xl:gap-8 py-2 xs:py-4 md:py-0">
+            <div className="w-full h-full ">
               <ServiceText
                 title={ServiceData.webServiceData.title}
                 subTitle={ServiceData.webServiceData.subTitle}
                 text={ServiceData.webServiceData.text}
               />
             </div>
-
-            <div className="mx-auto">
+            <div className="w-full h-full">
               <ServiceLottie
                 animation={webSmall}
-                className="!p-2 md:!p-5 !w-[300px] xs:!w-[400px] md:!w-[600px]"
+                className="!p-2 xs:!p-5 xl:!p-6 !w-[300px] xs:!w-[400px] md:!w-[450px] xl:!w-[600px]"
               />
             </div>
           </div>
@@ -40,18 +39,18 @@ const ServicesPage = () => {
         </div>
 
         <div className="w-full h-full relative">
-          <div className="container absolute inset-0 flex flex-row justify-between">
-            <div className=" ">
+          <div className="container absolute inset-0 flex flex-col md:flex-row justify-between py-2 xs:py-4 md:py-0">
+            <div className="w-full h-full">
               <ServiceText
-                title={ServiceData.webServiceData.title}
-                subTitle={ServiceData.webServiceData.subTitle}
-                text={ServiceData.webServiceData.text}
+                title={ServiceData.mobileServiceData.title}
+                subTitle={ServiceData.mobileServiceData.subTitle}
+                text={ServiceData.mobileServiceData.text}
               />
             </div>
-            <div className=" ">
+            <div className="w-full h-full">
               <ServiceLottie
                 animation={mobileSecond}
-                className="!p-2 md:!p-5 !w-[310px] xs:!w-[430px] md:!w-[650px]"
+                className="!p-2 xs:!p-5 xl:!p-6 !w-[310px] xs:!w-[430px] md:!w-[500px] xl:!w-[650px]"
               />
             </div>
           </div>
@@ -59,18 +58,18 @@ const ServicesPage = () => {
         </div>
 
         <div className="w-full h-full relative">
-          <div className="container absolute inset-0 flex flex-row justify-between">
-            <div className=" w-screen h-screen">
+          <div className="container absolute inset-0 flex flex-col md:flex-row justify-between py-2 xs:py-4 md:py-0">
+            <div className="w-full h-full">
               <ServiceText
-                title={ServiceData.webServiceData.title}
-                subTitle={ServiceData.webServiceData.subTitle}
-                text={ServiceData.webServiceData.text}
+                title={ServiceData.socialServiceData.title}
+                subTitle={ServiceData.socialServiceData.subTitle}
+                text={ServiceData.socialServiceData.text}
               />
             </div>
-            <div className=" ">
+            <div className=" w-full h-full">
               <ServiceLottie
                 animation={socialThird}
-                className="!p-2 md:!p-5 !w-[300px] xs:!w-[400px] md:!w-[600px]"
+                className="!p-2 xs:!p-5 xl:!p-6 !w-[300px] xs:!w-[400px] md:!w-[450px] xl:!w-[600px]"
               />
             </div>
           </div>
@@ -78,18 +77,18 @@ const ServicesPage = () => {
         </div>
 
         <div className="w-full h-full relative">
-          <div className="container absolute inset-0 flex flex-row justify-between">
-            <div className=" ">
+          <div className="container absolute inset-0 flex flex-col md:flex-row justify-between py-2 xs:py-4 md:py-0">
+            <div className="w-full h-full ">
               <ServiceText
-                title={ServiceData.webServiceData.title}
-                subTitle={ServiceData.webServiceData.subTitle}
-                text={ServiceData.webServiceData.text}
+                title={ServiceData.seoServiceData.title}
+                subTitle={ServiceData.seoServiceData.subTitle}
+                text={ServiceData.seoServiceData.text}
               />
             </div>
-            <div className="">
+            <div className="w-full h-full">
               <ServiceLottie
                 animation={seoMan}
-                className="!p-2 md:!p-5 !w-[250px] xs:!w-[350px] md:!w-[550px]"
+                className="!p-2 xs:!p-5 xl:!p-5 !w-[250px] xs:!w-[350px] md:!w-[400px] xl:!w-[550px]"
               />
             </div>
           </div>
@@ -97,18 +96,18 @@ const ServicesPage = () => {
         </div>
 
         <div className="w-full h-full relative">
-          <div className="container absolute inset-0 flex flex-row justify-between">
-            <div className=" ">
+          <div className="container absolute inset-0 flex flex-col md:flex-row justify-between ">
+            <div className="w-full h-full">
               <ServiceText
-                title={ServiceData.webServiceData.title}
-                subTitle={ServiceData.webServiceData.subTitle}
-                text={ServiceData.webServiceData.text}
+                title={ServiceData.creativeServiceData.title}
+                subTitle={ServiceData.creativeServiceData.subTitle}
+                text={ServiceData.creativeServiceData.text}
               />
             </div>
-            <div className=" ">
+            <div className="w-full h-full">
               <ServiceLottie
                 animation={twoCreative}
-                className="!p-2 md:!p-5 !w-[300px] xs:!w-[400px] md:!w-[600px]"
+                className="!p-2 xs:!p-5 xl:!p-6 !w-[300px] xs:!w-[400px] md:!w-[450px] xl:!w-[600px]"
               />
             </div>
           </div>

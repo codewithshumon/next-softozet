@@ -12,7 +12,7 @@ const ServiceLottie: React.FC<ServiceLottieProps> = ({
   className,
 }) => {
   return (
-    <div>
+    <div className=" w-full h-full flex items-center justify-center ">
       <Lottie animationData={animation} loop={true} className={className} />
     </div>
   );
