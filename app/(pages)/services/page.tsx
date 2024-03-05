@@ -20,7 +20,7 @@ const ServicesPage = () => {
     <section className="w-full h-full ">
       <div className="w-full h-full flex flex-col dssdsdfasmd:flex-row  items-center justify-around ">
         <div className="w-full h-full relative">
-          <div className="container absolute inset-0 flex flex-col md:flex-row justify-between gap-2 md:gap-5 xl:gap-8 py-2 xs:py-4 md:py-0">
+          <div className="container absolute inset-0 flex flex-col md:flex-row justify-between gap-2 md:gap-5 xl:gap-8 py-2 xs:py-4 md:py-6">
             <div className="w-full h-full ">
               <ServiceText
                 title={ServiceData.webServiceData.title}
@@ -39,7 +39,7 @@ const ServicesPage = () => {
         </div>
 
         <div className="w-full h-full relative">
-          <div className="container absolute inset-0 flex flex-col md:flex-row justify-between py-2 xs:py-4 md:py-0">
+          <div className="container absolute inset-0 flex flex-col md:flex-row justify-between py-2 xs:py-4 md:py-6">
             <div className="w-full h-full">
               <ServiceText
                 title={ServiceData.mobileServiceData.title}
@@ -58,7 +58,7 @@ const ServicesPage = () => {
         </div>
 
         <div className="w-full h-full relative">
-          <div className="container absolute inset-0 flex flex-col md:flex-row justify-between py-2 xs:py-4 md:py-0">
+          <div className="container absolute inset-0 flex flex-col md:flex-row justify-between py-2 xs:py-4 md:py-6">
             <div className="w-full h-full">
               <ServiceText
                 title={ServiceData.socialServiceData.title}
@@ -77,7 +77,7 @@ const ServicesPage = () => {
         </div>
 
         <div className="w-full h-full relative">
-          <div className="container absolute inset-0 flex flex-col md:flex-row justify-between py-2 xs:py-4 md:py-0">
+          <div className="container absolute inset-0 flex flex-col md:flex-row justify-between py-2 xs:py-4 md:py-6">
             <div className="w-full h-full ">
               <ServiceText
                 title={ServiceData.seoServiceData.title}
@@ -96,7 +96,7 @@ const ServicesPage = () => {
         </div>
 
         <div className="w-full h-full relative">
-          <div className="container absolute inset-0 flex flex-col md:flex-row justify-between ">
+          <div className="container absolute inset-0 flex flex-col md:flex-row justify-between py-2 xs:py-4 md:py-6 ">
             <div className="w-full h-full">
               <ServiceText
                 title={ServiceData.creativeServiceData.title}
