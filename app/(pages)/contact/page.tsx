@@ -3,6 +3,9 @@
 import { useState } from 'react';
 
 import conatactLottie from '@/public/contact-lottie.json';
+import emailSendLottie from '@/public/email-sending.json';
+import rightMarkLottie from '@/public/right-mark.json';
+
 import LottieComponent from '@/app/components/global/ContactLottie';
 import Button from '@/app/components/global/Button';
 
@@ -10,6 +13,11 @@ const ContactPage = () => {
   const [loading, setLoading] = useState(false);
   const [showEmailSend, setShowEmailSend] = useState(false);
   const [showRightMard, setShowRightMard] = useState(false);
+  const [timeoutInitiated, setTimeoutInitiated] = useState(false);
+
+  console.log('loading', loading);
+  console.log('showEmailSend', showEmailSend);
+  console.log('showRightMard', showRightMard);
 
   const [formData, setFormData] = useState({
     name: '',
@@ -23,37 +31,34 @@ const ContactPage = () => {
   };
 
   const handleSubmit = async (e: any) => {
+    console.log('handleSubmit');
     e.preventDefault();
 
+    // If timeout has already been initiated, return early
+    if (timeoutInitiated) return;
+
+    setLoading(true);
+    setShowEmailSend(true);
+    setShowRightMard(true);
+
     try {
-      setLoading(true);
-      setTimeout(() => {
-        setShowEmailSend(false);
-      }, 1000);
-    } catch (error) {}
-
-    //   const res = await fetch(`${BASE_URL}/user/${user._id}`, {
-    //     method: 'PUT',
-    //     headers: {
-    //       'Content-Type': 'application/json',
-    //       Authorization: `Bearer ${token}`,
-    //     },
-    //     body: JSON.stringify(formData),
-    //   });
-
-    //   const { message } = await res.json();
-
-    //   if (!res.ok) {
-    //     throw new Error(message);
-    //   }
-
-    //   setLoading(false);
-    //   toast.success(message);
-    // } catch (error) {
-    //   console.log(error);
-
-    //   toast.error(error.message);
-    //   setLoading(false);
+      console.log('try');
+      await new Promise<void>((resolve) => {
+        setTimeout(() => {
+          console.log('setTimeout');
+          setLoading(false);
+          setShowEmailSend(false);
+          setShowRightMard(false);
+          setTimeoutInitiated(false); // Reset timeoutInitiated after timeout
+          resolve(); // Resolve the promise without any value
+        }, 3000);
+      });
+    } catch (error) {
+      console.log('catch');
+      setLoading(false);
+      setShowEmailSend(false);
+      setShowRightMard(false);
+    }
   };
 
   return (
@@ -62,86 +67,106 @@ const ContactPage = () => {
         <div className="">
           <LottieComponent
             animationData={conatactLottie}
-            className="!w-[250px] xs:!w-[350px] md:!w-[400px]"
+            className="!w-[250px] xs:!w-[350px] xl:!w-[400px]"
           />
         </div>
-        <div className="">
-          <form
-            onSubmit={handleSubmit}
-            className="w-full h-full flex flex-col items-center text-white font-semibold md:font-bold "
-          >
-            <div className=" w-full h-full flex flex-col space-y-2 ">
-              <div className=" w-full flex flex-col xs:flex-row gap-2 xs:gap-5 ">
-                <div className="w-full h-full flex flex-col gap-2 ">
-                  <label htmlFor="email" className="">
-                    Your Full Name
-                  </label>
-                  <input
-                    type="text"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleInpurChange}
-                    placeholder="Full Name"
-                    className="py-1 px-2 text-gray-700 md:py-2 md:px-4 rounded-full outline-emerald-500"
-                    required
-                  />
-                </div>
+        {!loading && !showEmailSend && !showRightMard && (
+          <div className="">
+            <form className="w-full h-full flex flex-col items-center text-white font-semibold md:font-bold ">
+              <div className=" w-full h-full flex flex-col space-y-2 ">
+                <div className=" w-full flex flex-col xs:flex-row gap-2 xs:gap-5 ">
+                  <div className="w-full h-full flex flex-col gap-2 ">
+                    <label htmlFor="email" className="">
+                      Your Full Name
+                    </label>
+                    <input
+                      type="text"
+                      name="name"
+                      value={formData.name}
+                      onChange={handleInpurChange}
+                      placeholder="Full Name"
+                      className="py-1 px-2 text-gray-700 md:py-2 md:px-4 rounded-full outline-emerald-500"
+                      required
+                    />
+                  </div>
 
+                  <div className="w-full h-full flex flex-col gap-2">
+                    <label htmlFor="email" className="">
+                      Your Phone Number
+                    </label>
+                    <input
+                      type="number"
+                      name="number"
+                      value={formData.number === 0 ? '' : formData.number}
+                      onChange={handleInpurChange}
+                      placeholder="+1 XXXXXXXXXX"
+                      className="py-1 px-2 text-gray-700 md:py-2 md:px-4 rounded-full outline-emerald-500"
+                      required
+                    />
+                  </div>
+                </div>
                 <div className="w-full h-full flex flex-col gap-2">
                   <label htmlFor="email" className="">
-                    Your Phone Number
+                    Your Email (Optional)
                   </label>
                   <input
-                    type="number"
-                    name="number"
-                    value={formData.number === 0 ? '' : formData.number}
+                    type="email"
+                    name="email"
+                    value={formData.email}
                     onChange={handleInpurChange}
-                    placeholder="+1 XXXXXXXXXX"
+                    placeholder="example@gmail.com"
                     className="py-1 px-2 text-gray-700 md:py-2 md:px-4 rounded-full outline-emerald-500"
+                  />
+                </div>
+                <div className="w-full h-full flex flex-col gap-2">
+                  <label htmlFor="message" className="">
+                    Your Message
+                  </label>
+                  <textarea
+                    name="message"
+                    value={formData.message}
+                    onChange={handleInpurChange}
+                    rows={5}
+                    id="message"
+                    placeholder="Write your message here...."
+                    className="text-gray-700 py-1 px-2 md:py-2 md:px-4 rounded-2xl outline-emerald-500"
                     required
                   />
                 </div>
               </div>
-              <div className="w-full h-full flex flex-col gap-2">
-                <label htmlFor="email" className="">
-                  Your Email (Optional)
-                </label>
-                <input
-                  type="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleInpurChange}
-                  placeholder="example@gmail.com"
-                  className="py-1 px-2 text-gray-700 md:py-2 md:px-4 rounded-full outline-emerald-500"
-                />
-              </div>
-              <div className="w-full h-full flex flex-col gap-2">
-                <label htmlFor="message" className="">
-                  Your Message
-                </label>
-                <textarea
-                  name="message"
-                  value={formData.message}
-                  onChange={handleInpurChange}
-                  rows={5}
-                  id="message"
-                  placeholder="Write your message here...."
-                  className="text-gray-700 py-1 px-2 md:py-2 md:px-4 rounded-2xl outline-emerald-500"
-                  required
-                />
-              </div>
-            </div>
 
-            <div className=" !w-full mt-5  text-[16px] xs:text-[20px] md:text-[26px] leading-7 font-[600] border-[3px] border-solid botton-gradient text-white text-center cursor-pointer">
-              <Button
-                disabled={loading}
-                type="submit"
-                title="SUBMIT"
-                className="px-2 py-[1px] select-none"
-              />
-            </div>
-          </form>
-        </div>
+              <div
+                onClick={handleSubmit}
+                className="mt-5  text-[16px] xs:text-[20px] md:text-[26px] leading-7 font-[600] border-[3px] border-solid botton-gradient text-white text-center cursor-pointer"
+              >
+                <Button
+                  disabled={loading}
+                  type="submit"
+                  title="SUBMIT"
+                  className="px-2 py-[1px] select-none"
+                />
+              </div>
+            </form>
+          </div>
+        )}
+
+        {loading && showEmailSend && (
+          <div>
+            <LottieComponent
+              animationData={emailSendLottie}
+              className="!w-[500px]"
+            />
+          </div>
+        )}
+
+        {loading && showRightMard && (
+          <div>
+            <LottieComponent
+              animationData={rightMarkLottie}
+              className="!w-[500px]"
+            />
+          </div>
+        )}
       </div>
     </div>
   );
