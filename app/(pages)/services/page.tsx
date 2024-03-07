@@ -1,6 +1,14 @@
+'use client';
+
+/* eslint-disable react-hooks/exhaustive-deps */
+import { useEffect, useRef } from 'react';
 import ServiceLottie from '@/app/components/services/ServiceLottie';
 import ServiceText from '@/app/components/services/ServiceText';
 import { ServiceData } from '@/app/constant/serviceData';
+
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+gsap.registerPlugin(ScrollTrigger);
 
 import {
   webSingleMan,
@@ -17,9 +25,10 @@ import {
 
 const ServicesPage = () => {
   return (
-    <section className="w-full h-full ">
-      <div className="w-full h-full flex flex-col dssdsdfasmd:flex-row  items-center justify-around ">
-        <div className="w-full h-full relative">
+    <section className="w-full h-full full-container ">
+      <div className="w-screen h-screen bg-[#c54f3b]"></div>
+      <div className="w-full h-full gsap-container flex flex-col dmd:flex-row  items-center justify-around ">
+        <div className="w-full h-full relative gsapAnimation">
           <div className="container absolute inset-0 flex flex-col md:flex-row justify-between gap-2 md:gap-5 xl:gap-8 py-2 xs:py-4 md:py-6">
             <div className="w-full h-full ">
               <ServiceText
@@ -38,7 +47,7 @@ const ServicesPage = () => {
           <div className="w-screen h-screen bg-[#114231]"></div>
         </div>
 
-        <div className="w-full h-full relative">
+        <div className="w-full h-full relative gsapAnimation">
           <div className="container absolute inset-0 flex flex-col md:flex-row justify-between py-2 xs:py-4 md:py-6">
             <div className="w-full h-full">
               <ServiceText
@@ -57,7 +66,7 @@ const ServicesPage = () => {
           <div className="w-screen h-screen bg-[#c54f3b]"></div>
         </div>
 
-        <div className="w-full h-full relative">
+        <div className="w-full h-full relative gsapAnimation">
           <div className="container absolute inset-0 flex flex-col md:flex-row justify-between py-2 xs:py-4 md:py-6">
             <div className="w-full h-full">
               <ServiceText
@@ -76,7 +85,7 @@ const ServicesPage = () => {
           <div className="w-screen h-screen bg-[#2d5fca]"></div>
         </div>
 
-        <div className="w-full h-full relative">
+        <div className="w-full h-full relative gsapAnimation">
           <div className="container absolute inset-0 flex flex-col md:flex-row justify-between py-2 xs:py-4 md:py-6">
             <div className="w-full h-full ">
               <ServiceText
@@ -95,7 +104,7 @@ const ServicesPage = () => {
           <div className="w-screen h-screen bg-[#4d35d8]"></div>
         </div>
 
-        <div className="w-full h-full relative">
+        <div className="w-full h-full relative gsapAnimation">
           <div className="container absolute inset-0 flex flex-col md:flex-row justify-between py-2 xs:py-4 md:py-6 ">
             <div className="w-full h-full">
               <ServiceText
@@ -114,6 +123,7 @@ const ServicesPage = () => {
           <div className="w-screen h-screen bg-[#d331c5]"></div>
         </div>
       </div>
+      <div className="w-screen h-screen bg-[#c54f3b]"></div>
     </section>
   );
 };
