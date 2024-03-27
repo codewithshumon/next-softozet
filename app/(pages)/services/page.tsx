@@ -1,36 +1,61 @@
-'use client';
+"use client";
 
 /* eslint-disable react-hooks/exhaustive-deps */
-import { useEffect, useRef } from 'react';
-import ServiceLottie from '@/app/components/services/ServiceLottie';
-import ServiceText from '@/app/components/services/ServiceText';
-import { ServiceData } from '@/app/constant/serviceData';
+import { useEffect } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
-gsap.registerPlugin(ScrollTrigger);
+import ServiceLottie from "@/app/components/services/ServiceLottie";
+import ServiceText from "@/app/components/services/ServiceText";
+import { ServiceData } from "@/app/constant/serviceData";
 
 import {
-  webSingleMan,
   webSmall,
   mobileSecond,
-  girlMobile,
-  socialSecond,
   socialThird,
   seoMan,
-  seoRanking,
-  manDesk,
   twoCreative,
-} from '@/public/svg-animations';
+} from "@/public/svg-animations";
 
 const ServicesPage = () => {
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    const animateSections = () => {
+      const section =
+        (document.querySelector(".sevice-image-wrapper") as HTMLElement) ||
+        null;
+      let items = gsap.utils.toArray(".image-item");
+
+      if (!section) return;
+
+      gsap.to(items, {
+        xPercent: -100 * (items.length - 1),
+        ease: "none",
+        scrollTrigger: {
+          trigger: section,
+          pin: true,
+          scrub: 1,
+          snap: 1 / (items.length - 1),
+          end: () => "+=" + section.offsetWidth,
+        },
+      });
+    };
+
+    animateSections();
+
+    return () => {
+      ScrollTrigger.getAll().forEach((instance) => instance.kill());
+    };
+  }, []);
+
   return (
     <section className="w-full h-full full-container ">
       <div className="w-screen h-screen bg-[#c54f3b]"></div>
-      <div className="w-full h-full gsap-container flex flex-col dmd:flex-row  items-center justify-around ">
-        <div className="w-full h-full relative gsapAnimation">
+      <div className="sevice-image-wrapper w-full h-full flex flex-row items-center ">
+        <div className="image-item w-[100vw] h-full relative ">
           <div className="container absolute inset-0 flex flex-col md:flex-row justify-between gap-2 md:gap-5 xl:gap-8 py-2 xs:py-4 md:py-6">
-            <div className="w-full h-full ">
+            <div className="w-full h-full  ">
               <ServiceText
                 title={ServiceData.webServiceData.title}
                 subTitle={ServiceData.webServiceData.subTitle}
@@ -47,7 +72,7 @@ const ServicesPage = () => {
           <div className="w-screen h-screen bg-[#114231]"></div>
         </div>
 
-        <div className="w-full h-full relative gsapAnimation">
+        <div className="image-item w-[100vw] h-full relative ">
           <div className="container absolute inset-0 flex flex-col md:flex-row justify-between py-2 xs:py-4 md:py-6">
             <div className="w-full h-full">
               <ServiceText
@@ -66,7 +91,7 @@ const ServicesPage = () => {
           <div className="w-screen h-screen bg-[#c54f3b]"></div>
         </div>
 
-        <div className="w-full h-full relative gsapAnimation">
+        <div className="image-item w-[100vw] h-full relative ">
           <div className="container absolute inset-0 flex flex-col md:flex-row justify-between py-2 xs:py-4 md:py-6">
             <div className="w-full h-full">
               <ServiceText
@@ -85,7 +110,7 @@ const ServicesPage = () => {
           <div className="w-screen h-screen bg-[#2d5fca]"></div>
         </div>
 
-        <div className="w-full h-full relative gsapAnimation">
+        <div className="image-item w-[100vw] h-full relative ">
           <div className="container absolute inset-0 flex flex-col md:flex-row justify-between py-2 xs:py-4 md:py-6">
             <div className="w-full h-full ">
               <ServiceText
@@ -104,7 +129,7 @@ const ServicesPage = () => {
           <div className="w-screen h-screen bg-[#4d35d8]"></div>
         </div>
 
-        <div className="w-full h-full relative gsapAnimation">
+        <div className="image-item w-[100vw] h-full relative ">
           <div className="container absolute inset-0 flex flex-col md:flex-row justify-between py-2 xs:py-4 md:py-6 ">
             <div className="w-full h-full">
               <ServiceText
