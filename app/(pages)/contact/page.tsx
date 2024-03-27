@@ -1,29 +1,24 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
+import { useState } from "react";
 
-import conatactLottie from '@/public/contact-lottie.json';
-import emailSendLottie from '@/public/email-sending.json';
-import rightMarkLottie from '@/public/right-mark.json';
+import conatactLottie from "@/public/contact-lottie.json";
+import emailSendLottie from "@/public/email-sending.json";
+import rightMarkLottie from "@/public/right-mark.json";
 
-import LottieComponent from '@/app/components/global/ContactLottie';
-import Button from '@/app/components/global/Button';
+import LottieComponent from "@/app/components/global/ContactLottie";
+import Button from "@/app/components/global/Button";
 
 const ContactPage = () => {
   const [loading, setLoading] = useState(false);
   const [showEmailSend, setShowEmailSend] = useState(false);
   const [showRightMard, setShowRightMard] = useState(false);
-  const [timeoutInitiated, setTimeoutInitiated] = useState(false);
-
-  console.log('loading', loading);
-  console.log('showEmailSend', showEmailSend);
-  console.log('showRightMard', showRightMard);
 
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
+    name: "",
+    email: "",
     number: 0,
-    message: '',
+    message: "",
   });
 
   const handleInpurChange = (e: any) => {
@@ -31,33 +26,32 @@ const ContactPage = () => {
   };
 
   const handleSubmit = async (e: any) => {
-    console.log('handleSubmit');
     e.preventDefault();
-
-    // If timeout has already been initiated, return early
-    if (timeoutInitiated) return;
 
     setLoading(true);
     setShowEmailSend(true);
-    setShowRightMard(true);
-
     try {
-      console.log('try');
-      await new Promise<void>((resolve) => {
-        setTimeout(() => {
-          console.log('setTimeout');
-          setLoading(false);
-          setShowEmailSend(false);
-          setShowRightMard(false);
-          setTimeoutInitiated(false); // Reset timeoutInitiated after timeout
-          resolve(); // Resolve the promise without any value
-        }, 3000);
-      });
+      await Promise.all([
+        new Promise<void>((resolve) => {
+          setTimeout(() => {
+            console.log("2000 timeout");
+            setShowEmailSend(false);
+            setShowRightMard(true);
+            console.log("2000 timeout after emailSend");
+            resolve();
+          }, 2000);
+
+          setTimeout(() => {
+            console.log("5000 timeout");
+            setLoading(false);
+            setShowEmailSend(false);
+            setShowRightMard(false);
+            resolve();
+          }, 5000);
+        }),
+      ]);
     } catch (error) {
-      console.log('catch');
-      setLoading(false);
-      setShowEmailSend(false);
-      setShowRightMard(false);
+      console.log("error", error);
     }
   };
 
@@ -97,7 +91,7 @@ const ContactPage = () => {
                     <input
                       type="number"
                       name="number"
-                      value={formData.number === 0 ? '' : formData.number}
+                      value={formData.number === 0 ? "" : formData.number}
                       onChange={handleInpurChange}
                       placeholder="+1 XXXXXXXXXX"
                       className="py-1 px-2 text-gray-700 md:py-2 md:px-4 rounded-full outline-emerald-500"

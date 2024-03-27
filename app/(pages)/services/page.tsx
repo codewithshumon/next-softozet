@@ -51,7 +51,7 @@ const ServicesPage = () => {
 
   return (
     <section className="w-full h-full full-container ">
-      <div className="w-screen h-screen bg-[#c54f3b]"></div>
+      {/* <div className="w-screen h-screen bg-[#c54f3b]"></div> */}
       <div className="sevice-image-wrapper w-full h-full flex flex-row items-center ">
         <div className="image-item w-[100vw] h-full relative ">
           <div className="container absolute inset-0 flex flex-col md:flex-row justify-between gap-2 md:gap-5 xl:gap-8 py-2 xs:py-4 md:py-6">
@@ -148,7 +148,7 @@ const ServicesPage = () => {
           <div className="w-screen h-screen bg-[#d331c5]"></div>
         </div>
       </div>
-      <div className="w-screen h-screen bg-[#c54f3b]"></div>
+      {/* <div className="w-screen h-screen bg-[#c54f3b]"></div> */}
     </section>
   );
 };
