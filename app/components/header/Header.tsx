@@ -1,24 +1,26 @@
-'use client';
+"use client";
 
-import { useEffect, useRef, useState } from 'react';
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
-import { BiMenu } from 'react-icons/bi';
+import { useEffect, useRef, useState } from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { BiMenu } from "react-icons/bi";
 
-import SvgLogo from '../global/SvgLogo';
-import Button from '../global/Button';
+import SvgLogo from "../global/SvgLogo";
+import Button from "../global/Button";
 
-import Styles from './Header.module.css';
+import Styles from "./Header.module.css";
+import useScrollY from "@/app/libs/useScroll";
 
 const navMenus = [
-  { path: '/home', display: 'HOME' },
-  { path: '/services', display: 'SERVICES' },
-  { path: '/work', display: 'WORK' },
-  { path: '/about', display: 'ABOUT US' },
-  { path: '/contact', display: 'CONTACT US' },
+  { path: "/home", display: "HOME" },
+  { path: "/services", display: "SERVICES" },
+  { path: "/work", display: "WORK" },
+  { path: "/about", display: "ABOUT US" },
+  { path: "/contact", display: "CONTACT US" },
 ];
 
 const Header = () => {
+  const scrollY = useScrollY();
   const [showSidebar, setShowSidebar] = useState(false);
   const [closeSidebar, setCloseSidebar] = useState(false);
   const pathname = usePathname();
@@ -30,23 +32,23 @@ const Header = () => {
         document.body.scrollTop > 80 ||
         document.documentElement.scrollTop > 80
       ) {
-        headerRef.current?.classList.add('sticky_header');
+        headerRef.current?.classList.add("sticky_header");
       } else {
-        headerRef.current?.classList.remove('sticky_header');
+        headerRef.current?.classList.remove("sticky_header");
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   };
 
   useEffect(() => {
     handleStickyHeader();
 
-    return () => window.removeEventListener('scroll', handleStickyHeader);
+    return () => window.removeEventListener("scroll", handleStickyHeader);
   });
 
   const hadleShowSidebar = () => {
@@ -64,24 +66,24 @@ const Header = () => {
         <div
           onClick={handleCloseSidebar}
           className={`${
-            showSidebar ? 'fixed inset-0 w-full h-screen bg-white/40' : ''
+            showSidebar ? "fixed inset-0 w-full h-screen bg-white/40" : ""
           }`}
         >
           <div
-            className={`${showSidebar ? Styles.bigContainerIn : ''} ${
-              closeSidebar ? Styles.bigContainerOut : ''
+            className={`${showSidebar ? Styles.bigContainerIn : ""} ${
+              closeSidebar ? Styles.bigContainerOut : ""
             } translate-x-[100%] h-full`}
           >
             <div className="md:hidden h-screen fixed top-0 right-0 w-[95%] rounded-l-full bg-[#243887] p-7 pr-0 overflow-hidden">
               <div
-                className={`${showSidebar ? Styles.smallContainerIn : ''} ${
-                  closeSidebar ? Styles.smallContainerOut : ''
+                className={`${showSidebar ? Styles.smallContainerIn : ""} ${
+                  closeSidebar ? Styles.smallContainerOut : ""
                 } w-full h-full translate-x-[100%]`}
               >
                 <div className=" w-full h-full rounded-l-full bg-[#8c27e5]">
                   <div
-                    className={`${showSidebar ? Styles.menuContainerIn : ''} ${
-                      closeSidebar ? Styles.menuContainerOut : ''
+                    className={`${showSidebar ? Styles.menuContainerIn : ""} ${
+                      closeSidebar ? Styles.menuContainerOut : ""
                     } w-full h-full translate-x-[100%]`}
                   >
                     <div className="absolute w-[60%] right-[5%] xs:right-[10%] py-[50%] xs:py-[20%] h-full flex flex-col justify-around">
@@ -100,8 +102,8 @@ const Header = () => {
                             key={index}
                             className={`${
                               menu.path === pathname
-                                ? 'text-primaryColor'
-                                : ' text-gray-100'
+                                ? "text-primaryColor"
+                                : " text-gray-100"
                             } text-[16px] xs:text-[24px] leading-7 xs:leading-10 font-[600]`}
                           >
                             <Link href={menu.path}>{menu.display}</Link>
@@ -118,12 +120,14 @@ const Header = () => {
       </div>
       <header
         ref={headerRef}
-        className="absolute bg-transparent top-0 z-20 py-10 md:py-5 md:px-5 w-full h-[50px] md:h-[100px]"
+        className=" fixed bg-transparent top-0 z-20 py-10 md:py-5 md:px-5 w-full h-[50px] md:h-[100px]"
       >
         <div className="container text-white flex items-center justify-between">
           <nav className="flex items-center gap-3">
-            <SvgLogo width={50} height={50} />
-            <Link href={'/'}>
+            <div className="" style={{ transform: `rotate(-${scrollY}deg)` }}>
+              <SvgLogo width={50} height={50} />
+            </div>
+            <Link href={"/"}>
               <span className="text-[12px] xs:text-[16px] md:text-[24px] leading-7 font-[800]">
                 SOFTOZET
               </span>
@@ -136,8 +140,8 @@ const Header = () => {
                   key={index}
                   className={`${
                     menu.path === pathname
-                      ? 'text-primaryColor'
-                      : ' text-gray-100'
+                      ? "text-primaryColor"
+                      : " text-gray-100"
                   } text-[12px] leading-7 font-[600]`}
                 >
                   <Link href={menu.path}>{menu.display}</Link>
