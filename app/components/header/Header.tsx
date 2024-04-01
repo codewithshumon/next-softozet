@@ -124,7 +124,13 @@ const Header = () => {
       >
         <div className="container text-white flex items-center justify-between">
           <nav className="flex items-center gap-3">
-            <div className="" style={{ transform: `rotate(-${scrollY}deg)` }}>
+            <div
+              className=""
+              style={{
+                transform: `rotate(-${scrollY}deg)`,
+                transition: "transform 0.2s",
+              }}
+            >
               <SvgLogo width={50} height={50} />
             </div>
             <Link href={"/"}>

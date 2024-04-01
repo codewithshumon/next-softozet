@@ -8,6 +8,10 @@
   }
 } */
 
+/* body::-webkit-scrollbar {
+  display: none;
+} */
+
 @layer components {
   .container {
     @apply max-w-[1440px] w-full h-full px-5 mx-auto;
