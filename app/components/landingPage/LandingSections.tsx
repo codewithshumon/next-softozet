@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import { useState, useEffect } from 'react';
-import Lottie from 'lottie-react';
+import { useState, useEffect } from "react";
+import Lottie from "lottie-react";
 
 import {
   webFirst,
@@ -14,12 +14,12 @@ import {
   seoRanking,
   graphiDesk,
   manDesk,
-} from '@/public/svg-animations';
+} from "@/public/svg-animations";
 
-import LandingText from './LandingText';
-import styles from './LandingSections.module.css';
-import LandingServiceLottie from './landingService/LandingServiceLottie';
-import LandingServiceText from './landingService/LandingServiceText';
+import LandingText from "./LandingText";
+import styles from "./LandingSections.module.css";
+import LandingServiceLottie from "./landingService/LandingServiceLottie";
+import LandingServiceText from "./landingService/LandingServiceText";
 
 const LandingSections = () => {
   const [animationIn, setAnimationIn] = useState(false);
@@ -41,7 +41,7 @@ const LandingSections = () => {
   }, [count]);
 
   return (
-    <div className=" w-full">
+    <div className="w-full mt-[2%]">
       {/* landing screen section */}
       <div className="w-full h-screen overflow-hidden select-none">
         <div className="w-full h-full container flex flex-col md:flex-row gap-2 md:gap-5 items-center justify-around md:justify-between ">
@@ -117,7 +117,7 @@ const LandingSections = () => {
             <div className="w-full h-full flex items-center justify-center">
               <div
                 className={`${
-                  animationIn ? styles.animateRight : 'opacity-0'
+                  animationIn ? styles.animateRight : "opacity-0"
                 } `}
               >
                 {count === 1 && (
@@ -134,7 +134,7 @@ const LandingSections = () => {
               </div>
               <div
                 className={`${
-                  animationIn ? styles.animateRight : 'opacity-0'
+                  animationIn ? styles.animateRight : "opacity-0"
                 } `}
               >
                 {count === 2 && (
@@ -151,7 +151,7 @@ const LandingSections = () => {
               </div>
               <div
                 className={`${
-                  animationIn ? styles.animateRight : 'opacity-0'
+                  animationIn ? styles.animateRight : "opacity-0"
                 } `}
               >
                 {count === 3 && (
@@ -168,7 +168,7 @@ const LandingSections = () => {
               </div>
               <div
                 className={`${
-                  animationIn ? styles.animateRight : 'opacity-0'
+                  animationIn ? styles.animateRight : "opacity-0"
                 } `}
               >
                 {count === 4 && (
@@ -185,7 +185,7 @@ const LandingSections = () => {
               </div>
               <div
                 className={`${
-                  animationIn ? styles.animateRight : 'opacity-0'
+                  animationIn ? styles.animateRight : "opacity-0"
                 } `}
               >
                 {count === 5 && (
@@ -205,26 +205,6 @@ const LandingSections = () => {
         </div>
       </div>
       {/* landing screen section */}
-
-      {/* landing service section */}
-      <div>
-        <div>
-          <section>
-            <div>
-              <div>
-                <LandingServiceLottie
-                  animation={webSingleMan}
-                  className="!w-[400px]"
-                />
-              </div>
-              <div>
-                <LandingServiceText />
-              </div>
-            </div>
-          </section>
-        </div>
-      </div>
-      {/* landing service section */}
     </div>
   );
 };

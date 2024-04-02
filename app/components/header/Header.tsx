@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { BiMenu } from "react-icons/bi";
+import gsap from "gsap";
 
 import SvgLogo from "../global/SvgLogo";
 import Button from "../global/Button";
@@ -21,35 +22,26 @@ const navMenus = [
 
 const Header = () => {
   const scrollY = useScrollY();
+  const scrollRef = useRef(scrollY);
   const [showSidebar, setShowSidebar] = useState(false);
   const [closeSidebar, setCloseSidebar] = useState(false);
   const pathname = usePathname();
   const headerRef = useRef<HTMLDivElement>(null);
 
-  const handleStickyHeader: () => void = () => {
-    const handleScroll = () => {
-      if (
-        document.body.scrollTop > 80 ||
-        document.documentElement.scrollTop > 80
-      ) {
-        headerRef.current?.classList.add("sticky_header");
-      } else {
-        headerRef.current?.classList.remove("sticky_header");
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  };
+  gsap.to(".scroll-translate-up", {
+    yPercent: -300,
+    duration: 1,
+    ease: "none",
+  });
+  gsap.to(".scroll-translate-down", {
+    yPercent: 0,
+    duration: 0.5,
+    ease: "none",
+  });
 
   useEffect(() => {
-    handleStickyHeader();
-
-    return () => window.removeEventListener("scroll", handleStickyHeader);
-  });
+    scrollRef.current = scrollY;
+  }, [scrollY]);
 
   const hadleShowSidebar = () => {
     setShowSidebar(true);
@@ -131,16 +123,29 @@ const Header = () => {
                 transition: "transform 0.2s",
               }}
             >
-              <SvgLogo width={50} height={50} />
+              <SvgLogo width={55} height={55} />
             </div>
-            <Link href={"/"}>
+            <Link
+              href={"/"}
+              className={
+                scrollRef.current < scrollY
+                  ? "scroll-translate-up"
+                  : "scroll-translate-down"
+              }
+            >
               <span className="text-[12px] xs:text-[16px] md:text-[24px] leading-7 font-[800]">
                 SOFTOZET
               </span>
             </Link>
           </nav>
-          <div className="hidden md:flex w-[50%] h-full  justify-center rounded-full">
-            <div className="w-fit flex flex-row justify-between px-4 py-2 items-center gap-5 border-gradient-color">
+          <div
+            className={`${
+              scrollRef.current < scrollY
+                ? "scroll-translate-up"
+                : "scroll-translate-down"
+            } hidden md:flex w-[50%] h-[90%]  justify-center rounded-full`}
+          >
+            <div className="w-fit flex flex-row justify-between px-4 items-center gap-5 border-gradient-color ">
               {navMenus.map((menu, index) => (
                 <nav
                   key={index}
@@ -148,7 +153,7 @@ const Header = () => {
                     menu.path === pathname
                       ? "text-primaryColor"
                       : " text-gray-100"
-                  } text-[12px] leading-7 font-[600]`}
+                  } text-[12px] font-[600]`}
                 >
                   <Link href={menu.path}>{menu.display}</Link>
                 </nav>

@@ -1,6 +1,6 @@
-'use client';
+"use client";
 
-import Lottie from 'lottie-react';
+import Lottie from "lottie-react";
 
 interface LandingServiceLottieProps {
   animation: any;

@@ -1,5 +1,5 @@
-import Blob from '../global/Blob';
-import SvgLogo from '../global/SvgLogo';
+import Blob from "../global/Blob";
+import SvgLogo from "../global/SvgLogo";
 
 const Background = () => {
   return (
@@ -12,7 +12,7 @@ const Background = () => {
         <div className="bg-[#E200F5] mt-20 w-full h-[4/3] rounded-[100%] "></div>
       </div>
       <div className="w-full h-screen flex items-center justify-center overflow-hidden">
-        <div className="bg-[#d5c303] mt-20 w-screen h-screen rounded-[100%] "></div>
+        <div className="bg-[#a133c2] mt-20 w-screen h-screen rounded-[100%] "></div>
       </div>
       <div className="w-full h-screen flex items-center justify-center overflow-hidden">
         <div className=" mt-20 w-[600px] h-[600px] rounded-[100%] ">
