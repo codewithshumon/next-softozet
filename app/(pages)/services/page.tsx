@@ -5,8 +5,8 @@ import { useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-import ServiceLottie from "@/app/components/services/ServiceLottie";
-import ServiceText from "@/app/components/services/ServiceText";
+import ServiceLottie from "@/app/components/servicesPage/ServiceLottie";
+import ServiceText from "@/app/components/servicesPage/ServiceText";
 import { ServiceData } from "@/app/constant/serviceData";
 
 import {

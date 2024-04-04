@@ -26,18 +26,19 @@ const Header = () => {
   const [showSidebar, setShowSidebar] = useState(false);
   const [closeSidebar, setCloseSidebar] = useState(false);
   const pathname = usePathname();
-  const headerRef = useRef<HTMLDivElement>(null);
 
-  gsap.to(".scroll-translate-up", {
-    yPercent: -300,
-    duration: 1,
-    ease: "none",
-  });
-  gsap.to(".scroll-translate-down", {
-    yPercent: 0,
-    duration: 0.5,
-    ease: "none",
-  });
+  useEffect(() => {
+    gsap.to(".scroll-translate-up", {
+      yPercent: -300,
+      duration: 1,
+      ease: "none",
+    });
+    gsap.to(".scroll-translate-down", {
+      yPercent: 0,
+      duration: 0.5,
+      ease: "none",
+    });
+  }, [scrollY]);
 
   useEffect(() => {
     scrollRef.current = scrollY;
@@ -110,10 +111,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <header
-        ref={headerRef}
-        className=" fixed bg-transparent top-0 z-20 py-10 md:py-5 md:px-5 w-full h-[50px] md:h-[100px]"
-      >
+      <header className=" fixed bg-transparent top-0 z-20 py-10 md:py-5 md:px-5 w-full h-[50px] md:h-[100px]">
         <div className="container text-white flex items-center justify-between">
           <nav className="flex items-center gap-3">
             <div

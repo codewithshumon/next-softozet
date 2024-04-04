@@ -1,4 +1,4 @@
-import styles from './LandingSections.module.css';
+import styles from "./heroSection/HeroSection.module.css";
 
 interface LandingTextProps {
   title: string;
@@ -44,7 +44,7 @@ const LandingText: React.FC<LandingTextProps> = ({
           <p className={` ${styles.textAnimation} ${styles.animateText}`}>
             {boldTextStart && (
               <span className="font-bold">{boldTextStart}</span>
-            )}{' '}
+            )}{" "}
             {firstLine}
           </p>
         </div>

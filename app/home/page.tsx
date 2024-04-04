@@ -1,6 +1,6 @@
-import Background from '../components/landingPage/Background';
-import LandingSections from '../components/landingPage/LandingSections';
-import VideoSection from '../components/landingPage/VideoSection';
+import Background from "../components/landingPage/Background";
+import LandingSections from "../components/landingPage/heroSection/HeroSection";
+import VideoSection from "../components/landingPage/VideoSection";
 
 export default function Home() {
   return (

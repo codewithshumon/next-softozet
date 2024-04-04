@@ -16,10 +16,8 @@ import {
   manDesk,
 } from "@/public/svg-animations";
 
-import LandingText from "./LandingText";
-import styles from "./LandingSections.module.css";
-import LandingServiceLottie from "./landingService/LandingServiceLottie";
-import LandingServiceText from "./landingService/LandingServiceText";
+import LandingText from "../LandingText";
+import styles from "./HeroSection.module.css";
 
 const LandingSections = () => {
   const [animationIn, setAnimationIn] = useState(false);
