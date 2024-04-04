@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { BiMenu } from "react-icons/bi";
@@ -27,7 +27,20 @@ const Header = () => {
   const [closeSidebar, setCloseSidebar] = useState(false);
   const pathname = usePathname();
 
+  //to avoid gsap target not found
+  gsap.config({
+    nullTargetWarn: false,
+    // autoSleep: 60,
+    // force3D: false,
+    // trialWarn: false,
+    // units: { left: "%", top: "%", rotation: "rad" },
+  });
+
   useEffect(() => {
+    scrollRef.current = scrollY;
+  }, [scrollY]);
+
+  useLayoutEffect(() => {
     gsap.to(".scroll-translate-up", {
       yPercent: -300,
       duration: 1,
@@ -38,10 +51,6 @@ const Header = () => {
       duration: 0.5,
       ease: "none",
     });
-  }, [scrollY]);
-
-  useEffect(() => {
-    scrollRef.current = scrollY;
   }, [scrollY]);
 
   const hadleShowSidebar = () => {
