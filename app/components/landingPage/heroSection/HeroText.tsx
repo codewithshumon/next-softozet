@@ -1,4 +1,4 @@
-import styles from "./heroSection/HeroSection.module.css";
+import styles from "./HeroSection.module.css";
 
 interface LandingTextProps {
   title: string;

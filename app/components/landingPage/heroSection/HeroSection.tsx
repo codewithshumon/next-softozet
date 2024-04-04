@@ -16,7 +16,7 @@ import {
   manDesk,
 } from "@/public/svg-animations";
 
-import LandingText from "../LandingText";
+import LandingText from "./HeroText";
 import styles from "./HeroSection.module.css";
 
 const LandingSections = () => {
