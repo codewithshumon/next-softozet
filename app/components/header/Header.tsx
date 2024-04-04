@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useLayoutEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { BiMenu } from "react-icons/bi";
@@ -40,7 +40,7 @@ const Header = () => {
     scrollRef.current = scrollY;
   }, [scrollY]);
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     gsap.to(".scroll-translate-up", {
       yPercent: -300,
       duration: 1,
