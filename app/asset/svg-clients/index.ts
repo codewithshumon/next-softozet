@@ -1,7 +1,6 @@
 import Century21 from "./century-21.svg";
 import clik2pay from "./clik2pay.svg";
 import comenda from "./comenda.svg";
-import crocs from "./crocs.svg";
 import curti from "./curti-costruzioni.svg";
 import damart from "./damart.svg";
 import daxton from "./daxton.svg";
@@ -31,7 +30,6 @@ export {
   Century21,
   clik2pay,
   comenda,
-  crocs,
   curti,
   damart,
   daxton,
