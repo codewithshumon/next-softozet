@@ -16,12 +16,21 @@ const Background = () => {
       </div>
       <div className="w-full h-screen flex items-center justify-center overflow-hidden">
         {/* <Blob /> */}
-        <div className="bg-[#3de9a7] mt-20 w-[200vw] h-screen rounded-[100%]"></div>
+        <div className="bg-[#6547e9] mt-20 w-[200vw] h-screen rounded-[100%]"></div>
       </div>
       <div className="w-full h-screen flex items-center justify-center overflow-hidden">
         <div className=" mt-20 w-[100vw] h-[600px] ">
           {/* <Blob /> */}
-          <div className="bg-[#cf41fa] h-screen"></div>
+          <div className="bg-[rgb(41,48,116)] h-screen"></div>
+        </div>
+      </div>
+      <div className="w-full h-screen flex items-center justify-center overflow-hidden">
+        <div className="bg-[#49d3dd] mt-20 w-[600px] h-[600px] rounded-[100%] "></div>
+      </div>
+      <div className="w-full h-screen flex items-center justify-center overflow-hidden">
+        <div className=" mt-20 w-[100vw] h-[600px] ">
+          {/* <Blob /> */}
+          <div className="bg-[rgb(41,48,116)] h-screen"></div>
         </div>
       </div>
       <div className="w-full h-screen flex items-center justify-center overflow-hidden">

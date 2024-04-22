@@ -46,7 +46,7 @@ const ClientSection = () => {
         ease: "none",
         scrollTrigger: {
           trigger: ".animate-logos",
-          start: "top center",
+          start: "bottom bottom",
           scrub: 1,
           //snap: { duration: { min: 0.2, max: 3 } }, // the snap animation should be
           //delay: 0.2, // wait 0.2 seconds from the last scroll event
@@ -58,7 +58,7 @@ const ClientSection = () => {
         ease: "none",
         scrollTrigger: {
           trigger: ".animate-logos",
-          start: "top center",
+          start: "bottom bottom",
           scrub: 1,
           //snap: { duration: { min: 0.2, max: 3 } }, // the snap animation should be
           //delay: 0.2, // wait 0.2 seconds from the last scroll event
@@ -70,7 +70,7 @@ const ClientSection = () => {
         ease: "none",
         scrollTrigger: {
           trigger: ".animate-logos",
-          start: "top center",
+          start: "bottom bottom",
           scrub: 1,
           //snap: { duration: { min: 0.2, max: 3 } }, // the snap animation should be
           //delay: 0.2, // wait 0.2 seconds from the last scroll event

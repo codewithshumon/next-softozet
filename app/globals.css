@@ -184,6 +184,12 @@ body::-webkit-scrollbar-button:vertical:single-button:increment:hover {
     linear-gradient(to right, darkblue, darkorchid) border-box;
 }
 
+.sevice-border {
+  border: 2px solid #03eb64;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
 .animateRight {
   animation: slideInRight 1s forwards;
 }
