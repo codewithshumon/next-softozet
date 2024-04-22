@@ -1,5 +1,10 @@
-import ClientImage from "./ClientImage";
+"use client";
 
+import { useEffect } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+import ClientImage from "./ClientImage";
 import {
   ardenRealty,
   cryeLeikeRealty,
@@ -12,10 +17,8 @@ import {
   comenda,
   curti,
   damart,
-  daxton,
   dbRealty,
   dempseyWood,
-  dollarbreak,
   dormer,
   edinaRealty,
   federalRealty,
@@ -26,7 +29,6 @@ import {
   once,
   paybright,
   pequity,
-  soprole,
   stanley,
   tapestry,
   teba,
@@ -35,10 +37,60 @@ import {
 } from "@/app/asset/svg-clients";
 
 const ClientSection = () => {
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    const animateSections = () => {
+      gsap.to(".logo-group-1", {
+        xPercent: -62,
+        ease: "none",
+        scrollTrigger: {
+          trigger: ".animate-logos",
+          start: "top center",
+          scrub: 1,
+          //snap: { duration: { min: 0.2, max: 3 } }, // the snap animation should be
+          //delay: 0.2, // wait 0.2 seconds from the last scroll event
+          //ease: "power1.inOut",
+        },
+      });
+      gsap.to(".logo-group-2", {
+        xPercent: 60,
+        ease: "none",
+        scrollTrigger: {
+          trigger: ".animate-logos",
+          start: "top center",
+          scrub: 1,
+          //snap: { duration: { min: 0.2, max: 3 } }, // the snap animation should be
+          //delay: 0.2, // wait 0.2 seconds from the last scroll event
+          //ease: "power1.inOut",
+        },
+      });
+      gsap.to(".logo-group-3", {
+        xPercent: -62,
+        ease: "none",
+        scrollTrigger: {
+          trigger: ".animate-logos",
+          start: "top center",
+          scrub: 1,
+          //snap: { duration: { min: 0.2, max: 3 } }, // the snap animation should be
+          //delay: 0.2, // wait 0.2 seconds from the last scroll event
+          //ease: "power1.inOut",
+        },
+      });
+    };
+
+    animateSections();
+
+    return () => {
+      // Clean up ScrollTrigger instances
+      ScrollTrigger.getAll().forEach((instance) => instance.kill());
+    };
+  }, []);
+
   return (
     <div className=" w-[100vw] overflow-hidden">
-      <div className="w-[160vw] text-white">
-        <div className="w-full h-[10vw] flex items-center justify-between ///translate-x-[-62vw]">
+      <div className="animate-logos w-[160vw] text-white">
+        <div className="logo-group-1 w-full h-[10vw] flex items-center justify-between //translate-x-[-62vw]">
           <div>
             <ClientImage
               svg={Century21}
@@ -96,7 +148,7 @@ const ClientSection = () => {
             />
           </div>
         </div>
-        <div className="w-full h-[10vw] flex items-center justify-around translate-x-[-60vw] ///translate-x-[0vw]">
+        <div className="logo-group-2 w-full h-[10vw] flex items-center justify-around translate-x-[-60vw] //translate-x-[0vw]">
           <div>
             <ClientImage
               svg={dbRealty}
@@ -154,7 +206,7 @@ const ClientSection = () => {
             />
           </div>
         </div>
-        <div className=" w-full h-[10vw] flex items-center justify-between translate-x-[-62vw]">
+        <div className="logo-group-3 w-full h-[10vw] flex items-center justify-between //translate-x-[-62vw]">
           <div>
             <ClientImage
               svg={maisons}
