@@ -149,6 +149,25 @@ const ServicesPage = () => {
           </div>
           <div className="w-screen h-screen bg-[#d331c5]"></div>
         </div>
+
+        <div className="image-item w-[100vw] h-full relative ">
+          <div className="container absolute inset-0 flex flex-col md:flex-row justify-between py-2 xs:py-4 md:py-6 ">
+            <div className="w-full h-full">
+              <ServiceText
+                title={ServiceData.creativeServiceData.title}
+                subTitle={ServiceData.creativeServiceData.subTitle}
+                text={ServiceData.creativeServiceData.text}
+              />
+            </div>
+            <div className="w-full h-full">
+              <ServiceLottie
+                animation={girlBoyCall}
+                className="!p-2 xs:!p-5 xl:!p-6 !w-[300px] xs:!w-[400px] md:!w-[450px] xl:!w-[500px]"
+              />
+            </div>
+          </div>
+          <div className="w-screen h-screen bg-[#d331c5]"></div>
+        </div>
       </div>
       {/* <div className="w-screen h-screen bg-[#c54f3b]"></div> */}
     </section>
