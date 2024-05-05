@@ -15,6 +15,8 @@ import {
   socialThird,
   seoMan,
   twoCreative,
+  boyOrderCall,
+  girlBoyCall,
 } from "@/public/svg-animations";
 
 const ServicesPage = () => {

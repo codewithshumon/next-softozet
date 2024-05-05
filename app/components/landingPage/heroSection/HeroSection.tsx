@@ -5,15 +5,11 @@ import Lottie from "lottie-react";
 
 import {
   webFirst,
-  webSingleMan,
   mobileFirst,
-  girlMobile,
   socialFirst,
-  socialSecond,
   groupSeo,
-  seoRanking,
   graphiDesk,
-  manDesk,
+  singleBoyCall,
 } from "@/public/svg-animations";
 
 import LandingText from "./HeroText";
