@@ -1,3 +1,4 @@
+import Link from "next/link";
 import ServiceLottie from "@/app/components/servicesPage/ServiceLottie";
 
 import {
@@ -22,6 +23,19 @@ const OurServices = () => {
                   className="!p-2 xs:!p-5 xl:!p-6 !w-[50px] xs:!w-[100px] md:!w-[150px] xl:!w-[350px]"
                 />
               </div>
+              <div>
+                <div>
+                  <h1>WEB APPLICATION DEVELOPMENT</h1>
+                  <p>
+                    Design and Develop custom website for your Brand/Business
+                  </p>
+                </div>
+                <div>
+                  <Link href="/services/web">
+                    <span>Learn more</span>
+                  </Link>
+                </div>
+              </div>
             </div>
             <div className="w-full h-[500px] sevice-border mt-[20%]  ">
               <div>
@@ -30,6 +44,19 @@ const OurServices = () => {
                   className="!p-2 xs:!p-5 xl:!p-6 !w-[50px] xs:!w-[100px] md:!w-[150px] xl:!w-[350px]"
                 />
               </div>
+              <div>
+                <div>
+                  <h1>WEB APPLICATION DEVELOPMENT</h1>
+                  <p>
+                    Design and Develop custom website for your Brand/Business
+                  </p>
+                </div>
+                <div>
+                  <Link href="/services/web">
+                    <span>Learn more</span>
+                  </Link>
+                </div>
+              </div>
             </div>
             <div className="w-full h-[500px] sevice-border mt-[30%] ">
               <div>
@@ -37,6 +64,19 @@ const OurServices = () => {
                   animation={socialSecond}
                   className="!p-2 xs:!p-5 xl:!p-6 !w-[50px] xs:!w-[100px] md:!w-[150px] xl:!w-[350px]"
                 />
+              </div>
+              <div>
+                <div>
+                  <h1>WEB APPLICATION DEVELOPMENT</h1>
+                  <p>
+                    Design and Develop custom website for your Brand/Business
+                  </p>
+                </div>
+                <div>
+                  <Link href="/services/web">
+                    <span>Learn more</span>
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
@@ -49,6 +89,19 @@ const OurServices = () => {
                   className="!p-2 xs:!p-5 xl:!p-6 !w-[50px] xs:!w-[100px] md:!w-[150px] xl:!w-[350px]"
                 />
               </div>
+              <div>
+                <div>
+                  <h1>WEB APPLICATION DEVELOPMENT</h1>
+                  <p>
+                    Design and Develop custom website for your Brand/Business
+                  </p>
+                </div>
+                <div>
+                  <Link href="/services/web">
+                    <span>Learn more</span>
+                  </Link>
+                </div>
+              </div>
             </div>
             <div className="w-full h-[500px] mt-[20%] sevice-border">
               <div>
@@ -57,6 +110,19 @@ const OurServices = () => {
                   className="!p-2 xs:!p-5 xl:!p-6 !w-[50px] xs:!w-[100px] md:!w-[150px] xl:!w-[350px]"
                 />
               </div>
+              <div>
+                <div>
+                  <h1>WEB APPLICATION DEVELOPMENT</h1>
+                  <p>
+                    Design and Develop custom website for your Brand/Business
+                  </p>
+                </div>
+                <div>
+                  <Link href="/services/web">
+                    <span>Learn more</span>
+                  </Link>
+                </div>
+              </div>
             </div>
             <div className="w-full h-[500px] mt-[30%] sevice-border">
               <div>
@@ -64,6 +130,19 @@ const OurServices = () => {
                   animation={singleBoyCall}
                   className="!p-2 xs:!p-5 xl:!p-6 !w-[50px] xs:!w-[100px] md:!w-[150px] xl:!w-[350px]"
                 />
+              </div>
+              <div>
+                <div>
+                  <h1>WEB APPLICATION DEVELOPMENT</h1>
+                  <p>
+                    Design and Develop custom website for your Brand/Business
+                  </p>
+                </div>
+                <div>
+                  <Link href="/services/web">
+                    <span>Learn more</span>
+                  </Link>
+                </div>
               </div>
             </div>
           </div>

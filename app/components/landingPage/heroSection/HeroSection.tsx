@@ -9,7 +9,7 @@ import {
   socialFirst,
   groupSeo,
   graphiDesk,
-  singleBoyCall,
+  callCenter,
 } from "@/public/svg-animations";
 
 import LandingText from "./HeroText";
@@ -24,7 +24,7 @@ const LandingSections = () => {
 
     const animationTimeout = setTimeout(() => {
       setAnimationIn(false);
-      if (count < 5) {
+      if (count < 6) {
         setCount(count + 1);
       } else {
         setCount(1);
@@ -97,6 +97,19 @@ const LandingSections = () => {
                 <LandingText
                   title="CREATIVE CONTENT"
                   titleFocus="DESIGN"
+                  boldTextStart="Elevate "
+                  firstLine="your brand presence with our innovative"
+                  secondLine="Content Design Solutions, blending creativity"
+                  thirdLine="and strategy to deliver engaging experiences"
+                  fouthLine="that leave a lasting impression."
+                />
+              </div>
+            )}
+            {count === 6 && (
+              <div className="">
+                <LandingText
+                  title="24/7 CALL CENTER"
+                  titleFocus="SERVICE"
                   boldTextStart="Elevate "
                   firstLine="your brand presence with our innovative"
                   secondLine="Content Design Solutions, blending creativity"
@@ -190,6 +203,24 @@ const LandingSections = () => {
                       animationData={graphiDesk}
                       loop={true}
                       className="!w-[250px] xs:!w-[350px] md:!w-[450px]"
+                    />
+                  </div>
+                )}
+              </div>
+
+              <div
+                className={`${
+                  animationIn ? styles.animateRight : "opacity-0"
+                } `}
+              >
+                {count === 6 && (
+                  <div
+                    className={`${styles.rightInOut} ${styles.lottieBigContainer} `}
+                  >
+                    <Lottie
+                      animationData={callCenter}
+                      loop={true}
+                      className="!w-[250px] xs:!w-[350px] md:!w-[550px]"
                     />
                   </div>
                 )}
