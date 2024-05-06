@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { FaArrowUpRightFromSquare } from "react-icons/fa6";
+
 import ServiceLottie from "@/app/components/servicesPage/ServiceLottie";
 
 import {
@@ -16,65 +18,95 @@ const OurServices = () => {
       <div className="w-full h-full px-[5%]">
         <div className=" w-full h-full flex flex-col gap-[10%]">
           <div className="w-full flex flex-col md:flex-row justify-between gap-[50px]">
-            <div className="w-full h-[500px] sevice-border mt-[10%] ">
+            <div className="w-full h-[500px] flex flex-col items-center justify-between pb-5 sevice-border mt-[10%] ">
               <div>
                 <ServiceLottie
                   animation={webSingleMan}
                   className="!p-2 xs:!p-5 xl:!p-6 !w-[50px] xs:!w-[100px] md:!w-[150px] xl:!w-[350px]"
                 />
               </div>
-              <div>
-                <div>
-                  <h1>WEB APPLICATION DEVELOPMENT</h1>
-                  <p>
+              <div className=" w-[90%] flex flex-col gap-5">
+                <div className="w-full text-center">
+                  <h1 className=" text-[#ffffff] font-extrabold ">
+                    WEB APPLICATION DEVELOPMENT
+                  </h1>
+                  <p className="text-[#e0dddd]">
                     Design and Develop custom website for your Brand/Business
                   </p>
                 </div>
-                <div>
-                  <Link href="/services/web">
-                    <span>Learn more</span>
+                <div className="w-full ">
+                  <Link
+                    href="/services/web"
+                    target="_blank"
+                    className="w-full flex items-center justify-center"
+                  >
+                    <div className=" flex flex-row items-center gap-2 border-[1px] border-[#03EB64] rounded-full px-3 py-2">
+                      <span className="font-bold text-white">Learn more</span>
+                      <FaArrowUpRightFromSquare color="white" />
+                    </div>
                   </Link>
                 </div>
               </div>
             </div>
-            <div className="w-full h-[500px] sevice-border mt-[20%]  ">
+
+            <div className="w-full h-[500px] flex flex-col items-center justify-between pb-5 sevice-border mt-[20%] ">
               <div>
                 <ServiceLottie
                   animation={girlMobile}
                   className="!p-2 xs:!p-5 xl:!p-6 !w-[50px] xs:!w-[100px] md:!w-[150px] xl:!w-[350px]"
                 />
               </div>
-              <div>
-                <div>
-                  <h1>WEB APPLICATION DEVELOPMENT</h1>
-                  <p>
-                    Design and Develop custom website for your Brand/Business
+              <div className=" w-[90%] flex flex-col gap-5">
+                <div className="w-full text-center">
+                  <h1 className=" text-[#ffffff] font-extrabold ">
+                    MOBILE APPLICATION DEVELOPMENT
+                  </h1>
+                  <p className="text-[#e0dddd]">
+                    Elevate Your Brand with Customized App Mobile Development
                   </p>
                 </div>
-                <div>
-                  <Link href="/services/web">
-                    <span>Learn more</span>
+                <div className="w-full ">
+                  <Link
+                    href="/services/mobile"
+                    target="_blank"
+                    className="w-full flex items-center justify-center"
+                  >
+                    <div className=" flex flex-row items-center gap-2 border-[1px] border-[#03EB64] rounded-full px-3 py-2">
+                      <span className="font-bold text-white">Learn more</span>
+                      <FaArrowUpRightFromSquare color="white" />
+                    </div>
                   </Link>
                 </div>
               </div>
             </div>
-            <div className="w-full h-[500px] sevice-border mt-[30%] ">
+
+            <div className="w-full h-[500px] flex flex-col items-center justify-between pb-5 sevice-border mt-[30%] overflow-hidden">
               <div>
                 <ServiceLottie
                   animation={socialSecond}
-                  className="!p-2 xs:!p-5 xl:!p-6 !w-[50px] xs:!w-[100px] md:!w-[150px] xl:!w-[350px]"
+                  className="!p-2 xs:!p-5 xl:!p-6 !w-[50px] xs:!w-[100px] md:!w-[150px] xl:!w-[450px] mt-[-15%]"
                 />
               </div>
-              <div>
-                <div>
-                  <h1>WEB APPLICATION DEVELOPMENT</h1>
-                  <p>
-                    Design and Develop custom website for your Brand/Business
+              <div className=" w-[90%] flex flex-col gap-5 mt-[-15%]">
+                <div className="w-full text-center">
+                  <h1 className=" text-[#ffffff] font-extrabold">
+                    SOCIAL MEDIA MARKETING
+                  </h1>
+                  <p className="text-[#e0dddd]">
+                    Boost Your Online Presence: Maximize Engagement with Your
+                    Targeted Audience
                   </p>
                 </div>
-                <div>
-                  <Link href="/services/web">
-                    <span>Learn more</span>
+                <div className="w-full ">
+                  <Link
+                    href="/services/social"
+                    target="_blank"
+                    className="w-full flex items-center justify-center"
+                  >
+                    <div className=" flex flex-row items-center gap-2 border-[1px] border-[#03EB64] rounded-full px-3 py-2">
+                      <span className="font-bold text-white">Learn more</span>
+                      <FaArrowUpRightFromSquare color="white" />
+                    </div>
                   </Link>
                 </div>
               </div>
@@ -82,65 +114,97 @@ const OurServices = () => {
           </div>
 
           <div className="w-full flex flex-row justify-between gap-[50px]">
-            <div className="w-full h-[500px] mt-[10%] sevice-border">
+            <div className="w-full h-[500px] flex flex-col items-center justify-between pb-5 sevice-border mt-[10%] overflow-hidden">
               <div>
                 <ServiceLottie
                   animation={seoRanking}
-                  className="!p-2 xs:!p-5 xl:!p-6 !w-[50px] xs:!w-[100px] md:!w-[150px] xl:!w-[350px]"
+                  className="!p-2 xs:!p-5 xl:!p-6 !w-[50px] xs:!w-[100px] md:!w-[150px] xl:!w-[500px]"
                 />
               </div>
-              <div>
-                <div>
-                  <h1>WEB APPLICATION DEVELOPMENT</h1>
-                  <p>
-                    Design and Develop custom website for your Brand/Business
+              <div className=" w-[90%] flex flex-col gap-5">
+                <div className="w-full text-center">
+                  <h1 className=" text-[#ffffff] font-extrabold ">
+                    SEARCH ENGINE OPTIMIZATION
+                  </h1>
+                  <p className="text-[#e0dddd]">
+                    Unlocking Visibility: Tailored SEO Strategies for Your
+                    Online Success.
                   </p>
                 </div>
-                <div>
-                  <Link href="/services/web">
-                    <span>Learn more</span>
+                <div className="w-full ">
+                  <Link
+                    href="/services/seo"
+                    target="_blank"
+                    className="w-full flex items-center justify-center"
+                  >
+                    <div className=" flex flex-row items-center gap-2 border-[1px] border-[#03EB64] rounded-full px-3 py-2">
+                      <span className="font-bold text-white">Learn more</span>
+                      <FaArrowUpRightFromSquare color="white" />
+                    </div>
                   </Link>
                 </div>
               </div>
             </div>
-            <div className="w-full h-[500px] mt-[20%] sevice-border">
+
+            <div className="w-full h-[500px] flex flex-col items-center justify-between pb-5 sevice-border mt-[20%] ">
               <div>
                 <ServiceLottie
                   animation={manDesk}
                   className="!p-2 xs:!p-5 xl:!p-6 !w-[50px] xs:!w-[100px] md:!w-[150px] xl:!w-[350px]"
                 />
               </div>
-              <div>
-                <div>
-                  <h1>WEB APPLICATION DEVELOPMENT</h1>
-                  <p>
-                    Design and Develop custom website for your Brand/Business
+              <div className=" w-[90%] flex flex-col gap-5">
+                <div className="w-full text-center">
+                  <h1 className=" text-[#ffffff] font-extrabold ">
+                    CREATIVE CONTENT DESIGN
+                  </h1>
+                  <p className="text-[#e0dddd]">
+                    Crafting Creativity, Engaging Audiences: Bespoke Content
+                    Designs for Your Brand.
                   </p>
                 </div>
-                <div>
-                  <Link href="/services/web">
-                    <span>Learn more</span>
+                <div className="w-full ">
+                  <Link
+                    href="/services/creative"
+                    target="_blank"
+                    className="w-full flex items-center justify-center"
+                  >
+                    <div className=" flex flex-row items-center gap-2 border-[1px] border-[#03EB64] rounded-full px-3 py-2">
+                      <span className="font-bold text-white">Learn more</span>
+                      <FaArrowUpRightFromSquare color="white" />
+                    </div>
                   </Link>
                 </div>
               </div>
             </div>
-            <div className="w-full h-[500px] mt-[30%] sevice-border">
+
+            <div className="w-full h-[500px] flex flex-col items-center justify-between pb-5 sevice-border mt-[30%] ">
               <div>
                 <ServiceLottie
                   animation={singleBoyCall}
                   className="!p-2 xs:!p-5 xl:!p-6 !w-[50px] xs:!w-[100px] md:!w-[150px] xl:!w-[350px]"
                 />
               </div>
-              <div>
-                <div>
-                  <h1>WEB APPLICATION DEVELOPMENT</h1>
-                  <p>
-                    Design and Develop custom website for your Brand/Business
+              <div className=" w-[90%] flex flex-col gap-5">
+                <div className="w-full text-center">
+                  <h1 className=" text-[#ffffff] font-extrabold ">
+                    24/7 CALL CENTER SERVICE
+                  </h1>
+                  <p className="text-[#e0dddd]">
+                    Your Dedicated 24/7 Call Center Partner for Customer
+                    Experience and Sales
                   </p>
                 </div>
-                <div>
-                  <Link href="/services/web">
-                    <span>Learn more</span>
+                <div className="w-full ">
+                  <Link
+                    href="/services/web"
+                    target="_blank"
+                    className="w-full flex items-center justify-center"
+                  >
+                    <div className=" flex flex-row items-center gap-2 border-[1px] border-[#03EB64] rounded-full px-3 py-2">
+                      <span className="font-bold text-white">Learn more</span>
+                      <FaArrowUpRightFromSquare color="white" />
+                    </div>
                   </Link>
                 </div>
               </div>
