@@ -147,16 +147,16 @@ const ServicesPage = () => {
               />
             </div>
           </div>
-          <div className="w-screen h-screen bg-[#d331c5]"></div>
+          <div className="w-screen h-screen bg-[#9b2a91]"></div>
         </div>
 
         <div className="image-item w-[100vw] h-full relative ">
           <div className="container absolute inset-0 flex flex-col md:flex-row justify-between py-2 xs:py-4 md:py-6 ">
             <div className="w-full h-full">
               <ServiceText
-                title={ServiceData.creativeServiceData.title}
-                subTitle={ServiceData.creativeServiceData.subTitle}
-                text={ServiceData.creativeServiceData.text}
+                title={ServiceData.callServiceData.title}
+                subTitle={ServiceData.callServiceData.subTitle}
+                text={ServiceData.callServiceData.text}
               />
             </div>
             <div className="w-full h-full">
@@ -166,7 +166,7 @@ const ServicesPage = () => {
               />
             </div>
           </div>
-          <div className="w-screen h-screen bg-[#d331c5]"></div>
+          <div className="w-screen h-screen bg-[#23772e]"></div>
         </div>
       </div>
       {/* <div className="w-screen h-screen bg-[#c54f3b]"></div> */}
