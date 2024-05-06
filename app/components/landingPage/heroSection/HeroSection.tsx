@@ -110,11 +110,11 @@ const LandingSections = () => {
                 <LandingText
                   title="24/7 CALL CENTER"
                   titleFocus="SERVICE"
-                  boldTextStart="Elevate "
-                  firstLine="your brand presence with our innovative"
-                  secondLine="Content Design Solutions, blending creativity"
-                  thirdLine="and strategy to deliver engaging experiences"
-                  fouthLine="that leave a lasting impression."
+                  boldTextStart="Enhance"
+                  firstLine="your brand's customer Support and Sales."
+                  secondLine="Our experienced Call Center Professionals."
+                  thirdLine="Provide 24/7 exceptional customer experiences that"
+                  fouthLine="leave a lasting impression and generate more sales."
                 />
               </div>
             )}
