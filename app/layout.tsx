@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Modal from "./components/modal/Modal";
 import Header from "./components/header/Header";
 import SmoothScroll from "./components/global/SmoothScroll";
 import Footer from "./components/footer/Footer";
@@ -21,6 +22,7 @@ export default function RootLayout({
     <html lang="en">
       <SmoothScroll>
         <body className={inter.className}>
+          {/* <Modal /> */}
           <Header />
           {children}
           <Footer />

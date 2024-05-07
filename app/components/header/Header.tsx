@@ -10,10 +10,10 @@ import SvgLogo from "../global/SvgLogo";
 import Button from "../global/Button";
 
 import Styles from "./Header.module.css";
-import useScrollY from "@/app/libs/useScroll";
+import useScrollY from "@/app/hooks/useScroll";
 
 const navMenus = [
-  { path: "/home", display: "HOME" },
+  { path: "/", display: "HOME" },
   { path: "/services", display: "SERVICES" },
   { path: "/work", display: "WORK" },
   { path: "/about", display: "ABOUT US" },
@@ -104,8 +104,8 @@ const Header = () => {
                             key={index}
                             className={`${
                               menu.path === pathname
-                                ? "text-primaryColor"
-                                : " text-gray-100"
+                                ? "text-[#329aa1]"
+                                : " text-[#ffffff]"
                             } text-[16px] xs:text-[24px] leading-7 xs:leading-10 font-[600]`}
                           >
                             <Link href={menu.path}>{menu.display}</Link>
@@ -158,8 +158,8 @@ const Header = () => {
                   key={index}
                   className={`${
                     menu.path === pathname
-                      ? "text-primaryColor"
-                      : " text-gray-100"
+                      ? "text-[#329aa1]"
+                      : " text-[#ffffff]"
                   } text-[12px] font-[600]`}
                 >
                   <Link href={menu.path}>{menu.display}</Link>
