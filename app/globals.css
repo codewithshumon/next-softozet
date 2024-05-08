@@ -220,3 +220,22 @@ body::-webkit-scrollbar-button:vertical:single-button:increment:hover {
   padding: 50px !important;
   bottom: 100px !important;
 }
+
+.circle-button-bg::before {
+  content: "";
+  width: 0;
+  height: 0;
+  transform: translate(-50%, -50%);
+  top: var(--y);
+  left: var(--x);
+  position: absolute;
+  background: #2eca6f;
+  border-radius: 50%;
+  transition: 0.7s ease-in-out;
+  z-index: -100;
+}
+
+.circle-button-bg:hover::before {
+  width: 300px;
+  height: 300px;
+}
