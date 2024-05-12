@@ -2,6 +2,7 @@ import Background from "./components/landingPage/Background";
 import ClientSection from "./components/landingPage/clientSection/ClientSection";
 import LandingSections from "./components/landingPage/heroSection/HeroSection";
 import OurServices from "./components/landingPage/servicesSection/OurServices";
+import CompanyDetails from "./components/landingPage/companyDetails/CompanyDetails";
 import VideoSection from "./components/landingPage/VideoSection";
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
         <VideoSection />
         <ClientSection />
         <OurServices />
+        <CompanyDetails />
       </section>
       <section className="relative w-full h-full bg-[#01081b] z-[5] ">
         <Background />
