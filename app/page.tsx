@@ -12,7 +12,10 @@ export default function Home() {
         <LandingSections />
         <VideoSection />
         <ClientSection />
-        <OurServices />
+        <div>
+          <OurServices />
+        </div>
+
         <CompanyDetails />
       </section>
       <section className="relative w-full h-full bg-[#01081b] z-[5] ">

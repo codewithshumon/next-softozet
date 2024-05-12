@@ -1,7 +1,7 @@
 import React from "react";
 
 const CompanyDetails = () => {
-  return <div>CompanyDetails</div>;
+  return <div className=" relative">CompanyDetails</div>;
 };
 
 export default CompanyDetails;
