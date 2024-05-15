@@ -239,3 +239,16 @@ body::-webkit-scrollbar-button:vertical:single-button:increment:hover {
   width: 300px;
   height: 300px;
 }
+
+@keyframes companyNameAnime {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.companyNameAnime {
+  animation: companyNameAnime 10s linear infinite;
+}
