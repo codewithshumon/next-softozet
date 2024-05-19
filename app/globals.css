@@ -240,7 +240,8 @@ body::-webkit-scrollbar-button:vertical:single-button:increment:hover {
   height: 300px;
 }
 
-@keyframes companyNameAnime {
+/* company brand name animation */
+/* @keyframes companyNameRightToLeft {
   from {
     transform: translateX(0);
   }
@@ -249,6 +250,68 @@ body::-webkit-scrollbar-button:vertical:single-button:increment:hover {
   }
 }
 
-.companyNameAnime {
-  animation: companyNameAnime 10s linear infinite;
+.companyNameRightToLeft {
+  animation: companyNameRightToLeft 15s linear infinite;
 }
+@keyframes companyNameLeftToRight {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.companyNameLeftToRight {
+  animation: companyNameLeftToRight 15s linear infinite;
+} */
+
+@keyframes companyNameRightToLeft {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.companyNameRightToLeft {
+  animation: companyNameRightToLeft 15s infinite linear;
+}
+@keyframes companyNameLeftToRight {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.companyNameLeftToRight {
+  animation: companyNameLeftToRight 15s infinite linear;
+}
+
+@keyframes logoSapinRigh {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.logoSapinRigh {
+  animation: logoSapinRigh 3s infinite linear;
+}
+
+@keyframes logoSapinLeft {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+.logoSapinLeft {
+  animation: logoSapinLeft 3s infinite linear;
+}
+/* company brand name animation */

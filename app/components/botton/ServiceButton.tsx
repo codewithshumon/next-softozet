@@ -22,7 +22,6 @@ const ServiceButton = () => {
       const mouseY = y - rect.top;
       btn.style.setProperty("--x", mouseX + "px");
       btn.style.setProperty("--y", mouseY + "px");
-      console.log(btn);
     }
   };
   return (

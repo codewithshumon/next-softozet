@@ -1,32 +1,62 @@
 "use client";
 /* eslint-disable react-hooks/exhaustive-deps */
 
-import { useEffect, useRef } from "react";
-import SvgLogo from "../../global/SvgLogo";
+import { useEffect, useRef, useCallback } from "react";
 import gsap from "gsap";
-import ScrollTrigger from "gsap/all";
+import { ScrollTrigger } from "gsap/all";
 
+import SvgLogo from "../../global/SvgLogo";
+
+import useScrollY from "@/app/hooks/useScroll";
 const CompanyDetails = () => {
+  const scrollY = useScrollY();
+  const scrollRef = useRef(scrollY);
   const firstText = useRef(null);
   const secondText = useRef(null);
   const slider = useRef(null);
   let xPercent = 0;
-  let direction = 1;
+  let direction = scrollRef.current < scrollY ? -1 : 1;
 
-  // useEffect(() => {
-  //   gsap.registerPlugin(ScrollTrigger);
-  //   gsap.to(slider.current, {
-  //     scrollTrigger: {
-  //       trigger: document.documentElement,
-  //       scrub: 0.25,
-  //       start: 0,
-  //       end: window.innerHeight,
-  //       onUpdate: (e) => (direction = e.direction * -1),
-  //     },
-  //     //x: "-500px",
-  //   });
-  //   requestAnimationFrame(animate);
-  // }, []);
+  useEffect(() => {
+    scrollRef.current = scrollY;
+  }, [scrollY]);
+
+  useEffect(() => {
+    // gsap.registerPlugin(ScrollTrigger);
+    // gsap.to(slider.current, {
+    //   scrollTrigger: {
+    //     trigger: document.body,
+    //     scrub: 0.25,
+    //     start: 0,
+    //     end: window.innerHeight,
+    //     onUpdate: (e) => (direction = e.direction * -1),
+    //   },
+    // });
+
+    const animate = () => {
+      if (xPercent < -100) {
+        xPercent = 0;
+      } else if (xPercent > 0) {
+        xPercent = -100;
+      }
+      gsap.set(firstText.current, { xPercent: xPercent });
+      gsap.set(secondText.current, { xPercent: xPercent });
+      requestAnimationFrame(animate);
+      xPercent += 0.1 * direction;
+    };
+    requestAnimationFrame(animate);
+  }, [direction]);
+
+  useEffect(() => {
+    if (xPercent < -100) {
+      xPercent = 0;
+    } else if (xPercent > 0) {
+      xPercent = -100;
+    }
+  }, []);
+
+  console.log("xPercent", xPercent);
+  console.log("direction", direction);
 
   // const animate = () => {
   //   if (xPercent < -100) {
@@ -47,23 +77,42 @@ const CompanyDetails = () => {
           ref={slider}
           className="relative whitespace-nowrap w-fit flex flex-row items-center "
         >
+          {/* two same div with must be same as px */}
           <div
             ref={firstText}
-            className="w-fit flex flex-row items-center gap-[2%] companyNameAnime "
+            className="w-[1500px] pr-[10px] flex flex-row items-center gap-[3%] m-0"
+            // className={`${
+            //   scrollRef.current < scrollY
+            //     ? "companyNameRightToLeft"
+            //     : "companyNameLeftToRight"
+            // } w-[1500px] pr-[10px] flex flex-row items-center gap-[3%] m-0`}
           >
-            <h1 className="text-[#e2e1dd] font-extrabold">SOFTOZET LIMITED</h1>
-            <span>
+            <div
+              className={`${
+                scrollRef.current < scrollY ? "logoSapinLeft" : "logoSapinRigh"
+              }`}
+            >
               <SvgLogo width={60} height={60} />
-            </span>
+            </div>
+            <h1 className="text-[#e2e1dd] font-extrabold">SOFTOZET LIMITED</h1>
           </div>
           <div
             ref={secondText}
-            className="absolute w-fit left-[104%] flex flex-row items-center gap-[2%] companyNameAnime"
+            className="absolute w-[1500px] left-[100%] flex flex-row items-center gap-[3%] m-0"
+            // className={`${
+            //   scrollRef.current < scrollY
+            //     ? "companyNameRightToLeft"
+            //     : "companyNameLeftToRight"
+            // } absolute w-[1500px] left-[100%] flex flex-row items-center gap-[3%] m-0`}
           >
-            <h1 className="text-[#e2e1dd] font-extrabold">SOFTOZET LIMITED</h1>
-            <span>
+            <div
+              className={`${
+                scrollRef.current < scrollY ? "logoSapinLeft" : "logoSapinRigh"
+              }`}
+            >
               <SvgLogo width={60} height={60} />
-            </span>
+            </div>
+            <h1 className="text-[#e2e1dd] font-extrabold">SOFTOZET LIMITED</h1>
           </div>
         </div>
       </div>
