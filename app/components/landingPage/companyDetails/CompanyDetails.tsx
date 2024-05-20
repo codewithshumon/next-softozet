@@ -15,23 +15,23 @@ const CompanyDetails = () => {
   const secondText = useRef(null);
   const slider = useRef(null);
   let xPercent = 0;
-  let direction = scrollRef.current < scrollY ? -1 : 1;
+  let direction = -1; //scrollRef.current < scrollY ? -1 : 1;
 
   useEffect(() => {
     scrollRef.current = scrollY;
   }, [scrollY]);
 
   useEffect(() => {
-    // gsap.registerPlugin(ScrollTrigger);
-    // gsap.to(slider.current, {
-    //   scrollTrigger: {
-    //     trigger: document.body,
-    //     scrub: 0.25,
-    //     start: 0,
-    //     end: window.innerHeight,
-    //     onUpdate: (e) => (direction = e.direction * -1),
-    //   },
-    // });
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.to(slider.current, {
+      scrollTrigger: {
+        trigger: ".scrollIdentyfire",
+        scrub: 0.25,
+        start: 0,
+        // end: window.innerHeight,
+        onUpdate: (e) => (direction = e.direction * -1),
+      },
+    });
 
     const animate = () => {
       if (xPercent < -100) {
@@ -47,36 +47,13 @@ const CompanyDetails = () => {
     requestAnimationFrame(animate);
   }, [direction]);
 
-  useEffect(() => {
-    if (xPercent < -100) {
-      xPercent = 0;
-    } else if (xPercent > 0) {
-      xPercent = -100;
-    }
-  }, []);
-
-  console.log("xPercent", xPercent);
-  console.log("direction", direction);
-
-  // const animate = () => {
-  //   if (xPercent < -100) {
-  //     xPercent = 0;
-  //   } else if (xPercent > 0) {
-  //     xPercent = -100;
-  //   }
-  //   gsap.set(firstText.current, { xPercent: xPercent });
-  //   gsap.set(secondText.current, { xPercent: xPercent });
-  //   requestAnimationFrame(animate);
-  //   xPercent += 0.1 * direction;
-  // };
-
   return (
     <>
-      <div className="w-[100%] h-fit text-[140px] mt-[5%] select-none ">
-        <div
-          ref={slider}
-          className="relative whitespace-nowrap w-fit flex flex-row items-center "
-        >
+      <div
+        ref={slider}
+        className="w-[100%] h-fit text-[140px] mt-[5%] select-none scrollIdentyfire"
+      >
+        <div className="relative whitespace-nowrap w-fit flex flex-row items-center ">
           {/* two same div with must be same as px */}
           <div
             ref={firstText}
