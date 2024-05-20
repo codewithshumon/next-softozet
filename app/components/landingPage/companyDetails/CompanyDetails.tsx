@@ -104,29 +104,40 @@ const CompanyDetails = () => {
               <div className=" w-full h-full flex flex-col gap-5">
                 <div className=" w-full flex flex-row items-center gap-3 ">
                   <div className=" w-5 h-5 border-2 p-2 border-[#03EB64] rounded-full"></div>
-                  <div>Worldwide marketing compnay from Bangladesh</div>
+                  <div>
+                    Worldwide business marketing company from Bangladesh
+                  </div>
                 </div>
                 <div className=" w-full flex flex-row items-center gap-3 ">
                   <div className=" w-5 h-5 border-2 p-2 border-[#03EB64] rounded-full"></div>
-                  <div>Worldwide marketing compnay from Bangladesh</div>
+                  <div>
+                    Reaching out your brand to ever edge of the target market
+                  </div>
                 </div>
                 <div className=" w-full flex flex-row items-center gap-3 ">
                   <div className=" w-5 h-5 border-2 p-2 border-[#03EB64] rounded-full"></div>
-                  <div>Worldwide marketing compnay from Bangladesh</div>
+                  <div>
+                    Reaching New Markets with your business product or service
+                  </div>
                 </div>
               </div>
               <div className=" w-full h-full flex flex-col gap-5">
                 <div className=" w-full flex flex-row items-center gap-3 ">
                   <div className=" w-5 h-5 border-2 p-2 border-[#03EB64] rounded-full"></div>
-                  <div>Worldwide marketing compnay from Bangladesh</div>
+                  <div>
+                    Revolutionizing with State-of-the-Art Solutions and
+                    Technologies
+                  </div>
                 </div>
                 <div className=" w-full flex flex-row items-center gap-3 ">
                   <div className=" w-5 h-5 border-2 p-2 border-[#03EB64] rounded-full"></div>
-                  <div>Worldwide marketing compnay from Bangladesh</div>
+                  <div>
+                    Strategies to drive innovation and reach business goal
+                  </div>
                 </div>
                 <div className=" w-full flex flex-row items-center gap-3 ">
                   <div className=" w-5 h-5 border-2 p-2 border-[#03EB64] rounded-full"></div>
-                  <div>Worldwide marketing compnay from Bangladesh</div>
+                  <div>Driving Growth with Data-Driven Marketing Solutions</div>
                 </div>
               </div>
             </div>
