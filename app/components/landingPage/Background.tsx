@@ -36,6 +36,9 @@ const Background = () => {
       <div className="w-full h-screen flex items-center justify-center overflow-hidden">
         <div className="bg-[#03eb64] mt-20 w-[600px] h-[600px] rounded-[100%] "></div>
       </div>
+      <div className="w-full h-screen flex items-center justify-center overflow-hidden">
+        <div className="bg-[#f73ef7] mt-20 w-[600px] h-[600px] rounded-[100%] "></div>
+      </div>
       <div className="absolute inset-0 flex items-center justify-center bg-blur w-full h-full"></div>
     </div>
   );
