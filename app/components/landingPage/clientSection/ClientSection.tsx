@@ -88,195 +88,197 @@ const ClientSection = () => {
   }, []);
 
   return (
-    <div className=" w-[100vw] overflow-hidden">
-      <div className="animate-logos w-[160vw] text-white">
-        <div className="logo-group-1 w-full h-[10vw] flex items-center justify-between //translate-x-[-62vw]">
-          <div>
-            <ClientImage
-              svg={Century21}
-              imageText="arden Realty"
-              className=" object-cover w-[200px] h-full "
-            />
+    <div className="container">
+      <div className=" w-[100vw] overflow-hidden">
+        <div className="animate-logos w-[160vw] text-white">
+          <div className="logo-group-1 w-full h-[10vw] flex items-center justify-between //translate-x-[-62vw]">
+            <div>
+              <ClientImage
+                svg={Century21}
+                imageText="arden Realty"
+                className=" object-cover w-[200px] h-full "
+              />
+            </div>
+            <div>
+              <ClientImage
+                svg={clik2pay}
+                imageText="arden Realty"
+                className=" object-cover w-[200px] h-full"
+              />
+            </div>
+            <div>
+              <ClientImage
+                svg={comenda}
+                imageText="arden Realty"
+                className=" object-cover w-[200px] h-full"
+              />
+            </div>
+            <div>
+              <ClientImage
+                svg={damart}
+                imageText="arden Realty"
+                className=" object-cover w-[200px] h-full"
+              />
+            </div>
+            <div>
+              <ClientImage
+                svg={curti}
+                imageText="arden Realty"
+                className=" object-cover w-[200px] h-full"
+              />
+            </div>
+            <div>
+              <ClientImage
+                svg={dempseyWood}
+                imageText="arden Realty"
+                className=" object-cover w-[200px] h-full"
+              />
+            </div>
+            <div>
+              <ClientImage
+                svg={dormer}
+                imageText="arden Realty"
+                className=" object-cover w-[200px] h-full"
+              />
+            </div>
+            <div>
+              <ClientImage
+                svg={hainbuch}
+                imageText="arden Realty"
+                className=" object-cover w-[200px] h-full"
+              />
+            </div>
           </div>
-          <div>
-            <ClientImage
-              svg={clik2pay}
-              imageText="arden Realty"
-              className=" object-cover w-[200px] h-full"
-            />
+          <div className="logo-group-2 w-full h-[10vw] flex items-center justify-around translate-x-[-60vw] //translate-x-[0vw]">
+            <div>
+              <ClientImage
+                svg={dbRealty}
+                imageText="arden Realty"
+                className=" object-cover w-[200px] h-full"
+              />
+            </div>
+            <div>
+              <ClientImage
+                svg={kellerWilliams}
+                imageText="arden Realty"
+                className=" object-cover w-[200px] h-full"
+              />
+            </div>
+            <div>
+              <ClientImage
+                svg={edinaRealty}
+                imageText="arden Realty"
+                className=" object-cover w-[200px] h-full"
+              />
+            </div>
+            <div>
+              <ClientImage
+                svg={federalRealty}
+                imageText="arden Realty"
+                className=" object-cover w-[200px] h-full"
+              />
+            </div>
+            <div>
+              <ClientImage
+                svg={klineMayRealty}
+                imageText="arden Realty"
+                className=" object-cover w-[200px] h-full"
+              />
+            </div>
+            <div>
+              <ClientImage
+                svg={ardenRealty}
+                imageText="arden Realty"
+                className=" object-cover w-[200px] h-full"
+              />
+            </div>
+            <div>
+              <ClientImage
+                svg={cryeLeikeRealty}
+                imageText="arden Realty"
+                className=" object-cover w-[200px] h-full"
+              />
+            </div>
+            <div>
+              <ClientImage
+                svg={daymarkRealty}
+                imageText="arden Realty"
+                className=" object-cover w-[200px] h-full"
+              />
+            </div>
           </div>
-          <div>
-            <ClientImage
-              svg={comenda}
-              imageText="arden Realty"
-              className=" object-cover w-[200px] h-full"
-            />
-          </div>
-          <div>
-            <ClientImage
-              svg={damart}
-              imageText="arden Realty"
-              className=" object-cover w-[200px] h-full"
-            />
-          </div>
-          <div>
-            <ClientImage
-              svg={curti}
-              imageText="arden Realty"
-              className=" object-cover w-[200px] h-full"
-            />
-          </div>
-          <div>
-            <ClientImage
-              svg={dempseyWood}
-              imageText="arden Realty"
-              className=" object-cover w-[200px] h-full"
-            />
-          </div>
-          <div>
-            <ClientImage
-              svg={dormer}
-              imageText="arden Realty"
-              className=" object-cover w-[200px] h-full"
-            />
-          </div>
-          <div>
-            <ClientImage
-              svg={hainbuch}
-              imageText="arden Realty"
-              className=" object-cover w-[200px] h-full"
-            />
-          </div>
-        </div>
-        <div className="logo-group-2 w-full h-[10vw] flex items-center justify-around translate-x-[-60vw] //translate-x-[0vw]">
-          <div>
-            <ClientImage
-              svg={dbRealty}
-              imageText="arden Realty"
-              className=" object-cover w-[200px] h-full"
-            />
-          </div>
-          <div>
-            <ClientImage
-              svg={kellerWilliams}
-              imageText="arden Realty"
-              className=" object-cover w-[200px] h-full"
-            />
-          </div>
-          <div>
-            <ClientImage
-              svg={edinaRealty}
-              imageText="arden Realty"
-              className=" object-cover w-[200px] h-full"
-            />
-          </div>
-          <div>
-            <ClientImage
-              svg={federalRealty}
-              imageText="arden Realty"
-              className=" object-cover w-[200px] h-full"
-            />
-          </div>
-          <div>
-            <ClientImage
-              svg={klineMayRealty}
-              imageText="arden Realty"
-              className=" object-cover w-[200px] h-full"
-            />
-          </div>
-          <div>
-            <ClientImage
-              svg={ardenRealty}
-              imageText="arden Realty"
-              className=" object-cover w-[200px] h-full"
-            />
-          </div>
-          <div>
-            <ClientImage
-              svg={cryeLeikeRealty}
-              imageText="arden Realty"
-              className=" object-cover w-[200px] h-full"
-            />
-          </div>
-          <div>
-            <ClientImage
-              svg={daymarkRealty}
-              imageText="arden Realty"
-              className=" object-cover w-[200px] h-full"
-            />
-          </div>
-        </div>
-        <div className="logo-group-3 w-full h-[10vw] flex items-center justify-between //translate-x-[-62vw]">
-          <div>
-            <ClientImage
-              svg={maisons}
-              imageText="arden Realty"
-              className=" object-cover w-[200px] h-full"
-            />
-          </div>
-          <div>
-            <ClientImage
-              svg={onbuy}
-              imageText="arden Realty"
-              className=" object-cover w-[200px] h-full"
-            />
-          </div>
-          <div>
-            <ClientImage
-              svg={once}
-              imageText="arden Realty"
-              className=" object-cover w-[200px] h-full"
-            />
-          </div>
-          <div>
-            <ClientImage
-              svg={paybright}
-              imageText="arden Realty"
-              className=" object-cover w-[200px] h-full"
-            />
-          </div>
-          <div>
-            <ClientImage
-              svg={pequity}
-              imageText="arden Realty"
-              className=" object-cover w-[200px] h-full"
-            />
-          </div>
+          <div className="logo-group-3 w-full h-[10vw] flex items-center justify-between //translate-x-[-62vw]">
+            <div>
+              <ClientImage
+                svg={maisons}
+                imageText="arden Realty"
+                className=" object-cover w-[200px] h-full"
+              />
+            </div>
+            <div>
+              <ClientImage
+                svg={onbuy}
+                imageText="arden Realty"
+                className=" object-cover w-[200px] h-full"
+              />
+            </div>
+            <div>
+              <ClientImage
+                svg={once}
+                imageText="arden Realty"
+                className=" object-cover w-[200px] h-full"
+              />
+            </div>
+            <div>
+              <ClientImage
+                svg={paybright}
+                imageText="arden Realty"
+                className=" object-cover w-[200px] h-full"
+              />
+            </div>
+            <div>
+              <ClientImage
+                svg={pequity}
+                imageText="arden Realty"
+                className=" object-cover w-[200px] h-full"
+              />
+            </div>
 
-          <div>
-            <ClientImage
-              svg={stanley}
-              imageText="arden Realty"
-              className=" object-cover w-[200px] h-full"
-            />
-          </div>
-          <div>
-            <ClientImage
-              svg={tapestry}
-              imageText="arden Realty"
-              className=" object-cover w-[200px] h-full"
-            />
-          </div>
-          <div>
-            <ClientImage
-              svg={teba}
-              imageText="arden Realty"
-              className=" object-cover w-[200px] h-full"
-            />
-          </div>
-          <div>
-            <ClientImage
-              svg={turner}
-              imageText="arden Realty"
-              className=" object-cover w-[200px] h-full"
-            />
-          </div>
-          <div>
-            <ClientImage
-              svg={vrt}
-              imageText="arden Realty"
-              className=" object-cover w-[200px] h-full"
-            />
+            <div>
+              <ClientImage
+                svg={stanley}
+                imageText="arden Realty"
+                className=" object-cover w-[200px] h-full"
+              />
+            </div>
+            <div>
+              <ClientImage
+                svg={tapestry}
+                imageText="arden Realty"
+                className=" object-cover w-[200px] h-full"
+              />
+            </div>
+            <div>
+              <ClientImage
+                svg={teba}
+                imageText="arden Realty"
+                className=" object-cover w-[200px] h-full"
+              />
+            </div>
+            <div>
+              <ClientImage
+                svg={turner}
+                imageText="arden Realty"
+                className=" object-cover w-[200px] h-full"
+              />
+            </div>
+            <div>
+              <ClientImage
+                svg={vrt}
+                imageText="arden Realty"
+                className=" object-cover w-[200px] h-full"
+              />
+            </div>
           </div>
         </div>
       </div>

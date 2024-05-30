@@ -1,6 +1,10 @@
-'use client';
+"use client";
 
-import Lottie from 'lottie-react';
+import dynamic from "next/dynamic";
+// Dynamically import Lottie to ensure it's only loaded on the client side
+const Lottie = dynamic(() => import("lottie-react"), {
+  ssr: false,
+});
 
 interface ServiceLottieProps {
   animation: any;

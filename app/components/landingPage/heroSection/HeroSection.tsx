@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import Lottie from "lottie-react";
+import dynamic from "next/dynamic";
 
 import {
   webFirst,
@@ -14,6 +14,11 @@ import {
 
 import LandingText from "./HeroText";
 import styles from "./HeroSection.module.css";
+
+// Dynamically import Lottie to ensure it's only loaded on the client side
+const Lottie = dynamic(() => import("lottie-react"), {
+  ssr: false,
+});
 
 const LandingSections = () => {
   const [animationIn, setAnimationIn] = useState(false);
