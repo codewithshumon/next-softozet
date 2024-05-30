@@ -78,7 +78,7 @@ const CompanyDetails = () => {
   }, [counter]);
 
   return (
-    <>
+    <div className="container">
       <div
         ref={slider}
         className="w-[100%] h-fit text-[140px] mt-[5%] select-none scrollIdentyfire"
@@ -253,7 +253,7 @@ const CompanyDetails = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
