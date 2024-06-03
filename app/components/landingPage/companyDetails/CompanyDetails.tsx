@@ -78,10 +78,10 @@ const CompanyDetails = () => {
   }, [counter]);
 
   return (
-    <div className="container">
+    <>
       <div
         ref={slider}
-        className="w-[100%] h-fit text-[140px] mt-[5%] select-none scrollIdentyfire"
+        className=" container w-[100%] h-fit text-[140px] mt-[5%] select-none scrollIdentyfire"
       >
         <div className="relative whitespace-nowrap w-fit flex flex-row items-center ">
           {/* two same div with must be same as px */}
@@ -253,7 +253,7 @@ const CompanyDetails = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

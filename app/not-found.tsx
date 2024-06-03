@@ -1,7 +1,12 @@
-'use client';
+"use client";
 
-import Lottie from 'lottie-react';
-import pageNotFound from '@/public/page-not-found.json';
+import dynamic from "next/dynamic";
+// Dynamically import Lottie to ensure it's only loaded on the client side
+const Lottie = dynamic(() => import("lottie-react"), {
+  ssr: false,
+});
+
+import pageNotFound from "@/public/page-not-found.json";
 
 const NotFound = () => {
   return (
