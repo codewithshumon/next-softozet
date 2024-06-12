@@ -4,19 +4,29 @@ export const Testimonials = {
     title: "Advanced Commercial Advisor",
     company: "Century 21",
   },
-  marioQuintero: {
-    name: "Mario Quintero",
-    title: "Certified Luxury Home Marketing Specialist",
-    company: "Century 21",
+  michaelNajar: {
+    name: "Michael Najar",
+    title: "Keller Williams Realty",
+    company: "Broker",
   },
-  patriciaCastillo: {
-    name: "Patricia Castillo",
-    title: "REALTOR, National Association of REALTORS",
-    company: "Century 21",
+  juddSampson: {
+    name: "Judd Sampson",
+    title: "Co-Managing Broker",
+    company: "Edina Realty",
   },
-  roiDanon: {
-    name: "Roi Danon",
-    title: "Commercial Specialist",
-    company: "Century 21",
+  mikeBradley: {
+    name: "Mike Bradley",
+    title: "Founder and CEO",
+    company: "Clik2pay",
+  },
+  cassionCasPaton: {
+    name: "Cassion Cas Paton",
+    title: "Founder and CEO",
+    company: "OnBuy",
+  },
+  joanneCrevoiserat: {
+    name: "joanne Crevoiserat",
+    title: "Chief Executive Officer",
+    company: "Tapestry",
   },
 };
