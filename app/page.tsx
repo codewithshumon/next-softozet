@@ -18,6 +18,7 @@ export default function Home() {
         </div>
         <CompanyDetails />
         <Testimonial />
+        <div className=" text-white">member</div>
       </section>
       <section className="relative w-full h-full bg-[#01081b] z-[5] ">
         <Background />

@@ -223,29 +223,20 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="container overflow-hidden">
-      <button className="prev">Prev</button>
-      <button className="next">Next</button>
-      <div className="wrapper w-full h-[50vh] flex flex-row items-start gap-[1vw] translate-x-[-5vw] bg-red-600">
-        {Array.from({ length: 15 }, (_, i) => (
-          <div
-            key={i}
-            ref={(el: any) => (boxRef.current[i] = el)}
-            className="box w-[30vw] h-full  translate-x-[1vw]"
-          >
-            {i + 1}
-          </div>
-        ))}
-        {/* {Testimonials.map((test: any, index: any) => (
+    <div className="container h-[300px] ">
+      {/* <button className="prev">Prev</button>
+      <button className="next">Next</button> */}
+      <div className="wrapper w-full overflow-hidden  flex flex-row items-start gap-[1vw] ">
+        {Testimonials.map((test: any, index: any) => (
           <div
             key={index}
             // ref={(el: any) => (boxRef.current[i] = el)}
             ref={(el) => {
               if (el) boxRef.current[index] = el;
             }}
-            className=" w-full h-full"
+            className=" w-full translate-x-[1vw]"
           >
-            <div className=" w-full h-full">
+            <div className=" w-full">
               <div className=" w-[450px] h-[100px] bg-red-600 ">
                 <div className="">
                   <Image
@@ -266,7 +257,7 @@ export default function Home() {
               <div className="w-[450px] h-[200px] bg-green-400"></div>
             </div>
           </div>
-        ))} */}
+        ))}
       </div>
     </div>
   );
