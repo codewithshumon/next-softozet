@@ -136,6 +136,15 @@ body::-webkit-scrollbar-button:vertical:single-button:increment:hover {
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37); */
 }
 
+.header-bg-blur {
+  background: transparent;
+  backdrop-filter: blur(10px);
+
+  /* border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37); */
+}
+
 .custom-svg {
   width: 100%; /* Set SVG width to 100% of parent container */
   height: auto; /* Maintain aspect ratio */
@@ -181,7 +190,7 @@ body::-webkit-scrollbar-button:vertical:single-button:increment:hover {
   border-bottom-right-radius: 20px;
 
   background: linear-gradient(transparent, transparent) padding-box,
-    linear-gradient(to right, darkblue, darkorchid) border-box;
+    linear-gradient(to right, #e7d211, #9932cc) border-box;
 }
 
 .sevice-border {
