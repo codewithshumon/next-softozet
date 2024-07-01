@@ -134,7 +134,7 @@ const Header = () => {
         </div>
       </div>
       <header className=" fixed bg-transparent top-0 z-20 py-10 px-5 md:py-5 md:px-5 w-full h-[50px] md:h-[100px]">
-        <div className="w-full h-full header-bg-blur rounded-full px-0 py-0 md:px-5 md:py-8 flex items-center ">
+        <div className="w-full h-full rounded-full flex items-center ">
           <div className=" w-full text-white flex items-center justify-between overflow-hidden">
             <nav className="flex items-center gap-3">
               <div
@@ -167,9 +167,9 @@ const Header = () => {
                 scrollRef.current < scrollY
                   ? "scroll-translate-up"
                   : "scroll-translate-down"
-              } hidden md:flex w-[50%] justify-center rounded-full`}
+              } hidden md:flex w-[50%] justify-center rounded-full `}
             >
-              <div className="w-fit flex flex-row justify-between px-4 py-3 items-center gap-5 border-gradient-color ">
+              <div className="w-fit flex flex-row justify-between px-4 py-3 items-center gap-5 border-gradient-color header-bg-blur">
                 {navMenus.map((menu, index) => (
                   <nav
                     key={index}
