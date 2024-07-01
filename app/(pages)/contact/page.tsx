@@ -56,7 +56,7 @@ const ContactPage = () => {
   };
 
   return (
-    <div className=" w-full h-full bg-yellowColor">
+    <div className=" w-full h-full bg-yellowColor ">
       <div className="container flex flex-col ">
         <div className="mt-[25%] md:mt-[10%]">
           <h1 className="text-[40px] md:text-[100px] font-extrabold leading-none">
@@ -67,9 +67,9 @@ const ContactPage = () => {
             together.
           </p>
         </div>
-        <div className="w-full h-full md:h-screen relative  md:!overflow-hidden py-10 md:py-0">
+        <div className="w-full h-full md:h-screen relative  md:!overflow-hidden mx-1 xs:mx-10 md:mx-0 py-10 md:py-0 mb-10 md:mb-20">
           <div className="w-full h-full flex flex-col md:flex-row items-center justify-around ">
-            <div className=" hidden md:block">
+            <div className=" hidden xl:block">
               <LottieComponent
                 animationData={conatactLottie}
                 className="!w-[250px] xs:!w-[350px] xl:!w-[400px]"
@@ -107,7 +107,7 @@ const ContactPage = () => {
                         required
                       />
                     </div>
-                    <div className=" w-full flex flex-col xs:flex-row gap-2 xs:gap-5 ">
+                    <div className=" w-full flex flex-col md:flex-row gap-2 xs:gap-5 ">
                       <div className="w-full h-full flex flex-col gap-2">
                         <label htmlFor="email" className="">
                           Email *
@@ -137,7 +137,7 @@ const ContactPage = () => {
                         />
                       </div>
                     </div>
-                    <div className=" w-full flex flex-col xs:flex-row gap-2 xs:gap-5 ">
+                    <div className=" w-full flex flex-col md:flex-row gap-2 xs:gap-5 ">
                       <div className="w-full h-full flex flex-col gap-2 ">
                         <label htmlFor="email" className="">
                           Service required*
@@ -149,10 +149,25 @@ const ContactPage = () => {
                           className="py-1 px-2 text-gray-700 md:py-2 md:px-4 rounded-full outline-emerald-500"
                           required
                         >
-                          <option value="">select</option>
-                          <option value="male">Male</option>
-                          <option value="female">Female</option>
-                          <option value="other">Other</option>
+                          <option value="">Select Your Service</option>
+                          <option value="male">UI/UX Design </option>
+                          <option value="female">
+                            Web App Design & Development
+                          </option>
+                          <option value="female">
+                            Mobile App Design & Development
+                          </option>
+                          <option value="female">
+                            Custom Software Development
+                          </option>
+                          <option value="female">
+                            Search Engine Optimization
+                          </option>
+                          <option value="female">Social Media Marketing</option>
+                          <option value="female">
+                            Creative Content Design
+                          </option>
+                          <option value="other">24/7 Call Center</option>
                         </select>
                       </div>
 
@@ -161,7 +176,7 @@ const ContactPage = () => {
                           Project budget*
                         </label>
                         <input
-                          type="number"
+                          type="text"
                           name="number"
                           value={formData.number === 0 ? "" : formData.number}
                           onChange={handleInpurChange}
@@ -223,6 +238,36 @@ const ContactPage = () => {
             )}
           </div>
         </div>
+      </div>
+      <div className=" w-screen h-full bg-black">
+        <div className="container flex flex-col">
+          <div className="mx-0 xs:mx-5 md:mx-10 w-[90%] md:w-[78%] text-white my-20">
+            <p className="text-[25px] xs:text-[35px] md:text-[55px] xl:text-[70px] font-bold leading-[30px] xs:leading-[50px] md:leading-[80px]">
+              Drop us an email to explore for Business{" "}
+              <span className="text-[#7D7D82]">collaborations</span> or career{" "}
+              <span className="text-[#7D7D82]">opportunities</span>.
+            </p>
+          </div>
+          <div className="ml-0 md:ml-[10%] xl:ml-[20%] w-full text-white my-20 flex flex-col md:flex-row md:items-center gap-10 md:gap-[5%] xl:gap-[10%] ">
+            <div className="">
+              <span className="text-[18px] xs:text-[30px] md:text-[25px] xl:text-[40px] font-bold">
+                info@softozet.com
+              </span>
+              <p className="text-[#7D7D82] font-semibold text-[12px] xs:text-[20px] md:text-[20px] xl:text-[25px]">
+                Projects, collaborations and queries.
+              </p>
+            </div>
+            <div className="">
+              <span className="text-[18px] xs:text-[30px] md:text-[25px] xl:text-[40px] font-bold">
+                career@softozet.com
+              </span>
+              <p className="text-[#7D7D82] font-semibold text-[12px] xs:text-[20px] md:text-[20px] xl:text-[25px]">
+                Join our dynamic Team
+              </p>
+            </div>
+          </div>
+        </div>
+        <div></div>
       </div>
     </div>
   );

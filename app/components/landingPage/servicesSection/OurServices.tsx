@@ -231,7 +231,7 @@ const OurServices = () => {
               <div className=" w-[90%] flex flex-col gap-5">
                 <div className="w-full text-center">
                   <h1 className=" text-[#ffffff] font-extrabold ">
-                    24/7 CALL CENTER SERVICE
+                    24/7 CALL CENTER
                   </h1>
                   <p className="text-[#e0dddd]">
                     Your Dedicated 24/7 Call Center Partner for Customer

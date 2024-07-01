@@ -30,7 +30,7 @@ export const ServiceData = {
     text: `Our expertise lies in crafting innovative and visually stunning content that resonates with your audience. From striking graphics to engaging multimedia elements, we tailor each design to convey your brand's unique story and message. By blending creativity with strategic insights, we captivate attention and drive meaningful engagement. Join us in bringing your vision to life and making a lasting impact in the digital landscape. Let's collaborate to create content that sparks imagination and leaves a lasting impression on your audience.`,
   },
   callServiceData: {
-    title: "24/7 CALL CENTER SERVICE",
+    title: "24/7 CALL CENTER",
     subTitle:
       "Empowering Connections: Delivering Exceptional Service Through Every Call",
     text: `Welcome to our call center service, where every interaction is an opportunity to excel. With a blend of professionalism and warmth, we handle inquiries with care, resolve issues swiftly, and ensure every caller feels valued. Our advanced technology streamlines processes, while our dedicated team adds a personal touch, creating seamless experiences for your customers. Let's partner to elevate your brand's reputation and foster lasting customer loyalty through exceptional call center service. Together, we'll set new standards of excellence in customer care.`,
