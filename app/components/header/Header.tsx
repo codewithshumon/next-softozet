@@ -103,7 +103,7 @@ const Header = () => {
                   >
                     <div className="absolute w-[60%] right-[5%] xs:right-[10%] py-[50%] xs:py-[20%] h-full flex flex-col justify-around">
                       <div className="">
-                        <div className="text-[16px] xs:text-[28px] leading-7 font-[600] border-[3px] border-solid botton-gradient text-white">
+                        <div className="text-[16px] xs:text-[28px] leading-7 font-bold  border-[3px] border-solid botton-gradient text-white">
                           <Button
                             onClick={() => router.push("/contact")}
                             title="GET IN TOUCH"
@@ -185,7 +185,7 @@ const Header = () => {
               </div>
             </div>
 
-            <nav className=" hidden md:flex text-[12px]  leading-7 font-[600] border-[3px] border-solid botton-gradient">
+            <nav className=" hidden md:flex text-[16px] font-bold leading-7 border-[3px] border-solid botton-gradient">
               <Button
                 onClick={() => router.push("/contact")}
                 title="GET IN TOUCH"
