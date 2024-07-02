@@ -133,8 +133,8 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <header className=" fixed bg-transparent top-0 z-20 py-10 px-5 md:py-5 md:px-5 w-full h-[50px] md:h-[100px]">
-        <div className="w-full h-full rounded-full flex items-center ">
+      <header className="fixed bg-transparent top-0 z-20 py-10 px-5 md:py-5 md:px-5 w-full h-[50px] md:h-[100px] ">
+        <div className="w-full h-full max-w-[1440px] mx-auto rounded-full flex items-center">
           <div className=" w-full text-white flex items-center justify-between overflow-hidden">
             <nav className="flex items-center gap-3">
               <div

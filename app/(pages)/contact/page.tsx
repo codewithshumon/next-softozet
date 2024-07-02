@@ -56,7 +56,7 @@ const ContactPage = () => {
   };
 
   return (
-    <div className=" w-full h-full bg-yellowColor ">
+    <div className=" w-full h-full  bg-[#eeb02c] ">
       <div className="container flex flex-col ">
         <div className="mt-[25%] md:mt-[10%]">
           <h1 className="text-[40px] md:text-[100px] font-extrabold leading-none">
@@ -167,6 +167,7 @@ const ContactPage = () => {
                           <option value="female">
                             Creative Content Design
                           </option>
+                          <option value="female">Video Editing</option>
                           <option value="other">24/7 Call Center</option>
                         </select>
                       </div>
@@ -239,7 +240,7 @@ const ContactPage = () => {
           </div>
         </div>
       </div>
-      <div className=" w-screen h-full bg-black">
+      <div className=" w-full h-full bg-black">
         <div className="container flex flex-col">
           <div className="mx-0 xs:mx-5 md:mx-10 w-[90%] md:w-[78%] text-white my-20">
             <p className="text-[25px] xs:text-[35px] md:text-[55px] xl:text-[70px] font-bold leading-[30px] xs:leading-[50px] md:leading-[80px]">
@@ -267,7 +268,47 @@ const ContactPage = () => {
             </div>
           </div>
         </div>
-        <div></div>
+      </div>
+      <div className=" w-full h-full bg-[#c6c6c9]">
+        <div className="container">
+          <div className="mt-[25%] md:mt-[10%]">
+            <h1 className="text-[40px] text-black md:text-[100px] font-extrabold leading-none">
+              Find Our
+            </h1>
+            <p className="text-[#ffffff] ml-[30%] text-[30px] md:text-[100px] font-bold mt-[-10px] md:mt-[-20px]">
+              Locations
+            </p>
+          </div>
+          <div className=" w-full h-full py-[10%] flex flex-col md:flex-row">
+            <div className="bg-[#ffffff] w-[200px] h-[200px]"></div>
+            <div className="w-full h-[200px] flex flex-col md:flex-row">
+              <div>
+                <h1>Bangladesh</h1>
+                <div>
+                  <h2>ADDRESS</h2>
+                  <p>
+                    Joypurhat Tower, Block F, House 2-3, Main Road, Banasree,
+                    Rampura, Dhaka 1219
+                  </p>
+                </div>
+              </div>
+              <div>
+                <h2>CONTACT</h2>
+                <div>
+                  <p>info@softozet.com</p>
+                  <p>+880 1571-504281</p>
+                </div>
+              </div>
+              <div>
+                <h2>AVAILABLE</h2>
+                <div>
+                  <p>Sunday - Thursday</p>
+                  <p>9AM - 5PM</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
