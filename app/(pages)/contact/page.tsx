@@ -81,7 +81,7 @@ const ContactPage = () => {
                   <div className=" w-full h-full flex flex-col space-y-2 ">
                     <div className="w-full h-full flex flex-col gap-2">
                       <label htmlFor="email" className="">
-                        Full Name *
+                        Full Name*
                       </label>
                       <input
                         type="text"
@@ -110,7 +110,7 @@ const ContactPage = () => {
                     <div className=" w-full flex flex-col md:flex-row gap-2 xs:gap-5 ">
                       <div className="w-full h-full flex flex-col gap-2">
                         <label htmlFor="email" className="">
-                          Email *
+                          Email*
                         </label>
                         <input
                           type="email"
@@ -124,7 +124,7 @@ const ContactPage = () => {
 
                       <div className="w-full h-full flex flex-col gap-2">
                         <label htmlFor="email" className="">
-                          Phone Number *
+                          Phone Number*
                         </label>
                         <input
                           type="number"
@@ -270,44 +270,48 @@ const ContactPage = () => {
         </div>
       </div>
       <div className=" w-full h-full bg-[#c6c6c9]">
-        <div className="container">
+        <div className="container pb-[5%]">
           <div className="mt-[25%] md:mt-[10%]">
-            <h1 className="text-[40px] text-black md:text-[100px] font-extrabold leading-none">
+            <h1 className="text-[50px] xs:text-[60px] text-black md:text-[100px] font-extrabold leading-none">
               Find Our
             </h1>
-            <p className="text-[#ffffff] ml-[30%] text-[30px] md:text-[100px] font-bold mt-[-10px] md:mt-[-20px]">
+            <p className="text-[#ffffff] ml-[10%] md:ml-[20%]  text-[50px] xs:text-[60px] md:text-[100px] font-bold mt-[-10px] md:mt-[-20px]">
               Locations
             </p>
           </div>
-          <div className=" w-full h-full py-[10%] flex flex-col md:flex-row">
-            <div className="bg-[#ffffff] w-[200px] h-[200px]"></div>
-            <div className="w-full h-[200px] flex flex-col md:flex-row">
-              <div>
-                <h1>Bangladesh</h1>
-                <div>
-                  <h2>ADDRESS</h2>
-                  <p>
-                    Joypurhat Tower, Block F, House 2-3, Main Road, Banasree,
-                    Rampura, Dhaka 1219
+          <div className="w-full h-full py-[10%] flex flex-col md:flex-row gap-5 md:gap-0">
+            <div className="bg-[#ffffff] w-[250px] h-[200px] mr-[5%]">
+              <div className=" "></div>
+            </div>
+            <div className="w-full h-full md:h-[200px] flex flex-col md:flex-row gap-10 md:gap-0 justify-between">
+              <div className=" w-full md:w-[30%] flex flex-col justify-between gap-10 md:gap-0">
+                <h1 className="text-[40px] md:text-[50px] font-bold leading-[50px]">
+                  Bangladesh
+                </h1>
+                <div className=" flex flex-col gap-2">
+                  <h2 className="text-[20px] text-white font-bold ">ADDRESS</h2>
+                  <p className=" font-bold">
+                    MR Center, Block E, House 49, Road 17, Banani, Dhaka 1213
                   </p>
                 </div>
               </div>
-              <div>
-                <h2>CONTACT</h2>
-                <div>
+              <div className=" w-full md:w-[20%] flex flex-col gap-2 justify-end">
+                <h2 className="text-[20px] text-white font-bold ">CONTACT</h2>
+                <div className=" font-bold">
                   <p>info@softozet.com</p>
                   <p>+880 1571-504281</p>
                 </div>
               </div>
-              <div>
-                <h2>AVAILABLE</h2>
-                <div>
+              <div className=" w-full md:w-[20%]  flex flex-col gap-2 justify-end">
+                <h2 className="text-[20px] text-white font-bold ">AVAILABLE</h2>
+                <div className=" font-bold">
                   <p>Sunday - Thursday</p>
                   <p>9AM - 5PM</p>
                 </div>
               </div>
             </div>
           </div>
+          <div className="bg-[#3f3d3d] w-full h-[1px]" />
         </div>
       </div>
     </div>
