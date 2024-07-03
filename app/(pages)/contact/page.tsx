@@ -1,13 +1,17 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 
-import conatactLottie from "@/public/contact-lottie.json";
+import aboutUs from "@/public/about-us.json";
 import emailSendLottie from "@/public/email-sending.json";
 import rightMarkLottie from "@/public/right-mark.json";
 
 import LottieComponent from "@/app/components/global/ContactLottie";
 import Button from "@/app/components/global/Button";
+
+import bdMap from "@/app/asset/other-images/bd-map.png";
+import usMap from "@/app/asset/other-images/us-map.png";
 
 const ContactPage = () => {
   const [loading, setLoading] = useState(false);
@@ -67,12 +71,12 @@ const ContactPage = () => {
             together.
           </p>
         </div>
-        <div className="w-full h-full md:h-screen relative  md:!overflow-hidden mx-1 xs:mx-10 md:mx-0 py-10 md:py-0 mb-10 md:mb-20">
-          <div className="w-full h-full flex flex-col md:flex-row items-center justify-around ">
-            <div className=" hidden xl:block">
+        <div className="w-full h-full relative  md:!overflow-hidden mx-1 xs:mx-10 md:mx-0 py-10 md:py-0 mb-10 md:mb-20">
+          <div className="w-full h-full flex flex-col xl:flex-row items-center justify-around ">
+            <div className="">
               <LottieComponent
-                animationData={conatactLottie}
-                className="!w-[250px] xs:!w-[350px] xl:!w-[400px]"
+                animationData={aboutUs}
+                className="!w-[400px] xs:!w-[500px] md:!w-[800px] xl:!w-[600px]"
               />
             </div>
             {!loading && !showEmailSend && !showRightMard && (
@@ -279,34 +283,94 @@ const ContactPage = () => {
               Locations
             </p>
           </div>
-          <div className="w-full h-full py-[10%] flex flex-col md:flex-row gap-5 md:gap-0">
-            <div className="bg-[#ffffff] w-[250px] h-[200px] mr-[5%]">
-              <div className=" "></div>
+          <div className="w-full h-full py-[5%] flex flex-col md:flex-row gap-5 md:gap-0">
+            <div className="bg-[#ffffff]  w-[200px] md:w-[250px]  h-[200px] mr-[5%]">
+              <div className=" w-full h-full flex items-center justify-center ">
+                <Image
+                  src={bdMap}
+                  alt="bd map"
+                  className=" w-[90%]   object-cover"
+                />
+              </div>
             </div>
             <div className="w-full h-full md:h-[200px] flex flex-col md:flex-row gap-10 md:gap-0 justify-between">
               <div className=" w-full md:w-[30%] flex flex-col justify-between gap-10 md:gap-0">
-                <h1 className="text-[40px] md:text-[50px] font-bold leading-[50px]">
+                <h1 className="text-[40px] md:text-[50px] font-bold leading-[50px] ">
                   Bangladesh
                 </h1>
                 <div className=" flex flex-col gap-2">
-                  <h2 className="text-[20px] text-white font-bold ">ADDRESS</h2>
+                  <h2 className="text-[20px] text-[#585555] font-bold ">
+                    ADDRESS
+                  </h2>
                   <p className=" font-bold">
                     MR Center, Block E, House 49, Road 17, Banani, Dhaka 1213
                   </p>
                 </div>
               </div>
               <div className=" w-full md:w-[20%] flex flex-col gap-2 justify-end">
-                <h2 className="text-[20px] text-white font-bold ">CONTACT</h2>
+                <h2 className="text-[20px] text-[#585555] font-bold ">
+                  CONTACT
+                </h2>
                 <div className=" font-bold">
                   <p>info@softozet.com</p>
                   <p>+880 1571-504281</p>
                 </div>
               </div>
               <div className=" w-full md:w-[20%]  flex flex-col gap-2 justify-end">
-                <h2 className="text-[20px] text-white font-bold ">AVAILABLE</h2>
+                <h2 className="text-[20px] text-[#585555] font-bold ">
+                  AVAILABLE
+                </h2>
                 <div className=" font-bold">
                   <p>Sunday - Thursday</p>
                   <p>9AM - 5PM</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="bg-[#3f3d3d] w-full h-[1px]" />
+
+          <div className="w-full h-full mb-[10%] md:mb-0 py-[5%] flex flex-col md:flex-row gap-5 md:gap-0">
+            <div className="bg-[#ffffff]  w-[200px] md:w-[250px]  h-[200px] mr-[5%]">
+              <div className=" w-full h-full flex items-center justify-center ">
+                <Image
+                  src={usMap}
+                  alt="us map"
+                  className=" w-[90%]   object-cover"
+                />
+              </div>
+            </div>
+            <div className="w-full h-full md:h-[200px] flex flex-col md:flex-row gap-10 md:gap-0 justify-between">
+              <div className=" w-full md:w-[30%] flex flex-col justify-between gap-10 md:gap-0">
+                <h1 className=" w-full text-[40px] md:text-[50px] font-bold leading-[50px">
+                  United State
+                </h1>
+                <div className=" flex flex-col gap-2">
+                  <h2 className="text-[20px] text-[#585555] font-bold ">
+                    ADDRESS
+                  </h2>
+                  <p className=" font-bold">
+                    99 Sparrow Dr, Royal Palm Beach, FL 33411, USA
+                  </p>
+                </div>
+              </div>
+              <div className=" w-full md:w-[20%] flex flex-col gap-2 justify-end">
+                <h2 className="text-[20px] text-[#585555] font-bold ">
+                  CONTACT
+                </h2>
+                <div className=" font-bold">
+                  <p>info@softozet.com</p>
+                  <p>+880 1571-504281</p>
+                </div>
+              </div>
+              <div className=" w-full md:w-[20%]  flex flex-col gap-2 justify-end">
+                <h2 className="text-[20px] text-[#585555] font-bold ">
+                  AVAILABLE
+                </h2>
+                <div className=" font-bold">
+                  <p>Not availabe yet</p>
+                  <p>Opening soon</p>
+                  {/* <p>Sunday - Thursday</p>
+                  <p>9AM - 5PM</p> */}
                 </div>
               </div>
             </div>
