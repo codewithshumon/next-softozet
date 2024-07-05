@@ -113,13 +113,13 @@ const LandingSections = () => {
             {count === 6 && (
               <div className="">
                 <LandingText
-                  title="24/7 CALL CENTER"
-                  titleFocus="SERVICE"
-                  boldTextStart="Enhance"
-                  firstLine="your brand's customer Support and Sales."
-                  secondLine="Our experienced Call Center Professionals."
-                  thirdLine="Provide 24/7 exceptional customer experiences that"
-                  fouthLine="leave a lasting impression and generate more sales."
+                  title="APPOINTMENT SETTING"
+                  titleFocus="TELEMARKETING"
+                  boldTextStart="Boost "
+                  firstLine="your sales and customer engagement with our"
+                  secondLine="Appointment Setting and Telemarketing Services."
+                  thirdLine="Leveraging proven strategies and personalized"
+                  fouthLine="approaches to connect you with your target audience."
                 />
               </div>
             )}

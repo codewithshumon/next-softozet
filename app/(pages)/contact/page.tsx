@@ -172,7 +172,9 @@ const ContactPage = () => {
                             Creative Content Design
                           </option>
                           <option value="female">Video Editing</option>
-                          <option value="other">24/7 Call Center</option>
+                          <option value="other">
+                            Telemarketing/Appointment Setting
+                          </option>
                         </select>
                       </div>
 
