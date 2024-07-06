@@ -10,12 +10,16 @@ import ServiceLottie from "@/app/components/servicesPage/ServiceLottie";
 import ServiceButton from "@/app/components/botton/ServiceButton";
 
 import {
+  uiuxService,
   webSingleMan,
   girlMobile,
   socialSecond,
   seoRanking,
   manDesk,
   singleBoyCall,
+  customService,
+  videoSof,
+  videoDesk,
 } from "@/public/svg-animations";
 
 const OurServices = () => {
@@ -74,11 +78,40 @@ const OurServices = () => {
       <div className="relative w-full h-full flex flex-col gap-[100px] ">
         <div className=" w-full">
           <div className=" w-full flex flex-col md:flex-row justify-between gap-[50px]">
-            <div className=" w-1/3 h-[500px] flex flex-col items-center justify-between pb-5 sevice-border mt-[10%] ">
+            <div className=" w-1/3 h-[500px] flex flex-col items-center justify-between pb-5 sevice-border mt-[10%]">
+              <div>
+                <ServiceLottie
+                  animation={uiuxService}
+                  className="!p-2 xs:!p-5 xl:!p-6 !w-[50px] xs:!w-[100px] md:!w-[150px] xl:!w-[250px]"
+                />
+              </div>
+              <div className=" w-[90%] flex flex-col gap-5">
+                <div className="w-full text-center">
+                  <h1 className=" text-[#ffffff] font-extrabold ">
+                    UI/UX DESIGN
+                  </h1>
+                  <p className="text-[#e0dddd]">
+                    Craft intuitive and engaging interfaces for both mobile and
+                    web applications
+                  </p>
+                </div>
+                <div className="w-full ">
+                  <Link
+                    href="/services/web"
+                    // target="_blank"
+                    className="w-full flex items-center justify-center"
+                  >
+                    <ServiceButton />
+                  </Link>
+                </div>
+              </div>
+            </div>
+
+            <div className=" w-1/3 h-[500px] flex flex-col items-center justify-between pb-5 sevice-border mt-[20%] ">
               <div>
                 <ServiceLottie
                   animation={webSingleMan}
-                  className="!p-2 xs:!p-5 xl:!p-6 !w-[50px] xs:!w-[100px] md:!w-[150px] xl:!w-[350px]"
+                  className="!p-2 xs:!p-5 xl:!p-6 !w-[50px] xs:!w-[100px] md:!w-[150px] xl:!w-[300px]"
                 />
               </div>
               <div className=" w-[90%] flex flex-col gap-5">
@@ -102,7 +135,7 @@ const OurServices = () => {
               </div>
             </div>
 
-            <div className="w-1/3 h-[500px] flex flex-col items-center justify-between pb-5 sevice-border mt-[20%] ">
+            <div className="w-1/3 h-[500px] flex flex-col items-center justify-between pb-5 sevice-border mt-[30%] ">
               <div>
                 <ServiceLottie
                   animation={girlMobile}
@@ -121,6 +154,67 @@ const OurServices = () => {
                 <div className="w-full ">
                   <Link
                     href="/services/mobile"
+                    // target="_blank"
+                    className="w-full flex items-center justify-center"
+                  >
+                    <ServiceButton />
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className=" w-full">
+          <div className=" w-full  flex flex-row justify-between gap-[50px]">
+            <div className="w-1/3 h-[500px] flex flex-col items-center justify-between pb-5 sevice-border mt-[10%] overflow-hidden">
+              <div>
+                <ServiceLottie
+                  animation={customService}
+                  className="!p-2 xs:!p-5 xl:!p-6 !w-[50px] xs:!w-[100px] md:!w-[150px] xl:!w-[400px]"
+                />
+              </div>
+              <div className=" w-[90%] flex flex-col gap-5">
+                <div className="w-full text-center">
+                  <h1 className=" text-[#ffffff] font-extrabold ">
+                    CUSTOM SOFTWARE DEVELOPMENT
+                  </h1>
+                  <p className="text-[#e0dddd]">
+                    Tailor-made solutions to meet your unique business needs and
+                    challenges
+                  </p>
+                </div>
+                <div className="w-full ">
+                  <Link
+                    href="/services/seo"
+                    // target="_blank"
+                    className="w-full flex items-center justify-center"
+                  >
+                    <ServiceButton />
+                  </Link>
+                </div>
+              </div>
+            </div>
+            <div className="w-1/3 h-[500px] flex flex-col items-center justify-between pb-5 sevice-border mt-[20%] overflow-hidden">
+              <div>
+                <ServiceLottie
+                  animation={seoRanking}
+                  className="!p-2 xs:!p-5 xl:!p-6 !w-[50px] xs:!w-[100px] md:!w-[150px] xl:!w-[500px]"
+                />
+              </div>
+              <div className=" w-[90%] flex flex-col gap-5">
+                <div className="w-full text-center">
+                  <h1 className=" text-[#ffffff] font-extrabold ">
+                    SEARCH ENGINE OPTIMIZATION
+                  </h1>
+                  <p className="text-[#e0dddd]">
+                    Unlocking Visibility: Tailored SEO Strategies for Your
+                    Online Success.
+                  </p>
+                </div>
+                <div className="w-full ">
+                  <Link
+                    href="/services/seo"
                     // target="_blank"
                     className="w-full flex items-center justify-center"
                   >
@@ -163,36 +257,7 @@ const OurServices = () => {
 
         <div className=" w-full">
           <div className=" w-full  flex flex-row justify-between gap-[50px]">
-            <div className="w-1/3 h-[500px] flex flex-col items-center justify-between pb-5 sevice-border mt-[10%] overflow-hidden">
-              <div>
-                <ServiceLottie
-                  animation={seoRanking}
-                  className="!p-2 xs:!p-5 xl:!p-6 !w-[50px] xs:!w-[100px] md:!w-[150px] xl:!w-[500px]"
-                />
-              </div>
-              <div className=" w-[90%] flex flex-col gap-5">
-                <div className="w-full text-center">
-                  <h1 className=" text-[#ffffff] font-extrabold ">
-                    SEARCH ENGINE OPTIMIZATION
-                  </h1>
-                  <p className="text-[#e0dddd]">
-                    Unlocking Visibility: Tailored SEO Strategies for Your
-                    Online Success.
-                  </p>
-                </div>
-                <div className="w-full ">
-                  <Link
-                    href="/services/seo"
-                    // target="_blank"
-                    className="w-full flex items-center justify-center"
-                  >
-                    <ServiceButton />
-                  </Link>
-                </div>
-              </div>
-            </div>
-
-            <div className="w-1/3 h-[500px] flex flex-col items-center justify-between pb-5 sevice-border mt-[20%] ">
+            <div className="w-1/3 h-[500px] flex flex-col items-center justify-between pb-5 sevice-border mt-[10%] ">
               <div>
                 <ServiceLottie
                   animation={manDesk}
@@ -212,6 +277,34 @@ const OurServices = () => {
                 <div className="w-full ">
                   <Link
                     href="/services/creative"
+                    // target="_blank"
+                    className="w-full flex items-center justify-center"
+                  >
+                    <ServiceButton />
+                  </Link>
+                </div>
+              </div>
+            </div>
+
+            <div className="w-1/3 h-[500px] flex flex-col items-center justify-between pb-5 sevice-border mt-[20%] overflow-hidden">
+              <div>
+                <ServiceLottie
+                  animation={videoSof}
+                  className="!p-2 xs:!p-5 xl:!p-6 !w-[50px] xs:!w-[100px] md:!w-[150px] xl:!w-[300px]"
+                />
+              </div>
+              <div className=" w-[90%] flex flex-col gap-5">
+                <div className="w-full text-center">
+                  <h1 className=" text-[#ffffff] font-extrabold ">
+                    VIDEO EDITING
+                  </h1>
+                  <p className="text-[#e0dddd]">
+                    Transforming raw footage into polished, professional videos
+                  </p>
+                </div>
+                <div className="w-full ">
+                  <Link
+                    href="/services/seo"
                     // target="_blank"
                     className="w-full flex items-center justify-center"
                   >
