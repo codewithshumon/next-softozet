@@ -23,6 +23,16 @@ import callCenter from "./call/call-center.json";
 import girlBoyCall from "./call/girl-boy-call.json";
 import singleBoyCall from "./call/singleBoyCallCenter.json";
 
+import customLanding from "./custom/custom-landing.json";
+import customService from "./custom/custom-service.json";
+
+import uiuxLanding from "./uiux/uiux-landing.json";
+import uiuxService from "./uiux/uiux-service.json";
+
+import videoDesk from "./video/video-desk.json";
+import videoSocial from "./video/video-social.json";
+import videoSof from "./video/video-sof.json";
+
 export {
   webFirst,
   webSingleMan,
@@ -43,4 +53,11 @@ export {
   callCenter,
   girlBoyCall,
   singleBoyCall,
+  customLanding,
+  customService,
+  uiuxLanding,
+  uiuxService,
+  videoDesk,
+  videoSocial,
+  videoSof,
 };

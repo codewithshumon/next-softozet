@@ -10,6 +10,9 @@ import {
   groupSeo,
   graphiDesk,
   callCenter,
+  customLanding,
+  uiuxLanding,
+  videoSocial,
 } from "@/public/svg-animations";
 
 import LandingText from "./HeroText";
@@ -29,7 +32,7 @@ const LandingSections = () => {
 
     const animationTimeout = setTimeout(() => {
       setAnimationIn(false);
-      if (count < 6) {
+      if (count < 9) {
         setCount(count + 1);
       } else {
         setCount(1);
@@ -48,6 +51,19 @@ const LandingSections = () => {
             {count === 1 && (
               <div className="">
                 <LandingText
+                  title="UI/UX DESIGN"
+                  titleFocus="EXCELLENCE"
+                  boldTextStart="Transform "
+                  firstLine="your digital experience"
+                  secondLine="with our cutting-edge UI/UX Design"
+                  thirdLine="Services. crafted to enhance user"
+                  fouthLine="engagement and satisfaction."
+                />
+              </div>
+            )}
+            {count === 2 && (
+              <div className="">
+                <LandingText
                   title="WEB APPLICATION"
                   titleFocus="DEVELOPMENT"
                   boldTextStart="Unlock "
@@ -58,7 +74,7 @@ const LandingSections = () => {
                 />
               </div>
             )}
-            {count === 2 && (
+            {count === 3 && (
               <div className="">
                 <LandingText
                   title="MOBILE APPLICATION"
@@ -71,20 +87,21 @@ const LandingSections = () => {
                 />
               </div>
             )}
-            {count === 3 && (
+            {count === 4 && (
               <div className="">
                 <LandingText
-                  title="SOCIAL MEDIA"
-                  titleFocus="MARKETING"
-                  boldTextStart="Maximize "
-                  firstLine="your online reach & engagement with"
-                  secondLine="our strategic Social Media Marketing services,"
-                  thirdLine="tailored to elevate your brand's visibility and"
-                  fouthLine="drive meaningful interactions with your audience."
+                  title="CUSTOM SOFTWARE"
+                  titleFocus="DEVELOPMENT"
+                  boldTextStart="Empower "
+                  firstLine="your business with tailor-made"
+                  secondLine="solutions through our Custom Software"
+                  thirdLine="Development Services. designed to meet your"
+                  fouthLine="unique needs and drive efficiency."
                 />
               </div>
             )}
-            {count === 4 && (
+
+            {count === 5 && (
               <div className="">
                 <LandingText
                   title="SEARCH ENGINE"
@@ -97,7 +114,20 @@ const LandingSections = () => {
                 />
               </div>
             )}
-            {count === 5 && (
+            {count === 6 && (
+              <div className="">
+                <LandingText
+                  title="SOCIAL MEDIA"
+                  titleFocus="MARKETING"
+                  boldTextStart="Maximize "
+                  firstLine="your online reach & engagement with"
+                  secondLine="our strategic Social Media Marketing services,"
+                  thirdLine="tailored to elevate your brand's visibility and"
+                  fouthLine="drive meaningful interactions with your audience."
+                />
+              </div>
+            )}
+            {count === 7 && (
               <div className="">
                 <LandingText
                   title="CREATIVE CONTENT"
@@ -110,16 +140,30 @@ const LandingSections = () => {
                 />
               </div>
             )}
-            {count === 6 && (
+            {count === 8 && (
+              <div className="">
+                <LandingText
+                  title="VIDEO EDITING"
+                  titleFocus="EXCELLENCE"
+                  boldTextStart="Transform "
+                  firstLine="your content with our expert"
+                  secondLine="Video Editing Services. crafted to"
+                  thirdLine="engage and captivate your audience,"
+                  fouthLine="elevating your brand’s visual impact."
+                />
+              </div>
+            )}
+
+            {count === 9 && (
               <div className="">
                 <LandingText
                   title="APPOINTMENT SETTING"
-                  titleFocus="TELEMARKETING"
+                  titleFocus="AND TELEMARKETING"
                   boldTextStart="Boost "
-                  firstLine="your sales and customer engagement with our"
-                  secondLine="Appointment Setting and Telemarketing Services."
-                  thirdLine="Leveraging proven strategies and personalized"
-                  fouthLine="approaches to connect you with your target audience."
+                  firstLine="your sales and customer engagement"
+                  secondLine="with our professional Appointment Setting"
+                  thirdLine="and Telemarketing Services. tailored to"
+                  fouthLine="drive conversions and grow your business."
                 />
               </div>
             )}
@@ -134,12 +178,12 @@ const LandingSections = () => {
               >
                 {count === 1 && (
                   <div
-                    className={`${styles.rightInOut} ${styles.lottieContainer} `}
+                    className={`${styles.rightInOut} ${styles.lottieBigContainer} `}
                   >
                     <Lottie
-                      animationData={webFirst}
+                      animationData={uiuxLanding}
                       loop={true}
-                      className="!w-[300px] xs:!w-[400px] md:!w-[600px]"
+                      className="!w-[200px] xs:!w-[300px] md:!w-[450px] xl:!w-[550px]"
                     />
                   </div>
                 )}
@@ -154,9 +198,9 @@ const LandingSections = () => {
                     className={`${styles.rightInOut} ${styles.lottieContainer} `}
                   >
                     <Lottie
-                      animationData={mobileFirst}
+                      animationData={webFirst}
                       loop={true}
-                      className="!w-[250px] xs:!w-[350px] md:!w-[500px]"
+                      className="!w-[250px] xs:!w-[350px] md:!w-[500px] xl:!w-[600px]"
                     />
                   </div>
                 )}
@@ -168,12 +212,12 @@ const LandingSections = () => {
               >
                 {count === 3 && (
                   <div
-                    className={`${styles.rightInOut} ${styles.lottieBigContainer} `}
+                    className={`${styles.rightInOut} ${styles.lottieContainer} `}
                   >
                     <Lottie
-                      animationData={socialFirst}
+                      animationData={mobileFirst}
                       loop={true}
-                      className="!w-[250px] xs:!w-[350px] md:!w-[550px]"
+                      className="!w-[200px] xs:!w-[300px] md:!w-[400px] xl:!w-[500px]"
                     />
                   </div>
                 )}
@@ -185,16 +229,17 @@ const LandingSections = () => {
               >
                 {count === 4 && (
                   <div
-                    className={`${styles.rightInOut} ${styles.lottieContainer}`}
+                    className={`${styles.rightInOut} ${styles.lottieBigContainer} `}
                   >
                     <Lottie
-                      animationData={groupSeo}
+                      animationData={customLanding}
                       loop={true}
-                      className="!w-[250px] xs:!w-[350px] md:!w-[550px]"
+                      className="!w-[150px] xs:!w-[250px] md:!w-[350px] xl:!w-[450px]"
                     />
                   </div>
                 )}
               </div>
+
               <div
                 className={`${
                   animationIn ? styles.animateRight : "opacity-0"
@@ -202,12 +247,12 @@ const LandingSections = () => {
               >
                 {count === 5 && (
                   <div
-                    className={`${styles.rightInOut} ${styles.lottieBigContainer} `}
+                    className={`${styles.rightInOut} ${styles.lottieContainer}`}
                   >
                     <Lottie
-                      animationData={graphiDesk}
+                      animationData={groupSeo}
                       loop={true}
-                      className="!w-[250px] xs:!w-[350px] md:!w-[450px]"
+                      className="!w-[200px] xs:!w-[300px] md:!w-[500px] xl:!w-[550px]"
                     />
                   </div>
                 )}
@@ -223,9 +268,62 @@ const LandingSections = () => {
                     className={`${styles.rightInOut} ${styles.lottieBigContainer} `}
                   >
                     <Lottie
+                      animationData={socialFirst}
+                      loop={true}
+                      className="!w-[200px] xs:!w-[300px] md:!w-[450px] xl:!w-[550px]"
+                    />
+                  </div>
+                )}
+              </div>
+
+              <div
+                className={`${
+                  animationIn ? styles.animateRight : "opacity-0"
+                } `}
+              >
+                {count === 7 && (
+                  <div
+                    className={`${styles.rightInOut} ${styles.lottieBigContainer} `}
+                  >
+                    <Lottie
+                      animationData={graphiDesk}
+                      loop={true}
+                      className="!w-[200px] xs:!w-[300px] md:!w-[400px] xl:!w-[450px]"
+                    />
+                  </div>
+                )}
+              </div>
+
+              <div
+                className={`${
+                  animationIn ? styles.animateRight : "opacity-0"
+                } `}
+              >
+                {count === 8 && (
+                  <div
+                    className={`${styles.rightInOut} ${styles.lottieBigContainer} `}
+                  >
+                    <Lottie
+                      animationData={videoSocial}
+                      loop={true}
+                      className="!w-[200px] xs:!w-[300px] md:!w-[500px] xl:!w-[550px]"
+                    />
+                  </div>
+                )}
+              </div>
+              <div
+                className={`${
+                  animationIn ? styles.animateRight : "opacity-0"
+                } `}
+              >
+                {count === 9 && (
+                  <div
+                    className={`${styles.rightInOut} ${styles.lottieBigContainer} `}
+                  >
+                    <Lottie
                       animationData={callCenter}
                       loop={true}
-                      className="!w-[250px] xs:!w-[350px] md:!w-[550px]"
+                      className="!w-[200px] xs:!w-[300px] md:!w-[500px] xl:!w-[550px]"
                     />
                   </div>
                 )}
