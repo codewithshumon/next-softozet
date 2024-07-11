@@ -82,7 +82,7 @@ const ContactPage = () => {
             {!loading && !showEmailSend && !showRightMard && (
               <div className="">
                 <form className="w-full h-full flex flex-col items-center text-white font-semibold md:font-bold ">
-                  <div className=" w-full h-full flex flex-col space-y-2 ">
+                  <div className=" w-[80%] xs:w-full h-full flex flex-col space-y-2 ">
                     <div className="w-full h-full flex flex-col gap-2">
                       <label htmlFor="email" className="">
                         Full Name*
@@ -93,7 +93,7 @@ const ContactPage = () => {
                         value={formData.name}
                         onChange={handleInpurChange}
                         placeholder="Ex. John Doe"
-                        className="py-1 px-2 text-gray-700 md:py-2 md:px-4 rounded-full outline-emerald-500"
+                        className=" text-gray-700 py-2 px-4 rounded-full outline-emerald-500"
                         required
                       />
                     </div>
@@ -107,12 +107,12 @@ const ContactPage = () => {
                         value={formData.name}
                         onChange={handleInpurChange}
                         placeholder="Ex. Tesla Inc."
-                        className="py-1 px-2 text-gray-700 md:py-2 md:px-4 rounded-full outline-emerald-500"
+                        className=" text-gray-700 py-2 px-4 rounded-full outline-emerald-500"
                         required
                       />
                     </div>
                     <div className=" w-full flex flex-col md:flex-row gap-2 xs:gap-5 ">
-                      <div className="w-full h-full flex flex-col gap-2">
+                      <div className="w-full md:w-[150%] h-full flex flex-col gap-2">
                         <label htmlFor="email" className="">
                           Email*
                         </label>
@@ -122,7 +122,7 @@ const ContactPage = () => {
                           value={formData.email}
                           onChange={handleInpurChange}
                           placeholder="name@example.com"
-                          className="py-1 px-2 text-gray-700 md:py-2 md:px-4 rounded-full outline-emerald-500"
+                          className=" text-gray-700 py-2 px-4 rounded-full outline-emerald-500"
                         />
                       </div>
 
@@ -136,13 +136,13 @@ const ContactPage = () => {
                           value={formData.number === 0 ? "" : formData.number}
                           onChange={handleInpurChange}
                           placeholder="+1 XXXXXXXXXX"
-                          className="py-1 px-2 text-gray-700 md:py-2 md:px-4 rounded-full outline-emerald-500"
+                          className=" text-gray-700 py-2 px-4 rounded-full outline-emerald-500"
                           required
                         />
                       </div>
                     </div>
                     <div className=" w-full flex flex-col md:flex-row gap-2 xs:gap-5 ">
-                      <div className="w-full h-full flex flex-col gap-2 ">
+                      <div className="w-full md:w-[150%] h-full flex flex-col gap-2 ">
                         <label htmlFor="email" className="">
                           Service required*
                         </label>
@@ -150,7 +150,7 @@ const ContactPage = () => {
                           name="name"
                           value={formData.name}
                           onChange={handleInpurChange}
-                          className="py-1 px-2 text-gray-700 md:py-2 md:px-4 rounded-full outline-emerald-500"
+                          className=" text-gray-700 py-2 px-4 rounded-full outline-emerald-500"
                           required
                         >
                           <option value="">Select Your Service</option>
@@ -188,7 +188,7 @@ const ContactPage = () => {
                           value={formData.number === 0 ? "" : formData.number}
                           onChange={handleInpurChange}
                           placeholder="Ex. $10K - $20K"
-                          className="py-1 px-2 text-gray-700 md:py-2 md:px-4 rounded-full outline-emerald-500"
+                          className=" text-gray-700 py-2 px-4 rounded-full outline-emerald-500"
                           required
                         />
                       </div>
@@ -205,7 +205,7 @@ const ContactPage = () => {
                         rows={5}
                         id="message"
                         placeholder="Tell us more about your idea...."
-                        className="text-gray-700 py-1 px-2 md:py-2 md:px-4 rounded-2xl outline-emerald-500"
+                        className="text-gray-700  py-2 px-4 rounded-2xl outline-emerald-500"
                         required
                       />
                     </div>
