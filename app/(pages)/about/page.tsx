@@ -7,13 +7,59 @@ import ProjectIdea from "@/app/components/global/ProjectIdea";
 const AboutePage = () => {
   return (
     <div className="w-full h-full bg-primaryDarkcolor ">
-      <div className=" w-full h-full bg-primaryColor">
-        <div className="container flex items-center justify-center">
-          <Lottie
-            animationData={aboutUs}
-            loop={true}
-            className="!w-[600px]  md:!w-[1050px] "
-          />
+      <div className=" w-full h-full bg-[#188f65]">
+        <div className="container flex flex-col gap-10">
+          <div className="mt-[40%] xs:mt-[25%] md:mt-[15%]">
+            <h1 className="text-[40px] md:text-[100px] font-extrabold leading-none">
+              Innovating Success
+            </h1>
+            <p className="text-white text-[30px] md:text-[100px] font-bold mt-[-10px] md:mt-[-20px]">
+              <span className="text-[#000000] leading-none px-5">—</span>
+              Transforming Visions..
+            </p>
+          </div>
+          <div className=" flex items-center justify-center">
+            <Lottie
+              animationData={aboutUs}
+              loop={true}
+              className="!w-[600px]  md:!w-[1050px] "
+            />
+          </div>
+        </div>
+      </div>
+
+      <div className=" w-full h-full">
+        <div className="container flex flex-col py-20">
+          <div className=" w-full h-full flex items-center justify-center ">
+            <div className="w-[90%] flex flex-col items-center justify-center text-white my-20">
+              <h2 className="w-full text-center text-[25px] xs:text-[35px] md:text-[55px] xl:text-[100px] font-extrabold">
+                SOFTOZET LIMITED
+              </h2>
+              <span className="text-[#7D7D82] w-full text-center text-[25px] xs:text-[35px] md:text-[55px] xl:text-[70px] font-bold leading-[30px] xs:leading-[50px] md:leading-[80px]">
+                Empowering Growth Through Dedication & Innovation
+              </span>
+            </div>
+          </div>
+
+          <div className=" w-full h-full flex flex-col items-center">
+            <div className="w-[80%] flex flex-col items-center gap-10 text-[#8F8F92] text-[25px]">
+              <p className="">
+                TAF Technology is a design and development company based in
+                Bangladesh, specializing in website design and development using
+                WordPress. Our expertise extends to creating eCommerce websites
+                built on the WooCommerce platform, providing our clients with
+                simple, corporate, affordable, and effective solutions.
+              </p>
+              <p>
+                With a dedicated team of experts in web development sectors, TAF
+                Technology is committed to delivering quick and high-quality
+                solutions tailored to the specific needs of our clients. Our
+                team stays up-to-date with the latest industry trends and
+                technologies, ensuring that our services are always in line with
+                current best practices.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
 

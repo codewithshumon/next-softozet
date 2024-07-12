@@ -62,16 +62,16 @@ const ContactPage = () => {
   return (
     <div className=" w-full h-full  bg-[#eeb02c] ">
       <div className="container flex flex-col ">
-        <div className="mt-[25%] md:mt-[10%]">
+        <div className=" mt-[40%] xs:mt-[25%] md:mt-[15%]">
           <h1 className="text-[40px] md:text-[100px] font-extrabold leading-none">
             Let’s work
           </h1>
           <p className="text-white text-[30px] md:text-[100px] font-bold mt-[-10px] md:mt-[-20px]">
-            <span className="text-[#97979B] leading-none px-5">—</span>
+            <span className="text-[#000000] leading-none px-5">—</span>
             together.
           </p>
         </div>
-        <div className="w-full h-full relative  md:!overflow-hidden mx-1 xs:mx-10 md:mx-0 py-10 md:py-0 mb-10 md:mb-20">
+        <div className="w-full h-full relative md:!overflow-hidden mx-1 xs:mx-10 md:mx-0 py-10 md:py-0 mb-10 md:mb-20">
           <div className="w-full h-full flex flex-col xl:flex-row items-center justify-around ">
             <div className="">
               <LottieComponent
