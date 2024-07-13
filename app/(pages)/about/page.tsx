@@ -5,17 +5,21 @@ import aboutUs from "@/public/about-us.json";
 import ProjectIdea from "@/app/components/global/ProjectIdea";
 
 const AboutePage = () => {
+  // const currentYear = new Date().getFullYear();
+  // const startYear = 2020;
+  // const duration = `${startYear} - ${currentYear}`;
+
   return (
     <div className="w-full h-full bg-primaryDarkcolor ">
       <div className=" w-full h-full bg-[#188f65]">
-        <div className="container flex flex-col gap-10">
+        <div className="container flex flex-col gap-10 ">
           <div className="mt-[40%] xs:mt-[25%] md:mt-[15%]">
             <h1 className="text-[40px] md:text-[100px] font-extrabold leading-none">
-              Innovating Success
+              Accelerating
             </h1>
             <p className="text-white text-[30px] md:text-[100px] font-bold mt-[-10px] md:mt-[-20px]">
               <span className="text-[#000000] leading-none px-5">—</span>
-              Transforming Visions..
+              Business Growth..
             </p>
           </div>
           <div className=" flex items-center justify-center">
@@ -42,21 +46,30 @@ const AboutePage = () => {
           </div>
 
           <div className=" w-full h-full flex flex-col items-center">
-            <div className="w-[80%] flex flex-col items-center gap-10 text-[#8F8F92] text-[25px]">
+            <div className="w-[80%] flex flex-col items-center gap-20 text-[#8F8F92] text-[25px]">
               <p className="">
-                TAF Technology is a design and development company based in
-                Bangladesh, specializing in website design and development using
-                WordPress. Our expertise extends to creating eCommerce websites
-                built on the WooCommerce platform, providing our clients with
-                simple, corporate, affordable, and effective solutions.
+                At SOFTOZET Limited, {new Date().getFullYear() - 2020} years
+                back our journey is fired by passion. The secret to our
+                innovation and success? It&apos;s the fusion of relentless
+                dedication, a heart that beats for design, development, and
+                Marketing. We are an innovative 360° digital marketing and
+                software design & development company based in Bangladesh.
               </p>
               <p>
-                With a dedicated team of experts in web development sectors, TAF
-                Technology is committed to delivering quick and high-quality
+                With a dedicated team of experts in web development, Softozet
+                Limited is committed to delivering quick and high-quality
                 solutions tailored to the specific needs of our clients. Our
                 team stays up-to-date with the latest industry trends and
                 technologies, ensuring that our services are always in line with
                 current best practices.
+              </p>
+              <p>
+                At Softozet Limited, we pride ourselves on our dedication to
+                excellence and our innovative approach to web development. Our
+                commitment to ethical practices, clear communication, and
+                reliable results has been the foundation of our success,
+                fostering lasting relationships with our clients and driving
+                continuous growth.
               </p>
             </div>
           </div>
