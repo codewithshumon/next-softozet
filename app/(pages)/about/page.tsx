@@ -14,11 +14,11 @@ const AboutePage = () => {
       <div className=" w-full h-full bg-[#188f65]">
         <div className="container flex flex-col gap-10 ">
           <div className="mt-[40%] xs:mt-[25%] md:mt-[15%]">
-            <h1 className="text-[40px] md:text-[100px] font-extrabold leading-none">
+            <h1 className="text-[40px] text-[#ffffff] md:text-[100px] font-extrabold leading-none">
               Accelerating
             </h1>
-            <p className="text-white text-[30px] md:text-[100px] font-bold mt-[-10px] md:mt-[-20px]">
-              <span className="text-[#000000] leading-none px-5">—</span>
+            <p className="text-[#6ee935] text-[30px] md:text-[100px] font-bold mt-[-10px] md:mt-[-20px]">
+              <span className="text-[#ffffff] leading-none px-5">—</span>
               Business Growth..
             </p>
           </div>
