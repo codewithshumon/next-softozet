@@ -14,8 +14,8 @@ const AboutePage = () => {
 
   return (
     <div className="w-full h-full bg-primaryDarkcolor ">
-      <div className=" w-full h-full bg-[#188f65]">
-        <div className="container flex flex-col gap-10 ">
+      <div className=" w-full h-full ">
+        <div className="container flex flex-col gap-10 bg-[#171718]">
           <div className="mt-[40%] xs:mt-[25%] md:mt-[15%]">
             <h1 className="text-[40px] text-[#ffffff] md:text-[100px] font-extrabold leading-none">
               Accelerating

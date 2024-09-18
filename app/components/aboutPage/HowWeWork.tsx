@@ -1,4 +1,7 @@
+import Image from "next/image";
 import React from "react";
+
+import projectKickoff from "../../asset/other-images/howWeWork/project-kickoff.png";
 
 interface ServiceTextProps {
   title: string;
@@ -8,9 +11,9 @@ interface ServiceTextProps {
 
 const HowWeWork: React.FC<ServiceTextProps> = ({ title, subTitle, text }) => {
   return (
-    <div className=" h-screen w-full">
+    <div className=" h-full w-full">
       <div className=" w-full h-full flex flex-col">
-        <div className=" w-full h-[50%] bg-white">
+        <div className=" w-full h-[50%] bg-white py-10">
           <div className=" w-full h-full flex flex-row">
             <div className="w-[50%] h-full ">
               <div className="text-[#000000] text-[5em] flex flex-col font-extrabold">
@@ -27,26 +30,34 @@ const HowWeWork: React.FC<ServiceTextProps> = ({ title, subTitle, text }) => {
             </div>
           </div>
         </div>
-        <div className=" w-full h-[50%] flex flex-row">
-          <div className="w-[50%] h-full bg-blue-400">
+        <div className=" w-full h-[50%] flex flex-col py-[4%] px-3 gap-5  bg-white">
+          <div className="w-full h-full rounded-full border-[1px] border-[#171718]hover: border-[#22C55E]">
+            <div className=" w-full h-full flex flex-col gap-5 items-center justify-center ">
+              <div className=" w-[30%]  ">
+                <Image
+                  src={projectKickoff}
+                  alt="Project kickoff image"
+                  className="h-[100%]"
+                />
+              </div>
+              <div>
+                <p>Project kickoff</p>
+              </div>
+            </div>
+          </div>
+          <div className="w-full h-full bg-red-400">
             <div>img</div>
             <div>
               <p>Project kickoff</p>
             </div>
           </div>
-          <div className="w-[50%] h-full bg-red-400">
+          <div className="w-full h-full bg-red-400">
             <div>img</div>
             <div>
               <p>Project kickoff</p>
             </div>
           </div>
-          <div className="w-[50%] h-full bg-red-400">
-            <div>img</div>
-            <div>
-              <p>Project kickoff</p>
-            </div>
-          </div>
-          <div className="w-[50%] h-full bg-red-400">
+          <div className="w-full h-full bg-red-400">
             <div>img</div>
             <div>
               <p>Project kickoff</p>
