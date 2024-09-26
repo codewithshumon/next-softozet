@@ -30,18 +30,24 @@ const HowWeWork: React.FC<ServiceTextProps> = ({ title, subTitle, text }) => {
             </div>
           </div>
         </div>
-        <div className=" w-full h-[50%] flex flex-col py-[4%] px-3 gap-5  bg-white">
-          <div className="w-full h-full rounded-full border-[1px] border-[#171718]hover: border-[#22C55E]">
-            <div className=" w-full h-full flex flex-col gap-5 items-center justify-center ">
+        <div className="w-full h-full flex flex-col py-[4%] px-3 gap-5 bg-white">
+          <div className="w-full h-full flex flex-col">
+            <div className=" w-full h-[90vh] flex flex-col gap-5 items-center justify-center ">
+              <div className=" w-full h-[70%] bg-yellow-300 rounded-md border-[1px] border-[#171718]hover: border-[#22C55E]"></div>
               <div className=" w-[30%]  ">
-                <Image
-                  src={projectKickoff}
+                {/* <Image
+                  src={}
                   alt="Project kickoff image"
                   className="h-[100%]"
-                />
+                /> */}
               </div>
-              <div>
-                <p>Project kickoff</p>
+            </div>
+            <div className="w-full h-[60vh] flex flex-row gap-10">
+              <div className=" w-full h-full">
+                <div className="w-[50%] h-[80%] bg-green-500"></div>
+              </div>
+              <div className=" w-full h-full">
+                <div className="w-[50%] h-[80%] bg-red-500"></div>
               </div>
             </div>
           </div>
