@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 
 import development from "../../asset/other-svg/howWeWork/development.svg";
+import OurProcessCard from "./OurProcessCard";
 
 interface ServiceTextProps {
   title: string;
@@ -70,37 +71,34 @@ const HowWeWork: React.FC<ServiceTextProps> = ({ title, subTitle, text }) => {
                 </div>
               </div>
               <div className=" w-full h-full">
-                <div className="w-[50%] h-[100%] bg-red-500">
-                  <div>
-                    <div>
-                      <Image src={development} alt="development" />
-                    </div>
-                    <h2>Research & Planning</h2>
-                  </div>
-                </div>
+                <OurProcessCard
+                  title="Research & Planning"
+                  image={development}
+                  text="After partnering with us, you will meet our UX and
+                    technology experts who will dig into your business, discuss
+                    the scope of the challenge, and offer the most suitable
+                    technological solutions as per your requirement."
+                />
               </div>
             </div>
           </div>
           <div className="w-full h-full flex flex-col">
             <div className=" w-full h-[90vh] flex flex-col gap-5 items-center justify-center ">
               <div className=" w-full h-[70%] bg-yellow-300 rounded-md border-[1px] border-[#171718]hover: border-[#22C55E]"></div>
-              <div className=" w-[30%]  ">
-                {/* <Image
-                  src={}
-                  alt="Project kickoff image"
-                  className="h-[100%]"
-                /> */}
-              </div>
             </div>
             <div className="w-full h-[90vh] flex flex-row gap-10 mt-[-50vh] ml-[5vw] ">
               <div className=" w-full h-full">
-                <div className="w-[50%] h-[100%] bg-red-500">
-                  <div>
-                    <div>
-                      <Image src={development} alt="development" />
-                    </div>
+                <div className="w-[50%] h-[100%]  flex flex-col justify-between">
+                  <div className=" flex flex-col gap-2">
+                    <Image src={development} alt="development" />
                     <h2>Research & Planning</h2>
                   </div>
+                  <p>
+                    After partnering with us, you will meet our UX and
+                    technology experts who will dig into your business, discuss
+                    the scope of the challenge, and offer the most suitable
+                    technological solutions as per your requirement.
+                  </p>
                 </div>
               </div>
               <div className=" w-full h-full">
