@@ -1,8 +1,14 @@
-import Image from "next/image";
 import React from "react";
 
 import development from "../../asset/other-svg/howWeWork/development.svg";
+import planning from "../../asset/other-svg/howWeWork/planning.svg";
+import maintanance from "../../asset/other-svg/howWeWork/maintanance.svg";
+import service from "../../asset/other-svg/howWeWork/service.svg";
+import strategy from "../../asset/other-svg/howWeWork/strategy.svg";
+import userExperrionce from "../../asset/other-svg/howWeWork/userExperrionce.svg";
+
 import OurProcessCard from "./OurProcessCard";
+import OurProcessList from "./OurProcessList";
 
 interface ServiceTextProps {
   title: string;
@@ -11,6 +17,62 @@ interface ServiceTextProps {
 }
 
 const HowWeWork: React.FC<ServiceTextProps> = ({ title, subTitle, text }) => {
+  const planningItems = [
+    "Workshops",
+    "Consulting",
+    "Project Planning",
+    "Concept",
+    "Research",
+    "Expectations Setting",
+  ];
+
+  const strategyItems = [
+    "Persona Development",
+    "Brand Personalization",
+    "Prototyping",
+    "Stakeholder Alignment",
+    "Information Architecture",
+    "Information Flow",
+  ];
+
+  const userExperienceItems = [
+    "Art Direction",
+    "Visual Moodboards",
+    "Content Flow Design",
+    "Digital Identity",
+    "UI Design",
+    "Interaction Design",
+  ];
+
+  const developmentItems = [
+    "Website Development",
+    "Front-End Development",
+    "Mobile Development",
+    "Optimization",
+    "Physical Installations",
+    "Back-End Development",
+    "Platform Integration",
+    "Deployment",
+  ];
+
+  const qualityItems = [
+    "Usability Testing",
+    "System Testing",
+    "Security Testing",
+    "Functionality Testing",
+    "Performance Testing",
+    "Integration Testing",
+  ];
+
+  const maintananceItems = [
+    "Post Deployment Support",
+    "Security",
+    "On Demand Development",
+    "Monthly Maintenance",
+    "Performance Optimization",
+    "Technical Consultancy",
+  ];
+
   return (
     <div className=" h-full w-full">
       <div className=" w-full h-full flex flex-col">
@@ -31,49 +93,20 @@ const HowWeWork: React.FC<ServiceTextProps> = ({ title, subTitle, text }) => {
             </div>
           </div>
         </div>
+
         <div className="w-full h-full flex flex-col py-[4%] px-3 gap-5 bg-[#f0f0f3]">
           <div className="w-full h-full flex flex-col">
             <div className=" w-full h-[90vh] flex flex-col gap-5 items-center justify-center ">
               <div className=" w-full h-[70%] bg-yellow-300 rounded-md border-[1px] border-[#171718]hover: border-[#22C55E]"></div>
-              <div className=" w-[30%]  ">
-                {/* <Image
-                  src={}
-                  alt="Project kickoff image"
-                  className="h-[100%]"
-                /> */}
-              </div>
             </div>
             <div className="w-full h-[90vh] flex flex-row gap-10 mt-[-50vh] ml-[5vw] ">
               <div className=" w-full h-full">
-                <div className="w-[50%] h-[100%] ">
-                  <div className=" w-[120%] h-full bg-white">
-                    <ul className=" w-full h-full py-20 px-16 flex flex-col gap-3">
-                      <li className="py-2 border-b-[1px] border-gray-200">
-                        <span>Workshops</span>
-                      </li>
-                      <li className="py-2 border-b-[1px] border-gray-200">
-                        <span>Consulting</span>
-                      </li>
-                      <li className="py-2 border-b-[1px] border-gray-200">
-                        <span>Project Planning</span>
-                      </li>
-                      <li className="py-2 border-b-[1px] border-gray-200">
-                        <span>Concept</span>
-                      </li>
-                      <li className="py-2 border-b-[1px] border-gray-200">
-                        <span>Research</span>
-                      </li>
-                      <li className="py-2 border-b-[1px] border-gray-200">
-                        <span>Expectations Setting</span>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
+                <OurProcessList items={planningItems} />
               </div>
               <div className=" w-full h-full">
                 <OurProcessCard
                   title="Research & Planning"
-                  image={development}
+                  image={planning}
                   text="After partnering with us, you will meet our UX and
                     technology experts who will dig into your business, discuss
                     the scope of the challenge, and offer the most suitable
@@ -82,69 +115,25 @@ const HowWeWork: React.FC<ServiceTextProps> = ({ title, subTitle, text }) => {
               </div>
             </div>
           </div>
+
           <div className="w-full h-full flex flex-col">
             <div className=" w-full h-[90vh] flex flex-col gap-5 items-center justify-center ">
               <div className=" w-full h-[70%] bg-yellow-300 rounded-md border-[1px] border-[#171718]hover: border-[#22C55E]"></div>
             </div>
             <div className="w-full h-[90vh] flex flex-row gap-10 mt-[-50vh] ml-[5vw] ">
               <div className=" w-full h-full">
-                <div className="w-[50%] h-[100%]  flex flex-col justify-between">
-                  <div className=" flex flex-col gap-2">
-                    <Image src={development} alt="development" />
-                    <h2>Research & Planning</h2>
-                  </div>
-                  <p>
-                    After partnering with us, you will meet our UX and
+                <OurProcessCard
+                  title="Research & Planning"
+                  image={strategy}
+                  text="After partnering with us, you will meet our UX and
                     technology experts who will dig into your business, discuss
                     the scope of the challenge, and offer the most suitable
-                    technological solutions as per your requirement.
-                  </p>
-                </div>
+                    technological solutions as per your requirement."
+                />
               </div>
               <div className=" w-full h-full">
-                <div className="w-[50%] h-[100%] ">
-                  <div className=" w-[120%] h-full bg-white">
-                    <ul className=" w-full h-full py-20 px-16 flex flex-col gap-3">
-                      <li className="py-2 border-b-[1px] border-gray-200">
-                        <span>Workshops</span>
-                      </li>
-                      <li className="py-2 border-b-[1px] border-gray-200">
-                        <span>Consulting</span>
-                      </li>
-                      <li className="py-2 border-b-[1px] border-gray-200">
-                        <span>Project Planning</span>
-                      </li>
-                      <li className="py-2 border-b-[1px] border-gray-200">
-                        <span>Concept</span>
-                      </li>
-                      <li className="py-2 border-b-[1px] border-gray-200">
-                        <span>Research</span>
-                      </li>
-                      <li className="py-2 border-b-[1px] border-gray-200">
-                        <span>Expectations Setting</span>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
+                <OurProcessList items={strategyItems} />
               </div>
-            </div>
-          </div>
-          <div className="w-full h-full bg-red-400">
-            <div>img</div>
-            <div>
-              <p>Project kickoff</p>
-            </div>
-          </div>
-          <div className="w-full h-full bg-red-400">
-            <div>img</div>
-            <div>
-              <p>Project kickoff</p>
-            </div>
-          </div>
-          <div className="w-full h-full bg-red-400">
-            <div>img</div>
-            <div>
-              <p>Project kickoff</p>
             </div>
           </div>
         </div>
