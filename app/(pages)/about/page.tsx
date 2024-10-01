@@ -1,7 +1,7 @@
 "use client";
 
 import Lottie from "lottie-react";
-import aboutUs from "@/public/about-us.json";
+import businessGrowth from "@/public/business-growth.json";
 import ProjectIdea from "@/app/components/global/ProjectIdea";
 import WhyUnique from "@/app/components/aboutPage/WhyUnique";
 import HowWeWork from "@/app/components/aboutPage/HowWeWork";
@@ -15,21 +15,21 @@ const AboutePage = () => {
   return (
     <div className="w-full h-full bg-primaryDarkcolor ">
       <div className=" w-full h-full ">
-        <div className="container flex flex-col gap-10 bg-[#171718]">
-          <div className="mt-[40%] xs:mt-[25%] md:mt-[15%]">
-            <h1 className="text-[40px] text-[#ffffff] md:text-[100px] font-extrabold leading-none">
+        <div className="container flex flex-col bg-[#171718]">
+          <div className="mt-[30%] xs:mt-[20%] md:mt-[10%] flex flex-col gap-5">
+            <h1 className="text-[30px] text-[#ffffff] md:text-[80px] font-extrabold leading-none">
               Accelerating
             </h1>
-            <p className="text-[#6ee935] text-[30px] md:text-[100px] font-bold mt-[-10px] md:mt-[-20px]">
+            <p className="text-[#6ee935] text-[25px] md:text-[70px] font-bold mt-[-10px] md:mt-[-20px]">
               <span className="text-[#ffffff] leading-none px-5">—</span>
               Business Growth..
             </p>
           </div>
           <div className=" flex items-center justify-center">
             <Lottie
-              animationData={aboutUs}
+              animationData={businessGrowth}
               loop={true}
-              className="!w-[600px]  md:!w-[1050px] "
+              className="!w-[400px]  md:!w-[600px] "
             />
           </div>
         </div>
