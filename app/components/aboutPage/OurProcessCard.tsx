@@ -13,7 +13,7 @@ const OurProcessCard: React.FC<OurProcessCardProps> = ({
   text,
 }) => {
   return (
-    <div className="w-[50%] h-[100%] flex flex-col justify-between">
+    <div className="w-[50%] h-[100%] flex flex-col justify-around">
       <div className="flex flex-col gap-2">
         {typeof image === "string" || "src" in image ? (
           <Image src={image as StaticImageData} alt={title} />
@@ -22,7 +22,7 @@ const OurProcessCard: React.FC<OurProcessCardProps> = ({
             image as React.ComponentType<React.SVGProps<SVGSVGElement>>
           )
         )}
-        <h2>{title}</h2>
+        <h2 className="uppercase">{title}</h2>
       </div>
       <p>{text}</p>
     </div>
