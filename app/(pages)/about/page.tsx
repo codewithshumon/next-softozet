@@ -6,6 +6,7 @@ import ProjectIdea from "@/app/components/global/ProjectIdea";
 import WhyUnique from "@/app/components/aboutPage/WhyUnique";
 import HowWeWork from "@/app/components/aboutPage/HowWeWork";
 import CompanyDetails from "@/app/components/aboutPage/CompanyDetails";
+import CarrerAbout from "@/app/components/aboutPage/CarrerAbout";
 
 const AboutePage = () => {
   // const currentYear = new Date().getFullYear();
@@ -45,6 +46,10 @@ const AboutePage = () => {
 
       <div className=" w-full h-full">
         <WhyUnique />
+      </div>
+
+      <div className=" w-full h-full">
+        <CarrerAbout />
       </div>
 
       <div className=" w-full h-full bg-purpleColor">

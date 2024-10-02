@@ -101,7 +101,11 @@ const OurServices = () => {
                     // target="_blank"
                     className="w-full flex items-center justify-center"
                   >
-                    <ServiceButton />
+                    <ServiceButton
+                      borderColor="#03EB64"
+                      buttonArrowColor="white"
+                      textColor="white"
+                    />
                   </Link>
                 </div>
               </div>
@@ -129,7 +133,11 @@ const OurServices = () => {
                     // target="_blank"
                     className="w-full flex items-center justify-center"
                   >
-                    <ServiceButton />
+                    <ServiceButton
+                      borderColor="#03EB64"
+                      buttonArrowColor="white"
+                      textColor="white"
+                    />
                   </Link>
                 </div>
               </div>
@@ -157,7 +165,11 @@ const OurServices = () => {
                     // target="_blank"
                     className="w-full flex items-center justify-center"
                   >
-                    <ServiceButton />
+                    <ServiceButton
+                      borderColor="#03EB64"
+                      buttonArrowColor="white"
+                      textColor="white"
+                    />
                   </Link>
                 </div>
               </div>
@@ -190,7 +202,11 @@ const OurServices = () => {
                     // target="_blank"
                     className="w-full flex items-center justify-center"
                   >
-                    <ServiceButton />
+                    <ServiceButton
+                      borderColor="#03EB64"
+                      buttonArrowColor="white"
+                      textColor="white"
+                    />
                   </Link>
                 </div>
               </div>
@@ -218,7 +234,11 @@ const OurServices = () => {
                     // target="_blank"
                     className="w-full flex items-center justify-center"
                   >
-                    <ServiceButton />
+                    <ServiceButton
+                      borderColor="#03EB64"
+                      buttonArrowColor="white"
+                      textColor="white"
+                    />
                   </Link>
                 </div>
               </div>
@@ -247,7 +267,11 @@ const OurServices = () => {
                     // target="_blank"
                     className="w-full flex items-center justify-center"
                   >
-                    <ServiceButton />
+                    <ServiceButton
+                      borderColor="#03EB64"
+                      buttonArrowColor="white"
+                      textColor="white"
+                    />
                   </Link>
                 </div>
               </div>
@@ -280,7 +304,11 @@ const OurServices = () => {
                     // target="_blank"
                     className="w-full flex items-center justify-center"
                   >
-                    <ServiceButton />
+                    <ServiceButton
+                      borderColor="#03EB64"
+                      buttonArrowColor="white"
+                      textColor="white"
+                    />
                   </Link>
                 </div>
               </div>
@@ -308,7 +336,11 @@ const OurServices = () => {
                     // target="_blank"
                     className="w-full flex items-center justify-center"
                   >
-                    <ServiceButton />
+                    <ServiceButton
+                      borderColor="#03EB64"
+                      buttonArrowColor="white"
+                      textColor="white"
+                    />
                   </Link>
                 </div>
               </div>
@@ -337,7 +369,11 @@ const OurServices = () => {
                     // target="_blank"
                     className="w-full flex items-center justify-center"
                   >
-                    <ServiceButton />
+                    <ServiceButton
+                      borderColor="#03EB64"
+                      buttonArrowColor="white"
+                      textColor="white"
+                    />
                   </Link>
                 </div>
               </div>

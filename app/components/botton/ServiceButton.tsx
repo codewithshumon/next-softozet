@@ -5,7 +5,17 @@ import { HiOutlineArrowRight } from "react-icons/hi";
 
 import useMouse from "@/app/hooks/useMouse";
 
-const ServiceButton = () => {
+interface ServiceButtonProps {
+  textColor: string;
+  buttonArrowColor: string;
+  borderColor: string;
+}
+
+const ServiceButton: React.FC<ServiceButtonProps> = ({
+  textColor,
+  buttonArrowColor,
+  borderColor,
+}) => {
   const { x, y } = useMouse();
   const btnRef = useRef<HTMLButtonElement>(null);
 
@@ -27,10 +37,10 @@ const ServiceButton = () => {
   return (
     <button
       ref={btnRef}
-      className="relative circle-button-bg flex flex-row items-center gap-2 border-[1px] border-[#03EB64] rounded-full px-3 py-2 overflow-hidden"
+      className={`relative circle-button-bg flex flex-row items-center gap-2 border-[1px] rounded-full px-3 py-2 overflow-hidden border-[${borderColor}] text-${textColor}`}
     >
-      <span className="font-bold text-white">DISCOVER</span>
-      <HiOutlineArrowRight color="white" size={20} />
+      <span className={`font-bold text-${textColor}`}>DISCOVER</span>
+      <HiOutlineArrowRight color={buttonArrowColor} size={20} />
     </button>
   );
 };
