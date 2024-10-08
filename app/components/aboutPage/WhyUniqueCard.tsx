@@ -14,17 +14,21 @@ const WhyUniqueCard: React.FC<WhyUniqueCardProps> = ({
   text,
 }) => {
   return (
-    <div className=" w-full h-full flex flex-col gap-5 justify-around">
-      <div className="flex flex-col">
-        <span>{upPhotoTitle}</span>
+    <div className=" w-full h-full flex flex-col justify-around mt-10">
+      <div className=" relative w-full h-[70%] flex flex-col text-[3rem] font-bold text-[#FFFF00] items-center justify-center ">
+        <span className="absolute top-2 left-[-2%] ">{upPhotoTitle}</span>
         <Image
-          className="w-[450px]"
+          className="w-[400px] z-[2]"
           src={image}
           alt={`${upPhotoTitle + " " + downPhotoTitle}`}
         />
-        <span>{downPhotoTitle}</span>
+        <span className="absolute bottom-2 z-[5] right-0">
+          {downPhotoTitle}
+        </span>
       </div>
-      <p>{text}</p>
+      <div className=" w-full h-[30%] px-[5%] ">
+        <p>{text}</p>
+      </div>
     </div>
   );
 };
