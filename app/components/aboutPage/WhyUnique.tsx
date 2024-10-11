@@ -24,7 +24,7 @@ const WhyUnique: React.FC<ServiceTextProps> = ({ title, subTitle, text }) => {
   ];
 
   return (
-    <div className=" h-screen w-full bg-[#222121] flex flex-row  text-white px-20">
+    <div className=" h-[120vh] w-full bg-[#222121] flex flex-row  text-white px-20 py-10">
       <WhyUniqueList
         keyPoints={WhyUniqueListItem}
         title="Key Values That Make Us Stand Out"
