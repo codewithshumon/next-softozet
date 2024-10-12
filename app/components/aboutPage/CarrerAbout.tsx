@@ -26,19 +26,22 @@ const CarrerAbout = () => {
         </div>
       </div>
 
-      <div className="w-[50%] h-full flex flex-col gap-5 justify-around px-20 py-10">
-        <h2>Work with Softozet</h2>
-        <p>
+      <div className="w-[50%] h-full flex flex-col gap-5 justify-around ml-5 px-10 py-24 z-0">
+        <h2 className=" w-full text-[3rem] font-bold ">Work with Softozet</h2>
+        <p className="text-[#5F5F5D] text-[1rem]">
           Choose Musemind to embrace your skills and passion. We are your growth
           partner, encouraging creativity and individual development while
           creating excellent user experiences in a fast-paced, collaborative
           atmosphere.
         </p>
-        <ServiceButton
-          borderColor="#03EB64"
-          buttonArrowColor="black"
-          textColor="black"
-        />
+        <div className=" w-full flex items-center justify-center ">
+          <ServiceButton
+            borderColor="#03EB64"
+            buttonArrowColor="black"
+            textColor="black"
+            bottonText="Start Your Career"
+          />
+        </div>
       </div>
     </div>
   );

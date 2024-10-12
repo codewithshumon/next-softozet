@@ -105,6 +105,7 @@ const OurServices = () => {
                       borderColor="#03EB64"
                       buttonArrowColor="white"
                       textColor="white"
+                      bottonText="DISCOVER"
                     />
                   </Link>
                 </div>
@@ -137,6 +138,7 @@ const OurServices = () => {
                       borderColor="#03EB64"
                       buttonArrowColor="white"
                       textColor="white"
+                      bottonText="DISCOVER"
                     />
                   </Link>
                 </div>
@@ -169,6 +171,7 @@ const OurServices = () => {
                       borderColor="#03EB64"
                       buttonArrowColor="white"
                       textColor="white"
+                      bottonText="DISCOVER"
                     />
                   </Link>
                 </div>
@@ -206,6 +209,7 @@ const OurServices = () => {
                       borderColor="#03EB64"
                       buttonArrowColor="white"
                       textColor="white"
+                      bottonText="DISCOVER"
                     />
                   </Link>
                 </div>
@@ -238,6 +242,7 @@ const OurServices = () => {
                       borderColor="#03EB64"
                       buttonArrowColor="white"
                       textColor="white"
+                      bottonText="DISCOVER"
                     />
                   </Link>
                 </div>
@@ -271,6 +276,7 @@ const OurServices = () => {
                       borderColor="#03EB64"
                       buttonArrowColor="white"
                       textColor="white"
+                      bottonText="DISCOVER"
                     />
                   </Link>
                 </div>
@@ -308,6 +314,7 @@ const OurServices = () => {
                       borderColor="#03EB64"
                       buttonArrowColor="white"
                       textColor="white"
+                      bottonText="DISCOVER"
                     />
                   </Link>
                 </div>
@@ -340,6 +347,7 @@ const OurServices = () => {
                       borderColor="#03EB64"
                       buttonArrowColor="white"
                       textColor="white"
+                      bottonText="DISCOVER"
                     />
                   </Link>
                 </div>
@@ -373,6 +381,7 @@ const OurServices = () => {
                       borderColor="#03EB64"
                       buttonArrowColor="white"
                       textColor="white"
+                      bottonText="DISCOVER"
                     />
                   </Link>
                 </div>
