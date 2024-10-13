@@ -16,21 +16,17 @@ const AboutePage = () => {
   return (
     <div className="w-full h-full bg-primaryDarkcolor ">
       <div className=" w-full h-full ">
-        <div className="container flex flex-col bg-[#171718]">
-          <div className="mt-[30%] xs:mt-[20%] md:mt-[10%] flex flex-col gap-5">
-            <h1 className="text-[30px] text-[#ffffff] md:text-[80px] font-extrabold leading-none">
-              Accelerating
+        <div className="container h-screen flex flex-row bg-[#171718]">
+          <div className="w-[50%] h-full flex flex-col items-center justify-center  pl-10 ">
+            <h1 className="text-[30px] text-[#ffffff] md:text-[80px] uppercase font-extrabold leading-none">
+              Innovating Technology for Business Simplicity
             </h1>
-            <p className="text-[#6ee935] text-[25px] md:text-[70px] font-bold mt-[-10px] md:mt-[-20px]">
-              <span className="text-[#ffffff] leading-none px-5">—</span>
-              Business Growth..
-            </p>
           </div>
-          <div className=" flex items-center justify-center">
+          <div className="w-[50%] h-full flex items-center justify-center">
             <Lottie
               animationData={businessGrowth}
               loop={true}
-              className="!w-[400px]  md:!w-[600px] "
+              className="!w-[400px]  md:!w-[500px] "
             />
           </div>
         </div>
