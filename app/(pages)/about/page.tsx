@@ -16,9 +16,9 @@ const AboutePage = () => {
   return (
     <div className="w-full h-full bg-primaryDarkcolor ">
       <div className=" w-full h-full ">
-        <div className="container h-screen flex flex-row bg-[#171718]">
+        <div className="container h-screen flex flex-row bg-[#171718]-- bg-[#F0F0F3]">
           <div className="w-[50%] h-full flex flex-col items-center justify-center  pl-10 ">
-            <h1 className="text-[30px] text-[#ffffff] md:text-[80px] uppercase font-extrabold leading-none">
+            <h1 className="text-[30px] text-[#ffffff]-- text-black md:text-[80px] uppercase font-extrabold leading-none">
               Innovating Technology for Business Simplicity
             </h1>
           </div>

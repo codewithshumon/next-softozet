@@ -18,6 +18,7 @@ const CompanyDetails = () => {
   const slider = useRef(null);
   let xPercent = 0;
   let direction = -1; //scrollRef.current < scrollY ? -1 : 1;
+  const companyAge = new Date().getFullYear() - 2018;
 
   useEffect(() => {
     scrollRef.current = scrollY;
@@ -171,7 +172,7 @@ const CompanyDetails = () => {
                       <CountUp
                         className=""
                         start={0}
-                        end={6}
+                        end={companyAge}
                         duration={4}
                         delay={0}
                       />
@@ -192,7 +193,7 @@ const CompanyDetails = () => {
                       <CountUp
                         className=""
                         start={0}
-                        end={274}
+                        end={450}
                         duration={4}
                         delay={0}
                       />
@@ -214,7 +215,7 @@ const CompanyDetails = () => {
                       <CountUp
                         className=""
                         start={0}
-                        end={185}
+                        end={100}
                         duration={4}
                         delay={0}
                       />
@@ -224,7 +225,7 @@ const CompanyDetails = () => {
 
                   <div>
                     <span className="text-[16px] font-bold">
-                      Business partners
+                      International Clients
                     </span>
                   </div>
                 </div>
@@ -236,7 +237,7 @@ const CompanyDetails = () => {
                       <CountUp
                         className=""
                         start={0}
-                        end={65}
+                        end={250}
                         duration={4}
                         delay={0}
                       />
@@ -245,7 +246,9 @@ const CompanyDetails = () => {
                   )}
 
                   <div>
-                    <span className="text-[16px] font-bold">Employees</span>
+                    <span className="text-[16px] font-bold">
+                      Bangladesh Clients
+                    </span>
                   </div>
                 </div>
               </div>
