@@ -9,6 +9,7 @@ interface ServiceButtonProps {
   textColor: string;
   buttonArrowColor: string;
   borderColor: string;
+  buttonBgColor: string;
   bottonText: string;
 }
 
@@ -16,6 +17,7 @@ const ServiceButton: React.FC<ServiceButtonProps> = ({
   textColor,
   buttonArrowColor,
   borderColor,
+  buttonBgColor,
   bottonText,
 }) => {
   const { x, y } = useMouse();
@@ -39,7 +41,8 @@ const ServiceButton: React.FC<ServiceButtonProps> = ({
   return (
     <button
       ref={btnRef}
-      className={`relative circle-button-bg flex flex-row items-center justify-center gap-2 border-[1px] rounded-full px-3 py-2 overflow-hidden border-[${borderColor}] text-${textColor}`}
+      className={`relative circle-button-bg  flex flex-row items-center justify-center gap-2 border-[1px] rounded-full px-3 py-2 overflow-hidden border-[${borderColor}] text-${textColor}`}
+      style={{ "--button-bg-color": buttonBgColor } as React.CSSProperties}
     >
       <span className={`font-bold text-${textColor}`}>{bottonText}</span>
       <HiOutlineArrowRight color={buttonArrowColor} size={20} />

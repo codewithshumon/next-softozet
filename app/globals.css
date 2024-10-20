@@ -238,7 +238,7 @@ body::-webkit-scrollbar-button:vertical:single-button:increment:hover {
   top: var(--y);
   left: var(--x);
   position: absolute;
-  background: #2eca6f;
+  background: var(--button-bg-color);
   border-radius: 50%;
   transition: 0.7s ease-in-out;
   z-index: -100;

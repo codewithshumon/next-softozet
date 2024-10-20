@@ -104,6 +104,7 @@ const OurServices = () => {
                     <ServiceButton
                       borderColor="#03EB64"
                       buttonArrowColor="white"
+                      buttonBgColor="#03EB64"
                       textColor="white"
                       bottonText="DISCOVER"
                     />
@@ -137,6 +138,7 @@ const OurServices = () => {
                     <ServiceButton
                       borderColor="#03EB64"
                       buttonArrowColor="white"
+                      buttonBgColor="#03EB64"
                       textColor="white"
                       bottonText="DISCOVER"
                     />
@@ -170,6 +172,7 @@ const OurServices = () => {
                     <ServiceButton
                       borderColor="#03EB64"
                       buttonArrowColor="white"
+                      buttonBgColor="#03EB64"
                       textColor="white"
                       bottonText="DISCOVER"
                     />
@@ -208,6 +211,7 @@ const OurServices = () => {
                     <ServiceButton
                       borderColor="#03EB64"
                       buttonArrowColor="white"
+                      buttonBgColor="#03EB64"
                       textColor="white"
                       bottonText="DISCOVER"
                     />
@@ -241,6 +245,7 @@ const OurServices = () => {
                     <ServiceButton
                       borderColor="#03EB64"
                       buttonArrowColor="white"
+                      buttonBgColor="#03EB64"
                       textColor="white"
                       bottonText="DISCOVER"
                     />
@@ -275,6 +280,7 @@ const OurServices = () => {
                     <ServiceButton
                       borderColor="#03EB64"
                       buttonArrowColor="white"
+                      buttonBgColor="#03EB64"
                       textColor="white"
                       bottonText="DISCOVER"
                     />
@@ -313,6 +319,7 @@ const OurServices = () => {
                     <ServiceButton
                       borderColor="#03EB64"
                       buttonArrowColor="white"
+                      buttonBgColor="#03EB64"
                       textColor="white"
                       bottonText="DISCOVER"
                     />
@@ -346,6 +353,7 @@ const OurServices = () => {
                     <ServiceButton
                       borderColor="#03EB64"
                       buttonArrowColor="white"
+                      buttonBgColor="#03EB64"
                       textColor="white"
                       bottonText="DISCOVER"
                     />
@@ -380,6 +388,7 @@ const OurServices = () => {
                     <ServiceButton
                       borderColor="#03EB64"
                       buttonArrowColor="white"
+                      buttonBgColor="#03EB64"
                       textColor="white"
                       bottonText="DISCOVER"
                     />

@@ -37,6 +37,7 @@ const CarrerAbout = () => {
         <div className=" w-full flex items-center justify-center ">
           <ServiceButton
             borderColor="#03EB64"
+            buttonBgColor="#03EB64"
             buttonArrowColor="black"
             textColor="black"
             bottonText="Start Your Career"
