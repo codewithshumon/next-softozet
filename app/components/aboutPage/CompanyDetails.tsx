@@ -47,16 +47,22 @@ const CompanyDetails = () => {
         </div>
 
         <div className="w-[40%] h-full">
-          <div className="w-full h-full flex items-center justify-center bg0">
-            <div className=" w-[70%] h-[500px]  bg-blue-500">
+          <div className="w-full h-full flex items-center justify-center  ">
+            <div className=" w-[70%] h-[80%]  bg-blue-500 px-[10%] py-[20%] flex flex-col justify-between">
               <div>
                 <h4 className=" uppercase">Why us</h4>
               </div>
+              <div>
+                <p>We Carry</p>
+                <p>A Dedicated Team</p>
+                <p>Worth of</p>
+                <p>Experience</p>
+              </div>
 
-              <div className=" w-[150px] h-[150px] rounded-full  border border-[#000000] flex items-center justify-center">
+              <div className=" relative w-[30px] h-[30px] rounded-full  border border-[#000000] flex items-center justify-center">
                 {/* <div className="w-0 h-0 border-l-[40px] border-r-[40px] border-b-[30px] border-l-transparent border-r-transparent border-b-[#000000] mt-4"></div> */}
 
-                <div className="w-0 h-0 border-t-[15px] border-b-[15px] border-l-[20px] border-t-transparent border-b-transparent border-l-[#000000]"></div>
+                <div className="w-0 h-0 border-t-[5px] border-b-[5px] border-l-[8px] border-t-transparent border-b-transparent border-l-[#000000]"></div>
               </div>
 
               <div></div>
