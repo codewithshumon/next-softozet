@@ -1,6 +1,38 @@
-import React from "react";
+import { useEffect, useState } from "react";
+import CountUp from "react-countup";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/all";
 
 const CompanyDetails = () => {
+  const [counter, setCounter] = useState(false);
+  const companyAge = new Date().getFullYear() - 2018;
+
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.to(".details-counter", {
+      scrollTrigger: {
+        trigger: ".details-counter",
+        scrub: 0.25,
+        start: "top bottom",
+        onEnter: () => {
+          setCounter(true);
+        },
+        onEnterBack: () => {
+          setCounter(true);
+        },
+        onLeaveBack: () => {
+          setCounter(false);
+        },
+        onLeave: () => {
+          setCounter(false);
+        },
+        onRefresh: () => {
+          setCounter(true);
+        },
+      },
+    });
+  }, [counter]);
+
   return (
     <div className=" w-full h-[120vh] py-20 ">
       <div className="container flex flex-row">
@@ -47,25 +79,87 @@ const CompanyDetails = () => {
         </div>
 
         <div className="w-[40%] h-full">
-          <div className="w-full h-full flex items-center justify-center  ">
-            <div className=" w-[70%] h-[80%]  bg-blue-500 px-[10%] py-[20%] flex flex-col justify-between">
-              <div>
-                <h4 className=" uppercase">Why us</h4>
-              </div>
-              <div>
-                <p>We Carry</p>
-                <p>A Dedicated Team</p>
-                <p>Worth of</p>
-                <p>Experience</p>
-              </div>
+          <div className="w-full h-full flex items-center justify-center   ">
+            <div className=" w-[80%] h-[80%]  bg-blue-500 px-[10%] py-[15%] ">
+              <div className=" w-full h-full flex flex-col justify-between uppercase text-white ">
+                <div>
+                  <h4 className="text-[14px] font-extrabold">Why us</h4>
+                </div>
+                <div>
+                  <p className=" text-[18px]  font-extralight ">We Carry</p>
+                  <p className=" text-[26px] font-extrabold ">
+                    A Dedicated Team
+                  </p>
+                  <p className=" text-[18px]  font-extralight ">Worth of</p>
+                  <p className=" text-[26px] font-extrabold ">Experience</p>
+                </div>
 
-              <div className=" relative w-[30px] h-[30px] rounded-full  border border-[#000000] flex items-center justify-center">
-                {/* <div className="w-0 h-0 border-l-[40px] border-r-[40px] border-b-[30px] border-l-transparent border-r-transparent border-b-[#000000] mt-4"></div> */}
+                <div className=" flex flex-row items-center gap-3">
+                  <div className=" relative w-[30px] h-[30px] rounded-full  border border-[#ffffff] flex items-center justify-center">
+                    {/* <div className="w-0 h-0 border-l-[40px] border-r-[40px] border-b-[30px] border-l-transparent border-r-transparent border-b-[#000000] mt-4"></div> */}
 
-                <div className="w-0 h-0 border-t-[5px] border-b-[5px] border-l-[8px] border-t-transparent border-b-transparent border-l-[#000000]"></div>
+                    <div className="w-0 h-0 border-t-[5px] border-b-[5px] border-l-[8px] border-t-transparent border-b-transparent border-l-[#ffffff]"></div>
+                  </div>
+                  <p>watch video</p>
+                </div>
+
+                <div className="details-counter flex flex-row">
+                  <div className=" w-full h-full flex flex-col items-center justify-center">
+                    {counter && (
+                      <div className=" text-[14px] flex items-center justify-center font-bold">
+                        <CountUp
+                          className=""
+                          start={0}
+                          end={companyAge}
+                          duration={4}
+                          delay={0}
+                        />
+                        <span>+</span>
+                      </div>
+                    )}
+
+                    <div>
+                      <span className="text-[12px] font-bold">Experience</span>
+                    </div>
+                  </div>
+                  <div className=" w-full h-full flex flex-col items-center justify-center">
+                    {counter && (
+                      <div className=" text-[14px] flex items-center justify-center font-bold">
+                        <CountUp
+                          className=""
+                          start={0}
+                          end={350}
+                          duration={4}
+                          delay={0}
+                        />
+                        <span>+</span>
+                      </div>
+                    )}
+
+                    <div>
+                      <span className="text-[12px] font-bold">Clients</span>
+                    </div>
+                  </div>
+                  <div className=" w-full h-full flex flex-col items-center justify-center">
+                    {counter && (
+                      <div className=" text-[14px] flex items-center justify-center font-bold">
+                        <CountUp
+                          className=""
+                          start={0}
+                          end={450}
+                          duration={4}
+                          delay={0}
+                        />
+                        <span>+</span>
+                      </div>
+                    )}
+
+                    <div>
+                      <span className="text-[12px] font-bold">Projects</span>
+                    </div>
+                  </div>
+                </div>
               </div>
-
-              <div></div>
             </div>
           </div>
         </div>
