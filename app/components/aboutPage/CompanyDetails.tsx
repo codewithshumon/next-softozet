@@ -34,10 +34,10 @@ const CompanyDetails = () => {
   }, [counter]);
 
   return (
-    <div className=" w-full h-[120vh] py-20 ">
+    <div className=" w-full h-[130vh] py-16 ">
       <div className="container flex flex-row">
         <div className=" w-[60%] h-full flex flex-col gap-10">
-          <div className=" w-full h-full flex  justify-center  ">
+          <div className=" w-full h-full flex  justify-center">
             <div className="w-[90%] flex flex-col items-center justify-center text-white">
               <h2 className="w-full text-center text-[25px] xs:text-[35px] md:text-[2rempx] xl:text-[40px] font-extrabold">
                 SOFTOZET LIMITED
@@ -80,7 +80,7 @@ const CompanyDetails = () => {
 
         <div className="w-[40%] h-full">
           <div className="w-full h-full flex items-center justify-center   ">
-            <div className=" w-[80%] h-[80%]  bg-blue-500 px-[10%] py-[15%] ">
+            <div className=" w-[80%] h-[70%]  bg-blue-500 px-[10%] py-[12%] ">
               <div className=" w-full h-full flex flex-col justify-between uppercase text-white ">
                 <div>
                   <h4 className="text-[14px] font-extrabold">Why us</h4>
@@ -103,10 +103,10 @@ const CompanyDetails = () => {
                   <p>watch video</p>
                 </div>
 
-                <div className="details-counter flex flex-row">
+                <div className="details-counter flex flex-row ">
                   <div className=" w-full h-full flex flex-col items-center justify-center">
                     {counter && (
-                      <div className=" text-[14px] flex items-center justify-center font-bold">
+                      <div className=" text-[16px] flex items-center justify-center font-bold">
                         <CountUp
                           className=""
                           start={0}
@@ -119,12 +119,12 @@ const CompanyDetails = () => {
                     )}
 
                     <div>
-                      <span className="text-[12px] font-bold">Experience</span>
+                      <span className="text-[16px] font-bold">Experience</span>
                     </div>
                   </div>
                   <div className=" w-full h-full flex flex-col items-center justify-center">
                     {counter && (
-                      <div className=" text-[14px] flex items-center justify-center font-bold">
+                      <div className=" text-[16px]  flex items-center justify-center font-bold">
                         <CountUp
                           className=""
                           start={0}
@@ -137,12 +137,12 @@ const CompanyDetails = () => {
                     )}
 
                     <div>
-                      <span className="text-[12px] font-bold">Clients</span>
+                      <span className="text-[16px]  font-bold">Clients</span>
                     </div>
                   </div>
                   <div className=" w-full h-full flex flex-col items-center justify-center">
                     {counter && (
-                      <div className=" text-[14px] flex items-center justify-center font-bold">
+                      <div className=" text-[16px]  flex items-center justify-center font-bold">
                         <CountUp
                           className=""
                           start={0}
@@ -155,7 +155,7 @@ const CompanyDetails = () => {
                     )}
 
                     <div>
-                      <span className="text-[12px] font-bold">Projects</span>
+                      <span className="text-[16px]  font-bold">Projects</span>
                     </div>
                   </div>
                 </div>
