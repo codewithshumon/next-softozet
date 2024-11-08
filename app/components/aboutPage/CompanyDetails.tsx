@@ -81,11 +81,11 @@ const CompanyDetails = () => {
         <div className="w-[40%] h-full">
           <div className="w-full h-full flex items-center justify-center   ">
             <div className=" w-[80%] h-[70%]  bg-blue-500 px-[10%] py-[12%] ">
-              <div className=" w-full h-full flex flex-col justify-between uppercase text-white ">
+              <div className=" w-full h-full flex flex-col justify-between uppercase text-white gap-5 ">
                 <div>
                   <h4 className="text-[14px] font-extrabold">Why us</h4>
                 </div>
-                <div>
+                <div className=" space-y-[-5px]">
                   <p className=" text-[18px]  font-extralight ">We Carry</p>
                   <p className=" text-[26px] font-extrabold ">
                     A Dedicated Team

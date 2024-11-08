@@ -16,8 +16,9 @@ const navMenus = [
   { path: "/", display: "HOME" },
   { path: "/services", display: "SERVICES" },
   { path: "/work", display: "WORK" },
-  { path: "/about", display: "ABOUT US" },
-  { path: "/contact", display: "CONTACT US" },
+  { path: "/about", display: "ABOUT" },
+  { path: "/career", display: "CAREER" },
+  { path: "/contact", display: "CONTACT" },
 ];
 
 const Header = () => {
@@ -175,7 +176,7 @@ const Header = () => {
                     key={index}
                     className={`${
                       menu.path === pathname
-                        ? "text-[#9932cc]"
+                        ? "text-[#DDF063]"
                         : " text-[#ffffff]"
                     } text-[12px] font-[600]`}
                   >
