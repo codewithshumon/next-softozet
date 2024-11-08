@@ -106,7 +106,7 @@ const CompanyDetails = () => {
                 <div className="details-counter flex flex-row ">
                   <div className=" w-full h-full flex flex-col items-center justify-center">
                     {counter && (
-                      <div className=" text-[16px] flex items-center justify-center font-bold">
+                      <div className=" text-[24px] flex items-center justify-center font-bold">
                         <CountUp
                           className=""
                           start={0}
@@ -118,13 +118,14 @@ const CompanyDetails = () => {
                       </div>
                     )}
 
-                    <div>
-                      <span className="text-[16px] font-bold">Experience</span>
+                    <div className=" w-full flex flex-col text-center">
+                      <span className="text-[14px] font-bold">Years of</span>
+                      <span className="text-[14px] font-bold">Experience</span>
                     </div>
                   </div>
                   <div className=" w-full h-full flex flex-col items-center justify-center">
                     {counter && (
-                      <div className=" text-[16px]  flex items-center justify-center font-bold">
+                      <div className=" text-[24px]  flex items-center justify-center font-bold">
                         <CountUp
                           className=""
                           start={0}
@@ -136,13 +137,14 @@ const CompanyDetails = () => {
                       </div>
                     )}
 
-                    <div>
-                      <span className="text-[16px]  font-bold">Clients</span>
+                    <div className=" w-full flex flex-col text-center">
+                      <span className="text-[14px] font-bold">Total</span>
+                      <span className="text-[14px] font-bold">Clients</span>
                     </div>
                   </div>
                   <div className=" w-full h-full flex flex-col items-center justify-center">
                     {counter && (
-                      <div className=" text-[16px]  flex items-center justify-center font-bold">
+                      <div className=" text-[24px]  flex items-center justify-center font-bold">
                         <CountUp
                           className=""
                           start={0}
@@ -154,8 +156,9 @@ const CompanyDetails = () => {
                       </div>
                     )}
 
-                    <div>
-                      <span className="text-[16px]  font-bold">Projects</span>
+                    <div className=" w-full flex flex-col text-center">
+                      <span className="text-[14px] font-bold">Projects</span>
+                      <span className="text-[14px] font-bold">Completed</span>
                     </div>
                   </div>
                 </div>
