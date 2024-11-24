@@ -1,5 +1,7 @@
 "use client";
 
+import SingleService from "@/app/components/servicesPage/SingleService";
+
 import {
   webSmall,
   mobileSecond,
@@ -14,7 +16,28 @@ const ServicesPage = () => {
   return (
     <div className=" w-full h-full">
       <div className="container bg-[#161616] ">
-        <div className=" w-full h-[100vh]"></div>
+        <div className=" w-full h-[100vh] flex flex-col px-10 pt-[20vh] gap-5">
+          <div>
+            <h1 className="text-[80px] font-extrabold text-white">
+              Digital Product Design & Consulting Services
+            </h1>
+          </div>
+          <div>
+            <p className="text-[15px] font-extrabold text-[#9c9898]">
+              Our Global digital product design agency helps brands to make
+              top-quality SaaS, MVP, software, mobile apps, and websites. We
+              focus on user-friendly designs that look great and work smoothly.
+              Let us help your business grow with our expert digital product
+              solutions.
+            </p>
+          </div>
+          <div className="text-[40px] w-fit px-5 py-3 bg-yellow-400 rounded-full font-bold">
+            <div>Share Your Ideas</div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <SingleService />
       </div>
     </div>
   );
