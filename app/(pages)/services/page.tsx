@@ -13,8 +13,74 @@ import {
 } from "@/public/svg-animations";
 
 const ServicesPage = () => {
+  const brandingItems = [
+    "Branding",
+    "Motion Graphics",
+    "Brand Identity",
+    "Graphic Design",
+    "Corporate Identity",
+    "Expectations Setting",
+    "Startup Branding",
+    "Brand Strategy",
+  ];
+  const planningItems = [
+    "Workshops",
+    "Consulting",
+    "Project Planning",
+    "Concept",
+    "Research",
+    "Expectations Setting",
+  ];
+
+  const strategyItems = [
+    "Persona Development",
+    "Brand Personalization",
+    "Prototyping",
+    "Stakeholder Alignment",
+    "Information Architecture",
+    "Information Flow",
+  ];
+
+  const userExperienceItems = [
+    "Art Direction",
+    "Visual Moodboards",
+    "Content Flow Design",
+    "Digital Identity",
+    "UI Design",
+    "Interaction Design",
+  ];
+
+  const developmentItems = [
+    "Website Development",
+    "Front-End Development",
+    "Mobile Development",
+    "Optimization",
+    "Physical Installations",
+    "Back-End Development",
+    "Platform Integration",
+    "Deployment",
+  ];
+
+  const securityItems = [
+    "Usability Testing",
+    "System Testing",
+    "Security Testing",
+    "Functionality Testing",
+    "Performance Testing",
+    "Integration Testing",
+  ];
+
+  const maintananceItems = [
+    "Post Deployment Support",
+    "Security",
+    "On Demand Development",
+    "Monthly Maintenance",
+    "Performance Optimization",
+    "Technical Consultancy",
+  ];
+
   return (
-    <div className=" w-full h-full">
+    <div className=" w-full h-full ">
       <div className="container bg-[#161616] ">
         <div className=" w-full h-[100vh] flex flex-col px-10 pt-[20vh] gap-5">
           <div>
@@ -36,8 +102,8 @@ const ServicesPage = () => {
           </div>
         </div>
       </div>
-      <div>
-        <SingleService />
+      <div className="container  bg-[#b1acac] ">
+        <SingleService serviceItems={brandingItems} />
       </div>
     </div>
   );
