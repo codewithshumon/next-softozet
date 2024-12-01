@@ -2,86 +2,12 @@
 
 import SingleService from "@/app/components/servicesPage/SingleService";
 
-import {
-  webSmall,
-  mobileSecond,
-  socialThird,
-  seoMan,
-  twoCreative,
-  boyOrderCall,
-  girlBoyCall,
-} from "@/public/svg-animations";
+import { ServicePageData } from "@/app/constant/ServicePageData";
 
 const ServicesPage = () => {
-  const brandingItems = [
-    "Branding",
-    "Motion Graphics",
-    "Brand Identity",
-    "Graphic Design",
-    "Corporate Identity",
-    "Expectations Setting",
-    "Startup Branding",
-    "Brand Strategy",
-  ];
-  const planningItems = [
-    "Workshops",
-    "Consulting",
-    "Project Planning",
-    "Concept",
-    "Research",
-    "Expectations Setting",
-  ];
-
-  const strategyItems = [
-    "Persona Development",
-    "Brand Personalization",
-    "Prototyping",
-    "Stakeholder Alignment",
-    "Information Architecture",
-    "Information Flow",
-  ];
-
-  const userExperienceItems = [
-    "Art Direction",
-    "Visual Moodboards",
-    "Content Flow Design",
-    "Digital Identity",
-    "UI Design",
-    "Interaction Design",
-  ];
-
-  const developmentItems = [
-    "Website Development",
-    "Front-End Development",
-    "Mobile Development",
-    "Optimization",
-    "Physical Installations",
-    "Back-End Development",
-    "Platform Integration",
-    "Deployment",
-  ];
-
-  const securityItems = [
-    "Usability Testing",
-    "System Testing",
-    "Security Testing",
-    "Functionality Testing",
-    "Performance Testing",
-    "Integration Testing",
-  ];
-
-  const maintananceItems = [
-    "Post Deployment Support",
-    "Security",
-    "On Demand Development",
-    "Monthly Maintenance",
-    "Performance Optimization",
-    "Technical Consultancy",
-  ];
-
   return (
     <div className=" w-full h-full ">
-      <div className="container bg-[#161616] ">
+      <div className="container bg-[#302f2f] ">
         <div className=" w-full h-[100vh] flex flex-col px-10 pt-[20vh] gap-5">
           <div>
             <h1 className="text-[80px] font-extrabold text-white">
@@ -102,189 +28,58 @@ const ServicesPage = () => {
           </div>
         </div>
       </div>
-      <div className="container  bg-[#b1acac] ">
-        <SingleService serviceItems={brandingItems} />
+      <div className="container  bg-[#dfdcdc] ">
+        <div className=" w-full h-full px-5 ">
+          <SingleService
+            items={ServicePageData.brandingData.brandingItems}
+            title={ServicePageData.brandingData.brandingTitle}
+            text={ServicePageData.brandingData.brandingText}
+            flexClass="flex flex-row"
+          />
+        </div>
+        <div className=" w-full h-full px-5 ">
+          <SingleService
+            items={ServicePageData.uxuiDesingData.uxuiDesingItems}
+            title={ServicePageData.uxuiDesingData.uxuiDesingTitle}
+            text={ServicePageData.uxuiDesingData.uxuiDesingText}
+            flexClass="flex flex-row-reverse"
+          />
+        </div>
+        <div className=" w-full h-full px-5 ">
+          <SingleService
+            items={ServicePageData.webDesignData.webDesignItems}
+            title={ServicePageData.webDesignData.webDesignTitle}
+            text={ServicePageData.webDesignData.webDesignText}
+            flexClass="flex flex-row"
+          />
+        </div>
+        <div className=" w-full h-full px-5 ">
+          <SingleService
+            items={ServicePageData.mobileDesignData.mobileDesignItems}
+            title={ServicePageData.mobileDesignData.mobileDesignTitle}
+            text={ServicePageData.mobileDesignData.mobileDesignText}
+            flexClass="flex flex-row-reverse"
+          />
+        </div>
+        <div className=" w-full h-full px-5 ">
+          <SingleService
+            items={ServicePageData.customSoftwareData.customSoftwareItems}
+            title={ServicePageData.customSoftwareData.customSoftwareTitle}
+            text={ServicePageData.customSoftwareData.customSoftwareText}
+            flexClass="flex flex-row"
+          />
+        </div>
+        <div className=" w-full h-full  px-5">
+          <SingleService
+            items={ServicePageData.searchEngineData.searchEngineItems}
+            title={ServicePageData.searchEngineData.searchEngineTitle}
+            text={ServicePageData.searchEngineData.searchEngineText}
+            flexClass="flex flex-row-reverse"
+          />
+        </div>
       </div>
     </div>
   );
 };
 
 export default ServicesPage;
-
-// "use client";
-
-// /* eslint-disable react-hooks/exhaustive-deps */
-// import { useEffect } from "react";
-// import gsap from "gsap";
-// import { ScrollTrigger } from "gsap/ScrollTrigger";
-
-// import ServiceLottie from "@/app/components/servicesPage/ServiceLottie";
-// import ServiceText from "@/app/components/servicesPage/ServiceText";
-// import { ServiceData } from "@/app/constant/serviceData";
-
-// import {
-//   webSmall,
-//   mobileSecond,
-//   socialThird,
-//   seoMan,
-//   twoCreative,
-//   boyOrderCall,
-//   girlBoyCall,
-// } from "@/public/svg-animations";
-
-// const ServicesPage = () => {
-//   useEffect(() => {
-//     gsap.registerPlugin(ScrollTrigger);
-
-//     const animateSections = () => {
-//       const section =
-//         (document.querySelector(".sevice-image-wrapper") as HTMLElement) ||
-//         null;
-//       let items = gsap.utils.toArray(".image-item");
-
-//       if (!section) return;
-
-//       gsap.to(items, {
-//         xPercent: -100 * (items.length - 1),
-//         ease: "none",
-//         scrollTrigger: {
-//           trigger: section,
-//           pin: true,
-//           scrub: 1,
-//           snap: 1 / (items.length - 1),
-//           end: () => "+=" + section.offsetWidth,
-//         },
-//       });
-//     };
-
-//     animateSections();
-
-//     return () => {
-//       ScrollTrigger.getAll().forEach((instance) => instance.kill());
-//     };
-//   }, []);
-
-//   return (
-//     <section className="w-full h-full full-container ">
-//       {/* <div className="w-screen h-screen bg-[#c54f3b]"></div> */}
-//       <div className="sevice-image-wrapper w-full h-full flex flex-row items-center ">
-//         <div className="image-item w-[100vw] h-full relative ">
-//           <div className="container absolute inset-0 flex flex-col md:flex-row justify-between gap-2 md:gap-5 xl:gap-8 py-2 xs:py-4 md:py-6">
-//             <div className="w-full h-full  ">
-//               <ServiceText
-//                 title={ServiceData.webServiceData.title}
-//                 subTitle={ServiceData.webServiceData.subTitle}
-//                 text={ServiceData.webServiceData.text}
-//               />
-//             </div>
-//             <div className="w-full h-full">
-//               <ServiceLottie
-//                 animation={webSmall}
-//                 className="!p-2 xs:!p-5 xl:!p-6 !w-[300px] xs:!w-[400px] md:!w-[450px] xl:!w-[600px]"
-//               />
-//             </div>
-//           </div>
-//           <div className="w-screen h-screen bg-[#114231]"></div>
-//         </div>
-
-//         <div className="image-item w-[100vw] h-full relative ">
-//           <div className="container absolute inset-0 flex flex-col md:flex-row justify-between py-2 xs:py-4 md:py-6">
-//             <div className="w-full h-full">
-//               <ServiceText
-//                 title={ServiceData.mobileServiceData.title}
-//                 subTitle={ServiceData.mobileServiceData.subTitle}
-//                 text={ServiceData.mobileServiceData.text}
-//               />
-//             </div>
-//             <div className="w-full h-full">
-//               <ServiceLottie
-//                 animation={mobileSecond}
-//                 className="!p-2 xs:!p-5 xl:!p-6 !w-[310px] xs:!w-[430px] md:!w-[500px] xl:!w-[650px]"
-//               />
-//             </div>
-//           </div>
-//           <div className="w-screen h-screen bg-[#c54f3b]"></div>
-//         </div>
-
-//         <div className="image-item w-[100vw] h-full relative ">
-//           <div className="container absolute inset-0 flex flex-col md:flex-row justify-between py-2 xs:py-4 md:py-6">
-//             <div className="w-full h-full">
-//               <ServiceText
-//                 title={ServiceData.socialServiceData.title}
-//                 subTitle={ServiceData.socialServiceData.subTitle}
-//                 text={ServiceData.socialServiceData.text}
-//               />
-//             </div>
-//             <div className=" w-full h-full">
-//               <ServiceLottie
-//                 animation={socialThird}
-//                 className="!p-2 xs:!p-5 xl:!p-6 !w-[300px] xs:!w-[400px] md:!w-[450px] xl:!w-[600px]"
-//               />
-//             </div>
-//           </div>
-//           <div className="w-screen h-screen bg-[#2d5fca]"></div>
-//         </div>
-
-//         <div className="image-item w-[100vw] h-full relative ">
-//           <div className="container absolute inset-0 flex flex-col md:flex-row justify-between py-2 xs:py-4 md:py-6">
-//             <div className="w-full h-full ">
-//               <ServiceText
-//                 title={ServiceData.seoServiceData.title}
-//                 subTitle={ServiceData.seoServiceData.subTitle}
-//                 text={ServiceData.seoServiceData.text}
-//               />
-//             </div>
-//             <div className="w-full h-full">
-//               <ServiceLottie
-//                 animation={seoMan}
-//                 className="!p-2 xs:!p-5 xl:!p-5 !w-[250px] xs:!w-[350px] md:!w-[400px] xl:!w-[550px]"
-//               />
-//             </div>
-//           </div>
-//           <div className="w-screen h-screen bg-[#4d35d8]"></div>
-//         </div>
-
-//         <div className="image-item w-[100vw] h-full relative ">
-//           <div className="container absolute inset-0 flex flex-col md:flex-row justify-between py-2 xs:py-4 md:py-6 ">
-//             <div className="w-full h-full">
-//               <ServiceText
-//                 title={ServiceData.creativeServiceData.title}
-//                 subTitle={ServiceData.creativeServiceData.subTitle}
-//                 text={ServiceData.creativeServiceData.text}
-//               />
-//             </div>
-//             <div className="w-full h-full">
-//               <ServiceLottie
-//                 animation={twoCreative}
-//                 className="!p-2 xs:!p-5 xl:!p-6 !w-[300px] xs:!w-[400px] md:!w-[450px] xl:!w-[600px]"
-//               />
-//             </div>
-//           </div>
-//           <div className="w-screen h-screen bg-[#9b2a91]"></div>
-//         </div>
-
-//         <div className="image-item w-[100vw] h-full relative ">
-//           <div className="container absolute inset-0 flex flex-col md:flex-row justify-between py-2 xs:py-4 md:py-6 ">
-//             <div className="w-full h-full">
-//               <ServiceText
-//                 title={ServiceData.callServiceData.title}
-//                 subTitle={ServiceData.callServiceData.subTitle}
-//                 text={ServiceData.callServiceData.text}
-//               />
-//             </div>
-//             <div className="w-full h-full">
-//               <ServiceLottie
-//                 animation={girlBoyCall}
-//                 className="!p-2 xs:!p-5 xl:!p-6 !w-[300px] xs:!w-[400px] md:!w-[450px] xl:!w-[500px]"
-//               />
-//             </div>
-//           </div>
-//           <div className="w-screen h-screen bg-[#23772e]"></div>
-//         </div>
-//       </div>
-//       {/* <div className="w-screen h-screen bg-[#c54f3b]"></div> */}
-//     </section>
-//   );
-// };
-
-// export default ServicesPage;
