@@ -87,8 +87,8 @@ const OurServices = () => {
               </div>
               <div className=" w-[90%] flex flex-col gap-5">
                 <div className="w-full text-center">
-                  <h1 className=" text-[#ffffff] font-extrabold ">
-                    UI/UX DESIGN
+                  <h1 className=" text-[#ffffff] font-extrabold uppercase ">
+                    ui/ux design
                   </h1>
                   <p className="text-[#e0dddd]">
                     Craft intuitive and engaging interfaces for both mobile and
@@ -122,8 +122,8 @@ const OurServices = () => {
               </div>
               <div className=" w-[90%] flex flex-col gap-5">
                 <div className="w-full text-center">
-                  <h1 className=" text-[#ffffff] font-extrabold ">
-                    WEB APPLICATION DEVELOPMENT
+                  <h1 className=" text-[#ffffff] font-extrabold uppercase">
+                    web application development
                   </h1>
                   <p className="text-[#e0dddd]">
                     Design and Develop custom website for your Brand/Business
@@ -156,8 +156,8 @@ const OurServices = () => {
               </div>
               <div className=" w-[90%] flex flex-col gap-5">
                 <div className="w-full text-center">
-                  <h1 className=" text-[#ffffff] font-extrabold ">
-                    MOBILE APPLICATION DEVELOPMENT
+                  <h1 className=" text-[#ffffff] font-extrabold uppercase">
+                    mobile application development
                   </h1>
                   <p className="text-[#e0dddd]">
                     Elevate Your Brand with Customized App Mobile Development
@@ -194,8 +194,8 @@ const OurServices = () => {
               </div>
               <div className=" w-[90%] flex flex-col gap-5">
                 <div className="w-full text-center">
-                  <h1 className=" text-[#ffffff] font-extrabold ">
-                    CUSTOM SOFTWARE DEVELOPMENT
+                  <h1 className=" text-[#ffffff] font-extrabold uppercase">
+                    custom software development
                   </h1>
                   <p className="text-[#e0dddd]">
                     Tailor-made solutions to meet your unique business needs and
@@ -228,8 +228,8 @@ const OurServices = () => {
               </div>
               <div className=" w-[90%] flex flex-col gap-5">
                 <div className="w-full text-center">
-                  <h1 className=" text-[#ffffff] font-extrabold ">
-                    SEARCH ENGINE OPTIMIZATION
+                  <h1 className=" text-[#ffffff] font-extrabold uppercase">
+                    search engine optimization
                   </h1>
                   <p className="text-[#e0dddd]">
                     Unlocking Visibility: Tailored SEO Strategies for Your
@@ -263,8 +263,8 @@ const OurServices = () => {
               </div>
               <div className=" w-[90%] flex flex-col gap-5 mt-[-15%]">
                 <div className="w-full text-center">
-                  <h1 className=" text-[#ffffff] font-extrabold">
-                    SOCIAL MEDIA MARKETING
+                  <h1 className=" text-[#ffffff] font-extrabold uppercase">
+                    social media marketing
                   </h1>
                   <p className="text-[#e0dddd]">
                     Boost Your Online Presence: Maximize Engagement with Your
@@ -302,8 +302,8 @@ const OurServices = () => {
               </div>
               <div className=" w-[90%] flex flex-col gap-5">
                 <div className="w-full text-center">
-                  <h1 className=" text-[#ffffff] font-extrabold ">
-                    CREATIVE CONTENT DESIGN
+                  <h1 className=" text-[#ffffff] font-extrabold uppercase">
+                    creative content design
                   </h1>
                   <p className="text-[#e0dddd]">
                     Crafting Creativity, Engaging Audiences: Bespoke Content
@@ -337,8 +337,8 @@ const OurServices = () => {
               </div>
               <div className=" w-[90%] flex flex-col gap-5">
                 <div className="w-full text-center">
-                  <h1 className=" text-[#ffffff] font-extrabold ">
-                    VIDEO EDITING
+                  <h1 className=" text-[#ffffff] font-extrabold  uppercase">
+                    video editing
                   </h1>
                   <p className="text-[#e0dddd]">
                     Transforming raw footage into polished, professional videos
@@ -371,8 +371,8 @@ const OurServices = () => {
               </div>
               <div className=" w-[90%] flex flex-col gap-5">
                 <div className="w-full text-center">
-                  <h1 className=" text-[#ffffff] font-extrabold ">
-                    24/7 CALL CENTER
+                  <h1 className=" text-[#ffffff] font-extrabold uppercase ">
+                    back office support
                   </h1>
                   <p className="text-[#e0dddd]">
                     Your Dedicated 24/7 Call Center Partner for Customer

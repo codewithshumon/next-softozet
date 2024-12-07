@@ -87,4 +87,48 @@ export const ServicePageData = {
     searchEngineText:
       "We focus on enhancing user interest by creating User friendly interfaces. By building a strong brand identity within the app, we ensure that users recognize and trust your brand. Our expert design team also works on optimizing the functionality of the app, making sure it runs smoothly and efficiently.",
   },
+  socialMediaData: {
+    socialMediaItems: [
+      "Mobile App",
+      "SaaS Website Design",
+      "B2B Website Design",
+      "Corporate Website",
+    ],
+    socialMediaTitle: "Social Media Marketing",
+    socialMediaText:
+      "We focus on enhancing user interest by creating User friendly interfaces. By building a strong brand identity within the app, we ensure that users recognize and trust your brand. Our expert design team also works on optimizing the functionality of the app, making sure it runs smoothly and efficiently.",
+  },
+  creativeContentData: {
+    creativeContentItems: [
+      "Mobile App",
+      "SaaS Website Design",
+      "B2B Website Design",
+      "Corporate Website",
+    ],
+    creativeContentTitle: "Creative Content Design",
+    creativeContentText:
+      "We focus on enhancing user interest by creating User friendly interfaces. By building a strong brand identity within the app, we ensure that users recognize and trust your brand. Our expert design team also works on optimizing the functionality of the app, making sure it runs smoothly and efficiently.",
+  },
+  videoEditingData: {
+    videoEditingItems: [
+      "Mobile App",
+      "SaaS Website Design",
+      "B2B Website Design",
+      "Corporate Website",
+    ],
+    videoEditingTitle: "Video Editing Service",
+    videoEditingText:
+      "We focus on enhancing user interest by creating User friendly interfaces. By building a strong brand identity within the app, we ensure that users recognize and trust your brand. Our expert design team also works on optimizing the functionality of the app, making sure it runs smoothly and efficiently.",
+  },
+  backOfficeData: {
+    backOfficeItems: [
+      "Mobile App",
+      "SaaS Website Design",
+      "B2B Website Design",
+      "Corporate Website",
+    ],
+    backOfficeTitle: "Back Office Support",
+    backOfficeText:
+      "We focus on enhancing user interest by creating User friendly interfaces. By building a strong brand identity within the app, we ensure that users recognize and trust your brand. Our expert design team also works on optimizing the functionality of the app, making sure it runs smoothly and efficiently.",
+  },
 };
