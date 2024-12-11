@@ -74,7 +74,7 @@ body {
 /*scroll bar */
 body::-webkit-scrollbar {
   background: rgb(120, 252, 164);
-  width: 16px;
+  width: 10px;
 }
 
 body::-webkit-scrollbar-thumb {
@@ -108,23 +108,23 @@ body::-webkit-scrollbar-button:single-button {
 /* Decrement button */
 body::-webkit-scrollbar-button:single-button:vertical:decrement {
   margin-bottom: 2px;
-  border-width: 0 8px 8px 8px;
-  border-color: transparent transparent #2a2929 transparent;
+  border-width: 0 5px 5px 5px;
+  border-color: transparent transparent #00affa transparent;
 }
 
 body::-webkit-scrollbar-button:single-button:vertical:decrement:hover {
-  border-color: transparent transparent #000000 transparent;
+  border-color: transparent transparent #06038d transparent;
 }
 
 /* Increment button */
 body::-webkit-scrollbar-button:single-button:vertical:increment {
-  margin: 0 0 2px 2px;
-  border-width: 8px 8px 0 8px;
-  border-color: #2a2929 transparent transparent transparent;
+  margin: 2px;
+  border-width: 5px 5px 0 5px;
+  border-color: #00affa transparent transparent transparent;
 }
 
 body::-webkit-scrollbar-button:vertical:single-button:increment:hover {
-  border-color: #000000 transparent transparent transparent;
+  border-color: #06038d transparent transparent transparent;
 }
 
 .bg-blur {

@@ -93,20 +93,13 @@ const ServicesPage = () => {
             flexClass="flex flex-row-reverse"
           />
         </div>
-        <div className=" w-full h-full px-5 ">
-          <SingleService
-            items={ServicePageData.socialMediaData.socialMediaItems}
-            title={ServicePageData.socialMediaData.socialMediaTitle}
-            text={ServicePageData.socialMediaData.socialMediaText}
-            flexClass="flex flex-row"
-          />
-        </div>
+
         <div className=" w-full h-full  px-5">
           <SingleService
             items={ServicePageData.videoEditingData.videoEditingItems}
             title={ServicePageData.videoEditingData.videoEditingTitle}
             text={ServicePageData.videoEditingData.videoEditingText}
-            flexClass="flex flex-row-reverse"
+            flexClass="flex flex-row"
           />
         </div>
         <div className=" w-full h-full px-5 ">
@@ -114,14 +107,6 @@ const ServicesPage = () => {
             items={ServicePageData.backOfficeData.backOfficeItems}
             title={ServicePageData.backOfficeData.backOfficeTitle}
             text={ServicePageData.backOfficeData.backOfficeText}
-            flexClass="flex flex-row"
-          />
-        </div>
-        <div className=" w-full h-full  px-5">
-          <SingleService
-            items={ServicePageData.videoEditingData.videoEditingItems}
-            title={ServicePageData.videoEditingData.videoEditingTitle}
-            text={ServicePageData.videoEditingData.videoEditingText}
             flexClass="flex flex-row-reverse"
           />
         </div>
