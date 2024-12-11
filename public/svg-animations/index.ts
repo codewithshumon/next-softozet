@@ -30,7 +30,7 @@ import uiuxLanding from "./uiux/uiux-landing.json";
 import uiuxService from "./uiux/uiux-service.json";
 
 import videoDesk from "./video/video-desk.json";
-import videoSocial from "./video/video-social.json";
+import videoEditing from "./video/video-editing.json";
 import videoSof from "./video/video-sof.json";
 
 export {
@@ -58,6 +58,6 @@ export {
   uiuxLanding,
   uiuxService,
   videoDesk,
-  videoSocial,
+  videoEditing,
   videoSof,
 };

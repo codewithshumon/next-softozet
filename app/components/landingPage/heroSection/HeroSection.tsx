@@ -12,7 +12,7 @@ import {
   callCenter,
   customLanding,
   uiuxLanding,
-  videoSocial,
+  videoEditing,
 } from "@/public/svg-animations";
 
 import LandingText from "./HeroText";
@@ -304,7 +304,7 @@ const LandingSections = () => {
                     className={`${styles.rightInOut} ${styles.lottieBigContainer} `}
                   >
                     <Lottie
-                      animationData={videoSocial}
+                      animationData={videoEditing}
                       loop={true}
                       className="!w-[200px] xs:!w-[300px] md:!w-[500px] xl:!w-[550px]"
                     />
