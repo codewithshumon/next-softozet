@@ -7,7 +7,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { HiOutlineArrowRight } from "react-icons/hi";
 
 import ServiceLottie from "@/app/components/servicesPage/ServiceLottie";
-import ServiceButton from "@/app/components/botton/ServiceButton";
+import CustomButton from "@/app/components/botton/CustomButton";
 
 import {
   uiuxService,
@@ -19,7 +19,6 @@ import {
   singleBoyCall,
   customService,
   videoSof,
-  videoDesk,
 } from "@/public/svg-animations";
 
 const OurServices = () => {
@@ -101,12 +100,20 @@ const OurServices = () => {
                     // target="_blank"
                     className="w-full flex items-center justify-center"
                   >
-                    <ServiceButton
+                    <CustomButton
                       borderColor="#03EB64"
                       buttonArrowColor="white"
                       buttonBgColor="#03EB64"
                       textColor="white"
-                      bottonText="DISCOVER"
+                      bottonText="Discover"
+                      isArrow={true}
+                      arrow={{
+                        rightArrow: true,
+                        color: "white",
+                        strokeWidth: "1px",
+                        className: "",
+                        size: 15,
+                      }}
                     />
                   </Link>
                 </div>
@@ -135,12 +142,20 @@ const OurServices = () => {
                     // target="_blank"
                     className="w-full flex items-center justify-center"
                   >
-                    <ServiceButton
+                    <CustomButton
                       borderColor="#03EB64"
                       buttonArrowColor="white"
                       buttonBgColor="#03EB64"
                       textColor="white"
-                      bottonText="DISCOVER"
+                      bottonText="Discover"
+                      isArrow={true}
+                      arrow={{
+                        rightArrow: true,
+                        color: "white",
+                        strokeWidth: "1px",
+                        className: "",
+                        size: 15,
+                      }}
                     />
                   </Link>
                 </div>
@@ -169,12 +184,20 @@ const OurServices = () => {
                     // target="_blank"
                     className="w-full flex items-center justify-center"
                   >
-                    <ServiceButton
+                    <CustomButton
                       borderColor="#03EB64"
                       buttonArrowColor="white"
                       buttonBgColor="#03EB64"
                       textColor="white"
-                      bottonText="DISCOVER"
+                      bottonText="Discover"
+                      isArrow={true}
+                      arrow={{
+                        rightArrow: true,
+                        color: "white",
+                        strokeWidth: "1px",
+                        className: "",
+                        size: 15,
+                      }}
                     />
                   </Link>
                 </div>
@@ -208,12 +231,20 @@ const OurServices = () => {
                     // target="_blank"
                     className="w-full flex items-center justify-center"
                   >
-                    <ServiceButton
+                    <CustomButton
                       borderColor="#03EB64"
                       buttonArrowColor="white"
                       buttonBgColor="#03EB64"
                       textColor="white"
-                      bottonText="DISCOVER"
+                      bottonText="Discover"
+                      isArrow={true}
+                      arrow={{
+                        rightArrow: true,
+                        color: "white",
+                        strokeWidth: "1px",
+                        className: "",
+                        size: 15,
+                      }}
                     />
                   </Link>
                 </div>
@@ -242,12 +273,20 @@ const OurServices = () => {
                     // target="_blank"
                     className="w-full flex items-center justify-center"
                   >
-                    <ServiceButton
+                    <CustomButton
                       borderColor="#03EB64"
                       buttonArrowColor="white"
                       buttonBgColor="#03EB64"
                       textColor="white"
-                      bottonText="DISCOVER"
+                      bottonText="Discover"
+                      isArrow={true}
+                      arrow={{
+                        rightArrow: true,
+                        color: "white",
+                        strokeWidth: "1px",
+                        className: "",
+                        size: 15,
+                      }}
                     />
                   </Link>
                 </div>
@@ -277,12 +316,20 @@ const OurServices = () => {
                     // target="_blank"
                     className="w-full flex items-center justify-center"
                   >
-                    <ServiceButton
+                    <CustomButton
                       borderColor="#03EB64"
                       buttonArrowColor="white"
                       buttonBgColor="#03EB64"
                       textColor="white"
-                      bottonText="DISCOVER"
+                      bottonText="Discover"
+                      isArrow={true}
+                      arrow={{
+                        rightArrow: true,
+                        color: "white",
+                        strokeWidth: "1px",
+                        className: "",
+                        size: 15,
+                      }}
                     />
                   </Link>
                 </div>
@@ -316,12 +363,20 @@ const OurServices = () => {
                     // target="_blank"
                     className="w-full flex items-center justify-center"
                   >
-                    <ServiceButton
+                    <CustomButton
                       borderColor="#03EB64"
                       buttonArrowColor="white"
                       buttonBgColor="#03EB64"
                       textColor="white"
-                      bottonText="DISCOVER"
+                      bottonText="Discover"
+                      isArrow={true}
+                      arrow={{
+                        rightArrow: true,
+                        color: "white",
+                        strokeWidth: "1px",
+                        className: "",
+                        size: 15,
+                      }}
                     />
                   </Link>
                 </div>
@@ -350,12 +405,20 @@ const OurServices = () => {
                     // target="_blank"
                     className="w-full flex items-center justify-center"
                   >
-                    <ServiceButton
+                    <CustomButton
                       borderColor="#03EB64"
                       buttonArrowColor="white"
                       buttonBgColor="#03EB64"
                       textColor="white"
-                      bottonText="DISCOVER"
+                      bottonText="Discover"
+                      isArrow={true}
+                      arrow={{
+                        rightArrow: true,
+                        color: "white",
+                        strokeWidth: "1px",
+                        className: "",
+                        size: 15,
+                      }}
                     />
                   </Link>
                 </div>
@@ -385,12 +448,20 @@ const OurServices = () => {
                     // target="_blank"
                     className="w-full flex items-center justify-center"
                   >
-                    <ServiceButton
+                    <CustomButton
                       borderColor="#03EB64"
                       buttonArrowColor="white"
                       buttonBgColor="#03EB64"
                       textColor="white"
-                      bottonText="DISCOVER"
+                      bottonText="Discover"
+                      isArrow={true}
+                      arrow={{
+                        rightArrow: true,
+                        color: "white",
+                        strokeWidth: "1px",
+                        className: "",
+                        size: 15,
+                      }}
                     />
                   </Link>
                 </div>

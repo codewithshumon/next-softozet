@@ -1,3 +1,4 @@
+import CustomButton from "../botton/CustomButton";
 import ServiceKeyPoint from "./ServiceKeyPoint";
 
 interface SingleServiceProps {
@@ -14,7 +15,7 @@ const SingleService: React.FC<SingleServiceProps> = ({
   flexClass,
 }) => {
   return (
-    <div className=" relative w-full h-full ">
+    <div className=" relative w-full h-full py-5 z-0">
       <div className={`relative w-full h-[100vh] ${flexClass} `}>
         <div className="w-[50%] h-full p-10 flex items-center justify-center ">
           <div className=" w-[300px] h-[200px] bg-blue-500"></div>
@@ -32,6 +33,23 @@ const SingleService: React.FC<SingleServiceProps> = ({
           </div>
           <div className=" w-full">
             <ServiceKeyPoint items={items} />
+          </div>
+          <div className=" w-full h-full">
+            <CustomButton
+              borderColor="#03EB64"
+              buttonArrowColor="white"
+              buttonBgColor="#03EB64"
+              textColor="#000000"
+              bottonText="Discover More"
+              isArrow={true}
+              arrow={{
+                rightArrow: true,
+                color: "#000000",
+                strokeWidth: "1px",
+                className: "",
+                size: 15,
+              }}
+            />
           </div>
         </div>
       </div>

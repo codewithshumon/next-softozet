@@ -7,7 +7,7 @@ const Lottie = dynamic(() => import("lottie-react"), {
 
 import career from "@/public/career.json";
 
-import ServiceButton from "../botton/ServiceButton";
+import CustomButton from "../botton/CustomButton";
 
 const CarrerAbout = () => {
   return (
@@ -35,12 +35,20 @@ const CarrerAbout = () => {
           atmosphere.
         </p>
         <div className=" w-full flex items-center justify-center ">
-          <ServiceButton
+          <CustomButton
             borderColor="#03EB64"
             buttonBgColor="#03EB64"
             buttonArrowColor="black"
             textColor="black"
             bottonText="Start Your Career"
+            isArrow={true}
+            arrow={{
+              rightArrow: true,
+              color: "#000000",
+              strokeWidth: "1px",
+              className: "",
+              size: 15,
+            }}
           />
         </div>
       </div>

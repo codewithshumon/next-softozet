@@ -1,11 +1,19 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useRef } from "react";
 
-import { HiOutlineArrowRight } from "react-icons/hi";
-
 import useMouse from "@/app/hooks/useMouse";
+import ArrowRightLeft from "../global/ArrowRightLeft";
 
-interface ServiceButtonProps {
+interface CustomButtonProps {
+  arrow?: {
+    rightArrow?: boolean;
+    leftArrow?: boolean;
+    color: string;
+    strokeWidth: string;
+    className: string;
+    size: number;
+  };
+  isArrow?: boolean;
   textColor: string;
   buttonArrowColor: string;
   borderColor: string;
@@ -13,12 +21,13 @@ interface ServiceButtonProps {
   bottonText: string;
 }
 
-const ServiceButton: React.FC<ServiceButtonProps> = ({
+const CustomButton: React.FC<CustomButtonProps> = ({
   textColor,
-  buttonArrowColor,
   borderColor,
   buttonBgColor,
   bottonText,
+  arrow,
+  isArrow,
 }) => {
   const { x, y } = useMouse();
   const btnRef = useRef<HTMLButtonElement>(null);
@@ -41,13 +50,22 @@ const ServiceButton: React.FC<ServiceButtonProps> = ({
   return (
     <button
       ref={btnRef}
-      className={`relative circle-button-bg  flex flex-row items-center justify-center gap-2 border-[1px] rounded-full px-3 py-2 overflow-hidden border-[${borderColor}] text-${textColor}`}
+      className={`relative w-fit circle-button-bg  flex flex-row items-center justify-center gap-2 border-[1px] rounded-full px-3 py-2 overflow-hidden border-[${borderColor}] text-${textColor}`}
       style={{ "--button-bg-color": buttonBgColor } as React.CSSProperties}
     >
       <span className={`font-bold text-${textColor}`}>{bottonText}</span>
-      <HiOutlineArrowRight color={buttonArrowColor} size={20} />
+      {isArrow && (
+        <ArrowRightLeft
+          rightArrow={arrow?.rightArrow}
+          leftArrow={arrow?.leftArrow}
+          color={arrow?.color}
+          strokeWidth={arrow?.strokeWidth}
+          className={arrow?.className}
+          size={arrow?.size}
+        />
+      )}
     </button>
   );
 };
 
-export default ServiceButton;
+export default CustomButton;
