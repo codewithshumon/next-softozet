@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
-import { BiMenu } from "react-icons/bi";
+// import { BiMenu } from "react-icons/bi";
 import gsap from "gsap";
 
 import SvgLogo from "../global/SvgLogo";
@@ -193,9 +193,17 @@ const Header = () => {
                 className=" px-2 cursor-pointer select-none"
               />
             </nav>
-            <span className="block md:hidden" onClick={hadleShowSidebar}>
-              <BiMenu className="w-6 h-6 cursor-pointer" />
-            </span>
+
+            <div
+              className=" w-[9%] xs:w-[7%] sm:w-[6%] block md:hidden "
+              onClick={hadleShowSidebar}
+            >
+              <div className=" w-full h-full flex flex-col gap-[5px]  cursor-pointer">
+                <div className=" w-[100%] h-[3px] bg-[#fffc33] rounded-full "></div>
+                <div className=" w-[80%] h-[3px] bg-[#fffc33] rounded-full"></div>
+                <div className=" h-[3px] bg-[#fffc33] rounded-full"></div>
+              </div>
+            </div>
           </div>
         </div>
       </header>

@@ -4,8 +4,6 @@ import Link from "next/link";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-import { HiOutlineArrowRight } from "react-icons/hi";
-
 import ServiceLottie from "@/app/components/servicesPage/ServiceLottie";
 import CustomButton from "@/app/components/botton/CustomButton";
 
