@@ -6,6 +6,7 @@ interface SingleServiceProps {
   title: string;
   text: string;
   flexClass: string;
+  buttonAction?: () => void;
 }
 
 const SingleService: React.FC<SingleServiceProps> = ({
@@ -13,6 +14,7 @@ const SingleService: React.FC<SingleServiceProps> = ({
   title,
   text,
   flexClass,
+  buttonAction,
 }) => {
   return (
     <div className=" relative w-full h-full py-5 z-0">
@@ -49,6 +51,7 @@ const SingleService: React.FC<SingleServiceProps> = ({
                 className: "",
                 size: 15,
               }}
+              onClick={buttonAction}
             />
           </div>
         </div>

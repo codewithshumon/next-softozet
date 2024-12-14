@@ -1,10 +1,14 @@
 "use client";
 
+import { useRouter } from "next/navigation";
+
 import SingleService from "@/app/components/servicesPage/SingleService";
 
 import { ServicePageData } from "@/app/constant/ServicePageData";
 
 const ServicesPage = () => {
+  const router = useRouter();
+
   return (
     <div className=" w-full h-full ">
       <div className="container bg-[#302f2f] ">
@@ -31,6 +35,7 @@ const ServicesPage = () => {
       <div className="container  bg-[#dfdcdc] ">
         <div className=" w-full h-full px-5 ">
           <SingleService
+            buttonAction={() => router.push("/services/branding")}
             items={ServicePageData.brandingData.brandingItems}
             title={ServicePageData.brandingData.brandingTitle}
             text={ServicePageData.brandingData.brandingText}
@@ -39,6 +44,7 @@ const ServicesPage = () => {
         </div>
         <div className=" w-full h-full px-5 ">
           <SingleService
+            buttonAction={() => router.push("/services/ui-ux-design")}
             items={ServicePageData.uxuiDesingData.uxuiDesingItems}
             title={ServicePageData.uxuiDesingData.uxuiDesingTitle}
             text={ServicePageData.uxuiDesingData.uxuiDesingText}
@@ -47,6 +53,7 @@ const ServicesPage = () => {
         </div>
         <div className=" w-full h-full px-5 ">
           <SingleService
+            buttonAction={() => router.push("/services/web-app-development")}
             items={ServicePageData.webDesignData.webDesignItems}
             title={ServicePageData.webDesignData.webDesignTitle}
             text={ServicePageData.webDesignData.webDesignText}
@@ -55,6 +62,7 @@ const ServicesPage = () => {
         </div>
         <div className=" w-full h-full px-5 ">
           <SingleService
+            buttonAction={() => router.push("/services/mobile-app-development")}
             items={ServicePageData.mobileDesignData.mobileDesignItems}
             title={ServicePageData.mobileDesignData.mobileDesignTitle}
             text={ServicePageData.mobileDesignData.mobileDesignText}
@@ -63,6 +71,9 @@ const ServicesPage = () => {
         </div>
         <div className=" w-full h-full px-5 ">
           <SingleService
+            buttonAction={() =>
+              router.push("/services/custom-software-development")
+            }
             items={ServicePageData.customSoftwareData.customSoftwareItems}
             title={ServicePageData.customSoftwareData.customSoftwareTitle}
             text={ServicePageData.customSoftwareData.customSoftwareText}
@@ -71,6 +82,9 @@ const ServicesPage = () => {
         </div>
         <div className=" w-full h-full  px-5">
           <SingleService
+            buttonAction={() =>
+              router.push("/services/search-engine-optimization")
+            }
             items={ServicePageData.searchEngineData.searchEngineItems}
             title={ServicePageData.searchEngineData.searchEngineTitle}
             text={ServicePageData.searchEngineData.searchEngineText}
@@ -79,6 +93,7 @@ const ServicesPage = () => {
         </div>
         <div className=" w-full h-full px-5 ">
           <SingleService
+            buttonAction={() => router.push("/services/social-media-marketing")}
             items={ServicePageData.socialMediaData.socialMediaItems}
             title={ServicePageData.socialMediaData.socialMediaTitle}
             text={ServicePageData.socialMediaData.socialMediaText}
@@ -87,6 +102,9 @@ const ServicesPage = () => {
         </div>
         <div className=" w-full h-full  px-5">
           <SingleService
+            buttonAction={() =>
+              router.push("/services/creative-content-design")
+            }
             items={ServicePageData.creativeContentData.creativeContentItems}
             title={ServicePageData.creativeContentData.creativeContentTitle}
             text={ServicePageData.creativeContentData.creativeContentText}
@@ -96,6 +114,9 @@ const ServicesPage = () => {
 
         <div className=" w-full h-full  px-5">
           <SingleService
+            buttonAction={() =>
+              router.push("/services/professional-video-editing")
+            }
             items={ServicePageData.videoEditingData.videoEditingItems}
             title={ServicePageData.videoEditingData.videoEditingTitle}
             text={ServicePageData.videoEditingData.videoEditingText}
@@ -104,6 +125,7 @@ const ServicesPage = () => {
         </div>
         <div className=" w-full h-full px-5 ">
           <SingleService
+            buttonAction={() => router.push("/services/back-office-support")}
             items={ServicePageData.backOfficeData.backOfficeItems}
             title={ServicePageData.backOfficeData.backOfficeTitle}
             text={ServicePageData.backOfficeData.backOfficeText}

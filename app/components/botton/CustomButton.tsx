@@ -19,6 +19,7 @@ interface CustomButtonProps {
   borderColor: string;
   buttonBgColor: string;
   bottonText: string;
+  onClick?: () => void;
 }
 
 const CustomButton: React.FC<CustomButtonProps> = ({
@@ -28,6 +29,7 @@ const CustomButton: React.FC<CustomButtonProps> = ({
   bottonText,
   arrow,
   isArrow,
+  onClick,
 }) => {
   const { x, y } = useMouse();
   const btnRef = useRef<HTMLButtonElement>(null);
@@ -50,6 +52,7 @@ const CustomButton: React.FC<CustomButtonProps> = ({
   return (
     <button
       ref={btnRef}
+      onClick={onClick}
       className={`relative w-fit circle-button-bg  flex flex-row items-center justify-center gap-2 border-[1px] rounded-full px-3 py-2 overflow-hidden border-[${borderColor}] text-${textColor}`}
       style={{ "--button-bg-color": buttonBgColor } as React.CSSProperties}
     >
