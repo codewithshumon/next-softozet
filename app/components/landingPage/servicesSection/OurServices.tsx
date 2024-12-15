@@ -94,7 +94,7 @@ const OurServices = () => {
                 </div>
                 <div className="w-full ">
                   <Link
-                    href="/services/web"
+                    href="/services/ui-ux-design"
                     // target="_blank"
                     className="w-full flex items-center justify-center"
                   >
@@ -136,7 +136,7 @@ const OurServices = () => {
                 </div>
                 <div className="w-full ">
                   <Link
-                    href="/services/web"
+                    href="/services/web-app-development"
                     // target="_blank"
                     className="w-full flex items-center justify-center"
                   >
@@ -178,7 +178,7 @@ const OurServices = () => {
                 </div>
                 <div className="w-full ">
                   <Link
-                    href="/services/mobile"
+                    href="/services/mobile-app-development"
                     // target="_blank"
                     className="w-full flex items-center justify-center"
                   >
@@ -225,7 +225,7 @@ const OurServices = () => {
                 </div>
                 <div className="w-full ">
                   <Link
-                    href="/services/seo"
+                    href="/services/custom-software-development"
                     // target="_blank"
                     className="w-full flex items-center justify-center"
                   >
@@ -267,7 +267,7 @@ const OurServices = () => {
                 </div>
                 <div className="w-full ">
                   <Link
-                    href="/services/seo"
+                    href="/services/search-engine-optimization"
                     // target="_blank"
                     className="w-full flex items-center justify-center"
                   >
@@ -310,7 +310,7 @@ const OurServices = () => {
                 </div>
                 <div className="w-full ">
                   <Link
-                    href="/services/social"
+                    href="/services/social-media-marketing"
                     // target="_blank"
                     className="w-full flex items-center justify-center"
                   >
@@ -357,7 +357,7 @@ const OurServices = () => {
                 </div>
                 <div className="w-full ">
                   <Link
-                    href="/services/creative"
+                    href="/services/creative-content-design"
                     // target="_blank"
                     className="w-full flex items-center justify-center"
                   >
@@ -391,7 +391,7 @@ const OurServices = () => {
               <div className=" w-[90%] flex flex-col gap-5">
                 <div className="w-full text-center">
                   <h1 className=" text-[#ffffff] font-extrabold  uppercase">
-                    video editing
+                    professional video editing
                   </h1>
                   <p className="text-[#e0dddd]">
                     Transforming raw footage into polished, professional videos
@@ -399,7 +399,7 @@ const OurServices = () => {
                 </div>
                 <div className="w-full ">
                   <Link
-                    href="/services/seo"
+                    href="/services/professional-video-editing"
                     // target="_blank"
                     className="w-full flex items-center justify-center"
                   >
@@ -442,7 +442,7 @@ const OurServices = () => {
                 </div>
                 <div className="w-full ">
                   <Link
-                    href="/services/web"
+                    href="/services/back-office-support"
                     // target="_blank"
                     className="w-full flex items-center justify-center"
                   >
