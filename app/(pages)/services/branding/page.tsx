@@ -26,25 +26,51 @@ const page = () => {
       </div>
 
       <div className="container bg-[#d3cece] ">
-        <div className=" w-full h-[100vh] flex flex-row px-10 pt-[20vh] gap-5">
-          <div>
-            <div>
-              <h2>Design Speaks Louder Than Words</h2>
-            </div>
-            <div>
-              <p>
-                Your brand&apos;s design speaks before you do. 80% of consumers
-                recognize a brand just by its design & color! We use color
-                psychology to design your brand to be memorable.
-              </p>
-            </div>
-            <div>
-              <span>Create Your Brand Identity!</span>
+        <div className=" w-full h-[100vh] flex flex-row px-10 py-10 gap-5">
+          <div className="w-[60%] flex items-center justify-center">
+            <div className="w-[400px] h-[300px] bg-blue-400"></div>
+          </div>
+          <div className="w-[40%] flex flex-col items-center justify-center">
+            <div className=" flex flex-col">
+              <div>
+                <h2>Design Speaks Louder Than Words</h2>
+              </div>
+              <div>
+                <p>
+                  Your brand&apos;s design speaks before you do. 80% of
+                  consumers recognize a brand just by its design & color! We use
+                  color psychology to design your brand to be memorable.
+                </p>
+              </div>
+              <div>
+                <span>Create Your Brand Identity!</span>
+              </div>
             </div>
           </div>
+        </div>
+      </div>
 
-          <div>
+      <div className="container bg-[#d3cece] ">
+        <div className=" w-full h-[100vh] flex flex-row px-10 py-10 gap-5">
+          <div className="w-[60%] flex items-center justify-center">
             <div className="w-[400px] h-[300px] bg-blue-400"></div>
+          </div>
+          <div className="w-[40%] flex flex-col items-center justify-center">
+            <div className=" flex flex-col">
+              <div>
+                <h2>Design Speaks Louder Than Words</h2>
+              </div>
+              <div>
+                <p>
+                  Your brand&apos;s design speaks before you do. 80% of
+                  consumers recognize a brand just by its design & color! We use
+                  color psychology to design your brand to be memorable.
+                </p>
+              </div>
+              <div>
+                <span>Create Your Brand Identity!</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
