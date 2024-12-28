@@ -1,3 +1,4 @@
+import ServiceProcess from "@/app/components/servicesPage/ServiceProcess";
 import React from "react";
 
 const page = () => {
@@ -51,7 +52,11 @@ const page = () => {
       </div>
 
       <div className="container bg-[#d3cece] ">
-        <div className=" w-full h-[100vh] flex flex-row px-10 py-10 gap-5">
+        <ServiceProcess />
+      </div>
+
+      <div className="container bg-[#d3cece] ">
+        <div className=" w-full h-[100vh] flex flex-row-reverse px-10 py-10 gap-5">
           <div className="w-[60%] flex items-center justify-center">
             <div className="w-[400px] h-[300px] bg-blue-400"></div>
           </div>
