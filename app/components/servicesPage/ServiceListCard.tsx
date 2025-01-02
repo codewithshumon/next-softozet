@@ -1,18 +1,43 @@
 import React from "react";
+import Image, { StaticImageData } from "next/image";
 
-const ServiceListCard = () => {
+interface ServiceListCardProps {
+  title: string;
+  text: string;
+  image?: StaticImageData | React.ComponentType<React.SVGProps<SVGSVGElement>>;
+  className?: string;
+}
+
+const ServiceListCard: React.FC<ServiceListCardProps> = ({
+  title,
+  text,
+  image,
+  className,
+}) => {
   return (
-    <div>
-      <div className=" relative z-0">
+    <>
+      <div className={className}>
+        <div className="w-full h-[200px] bg-blue-400">
+          {image ? (
+            typeof image === "string" || "src" in image ? (
+              <Image src={image as StaticImageData} alt={title} />
+            ) : (
+              React.createElement(
+                image as React.ComponentType<React.SVGProps<SVGSVGElement>>
+              )
+            )
+          ) : (
+            <p>No Image Provided</p>
+          )}
+        </div>
         <div>
-          <h2>Let&apos;s Walk You Through Our Brand Design Process</h2>
-          <p>
-            The process of branding and design follows a certain chronological
-            order.
-          </p>
+          <h3>{title}</h3>
+        </div>
+        <div>
+          <p>{text}</p>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
