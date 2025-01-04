@@ -152,8 +152,8 @@ const page = () => {
         </div>
       </div>
 
-      <div className="container bg-[#d3cece] ">
-        <div className=" w-full h-[100vh]">
+      <div className="container bg-[#000000] ">
+        <div className=" w-full h-[140vh]">
           <ServiceValue />
         </div>
       </div>
@@ -184,7 +184,7 @@ const page = () => {
       </div>
 
       <div className="container bg-[#d3cece] ">
-        <div className=" w-full h-[100vh]">
+        <div className=" w-full h-full">
           <ServiceFaq />
         </div>
       </div>
