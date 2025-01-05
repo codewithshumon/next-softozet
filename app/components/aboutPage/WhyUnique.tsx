@@ -8,14 +8,7 @@ import {
 import WhyUniqueCard from "./WhyUniqueCard";
 import WhyUniqueList from "./WhyUniqueList";
 
-interface ServiceTextProps {
-  title: string;
-  subTitle: string;
-
-  text: string;
-}
-
-const WhyUnique: React.FC<ServiceTextProps> = ({ title, subTitle, text }) => {
+const WhyUnique = () => {
   const WhyUniqueListItem = [
     "Transparent Communication",
     "Precision Management",

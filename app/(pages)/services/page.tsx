@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import SingleService from "@/app/components/servicesPage/SingleService";
 
 import { ServicePageData } from "@/app/constant/ServicePageData";
+import ProjectIdea from "@/app/components/global/ProjectIdea";
 
 const ServicesPage = () => {
   const router = useRouter();
@@ -131,6 +132,19 @@ const ServicesPage = () => {
             text={ServicePageData.backOfficeData.backOfficeText}
             flexClass="flex flex-row-reverse"
           />
+        </div>
+
+        <div className=" w-full h-full bg-purpleColor">
+          <div className="container flex flex-col xl:flex-row py-10 md:py-20">
+            <div className=" w-full xl:w-[50%] h-full">
+              <h1 className=" py-10 w-[90%] text-[40px] xs:text-[50px] sm:text-[70px] md:text-[80px] xl:text-[5rem] text-white font-extrabold">
+                Have a Project Idea?
+              </h1>
+            </div>
+            <div className=" w-full xl:w-[50%] h-full">
+              <ProjectIdea />
+            </div>
+          </div>
         </div>
       </div>
     </div>

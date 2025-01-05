@@ -1,6 +1,7 @@
 "use client";
 
 import CustomButton from "../botton/CustomButton";
+import ServiceProcessList from "./ServiceProcessList";
 
 const ServiceProcess = () => {
   return (
@@ -27,6 +28,9 @@ const ServiceProcess = () => {
               size: 15,
             }}
           />
+        </div>
+        <div>
+          <ServiceProcessList />
         </div>
       </div>
     </div>

@@ -1,5 +1,6 @@
+import ProjectIdea from "@/app/components/global/ProjectIdea";
 import ServiceFaq from "@/app/components/servicesPage/ServiceFaq";
-import ServiceListCard from "@/app/components/servicesPage/ServiceListCard";
+import ServiceList from "@/app/components/servicesPage/ServiceList";
 import ServiceProcess from "@/app/components/servicesPage/ServiceProcess";
 import ServiceValue from "@/app/components/servicesPage/ServiceValue";
 
@@ -79,46 +80,7 @@ const page = () => {
       </div>
 
       <div className="container bg-[#d3cece]  ">
-        <div
-          className="h-[100vh] flex flex-row gap-5"
-          style={{ width: `${(1 / 3) * 5 * 100}%` }}
-        >
-          <ServiceListCard
-            title="Brand Identity Design"
-            text="Your brand identity is your visual fingerprint. It's how
-              customers recognize and remember your brand. A weak identity can
-              cost you business. We can help you design a distinctive identity
-              that makes you stand out and stick in customers' minds."
-          />
-          <ServiceListCard
-            title="Corporate Identity Design"
-            text="Your brand identity is your visual fingerprint. It's how
-              customers recognize and remember your brand. A weak identity can
-              cost you business. We can help you design a distinctive identity
-              that makes you stand out and stick in customers' minds."
-          />
-          <ServiceListCard
-            title="Brand Strategy"
-            text="Your brand identity is your visual fingerprint. It's how
-              customers recognize and remember your brand. A weak identity can
-              cost you business. We can help you design a distinctive identity
-              that makes you stand out and stick in customers' minds."
-          />
-          <ServiceListCard
-            title="Motion Graphics Design"
-            text="Your brand identity is your visual fingerprint. It's how
-              customers recognize and remember your brand. A weak identity can
-              cost you business. We can help you design a distinctive identity
-              that makes you stand out and stick in customers' minds."
-          />
-          <ServiceListCard
-            title="Graphic Design"
-            text="Your brand identity is your visual fingerprint. It's how
-              customers recognize and remember your brand. A weak identity can
-              cost you business. We can help you design a distinctive identity
-              that makes you stand out and stick in customers' minds."
-          />
-        </div>
+        <ServiceList />
       </div>
 
       <div className="container bg-[#d3cece] ">
@@ -186,6 +148,19 @@ const page = () => {
       <div className="container bg-[#d3cece] ">
         <div className=" w-full h-full">
           <ServiceFaq />
+        </div>
+      </div>
+
+      <div className=" w-full h-full bg-purpleColor">
+        <div className="container flex flex-col xl:flex-row py-10 md:py-20">
+          <div className=" w-full xl:w-[50%] h-full">
+            <h1 className=" py-10 w-[90%] text-[40px] xs:text-[50px] sm:text-[70px] md:text-[80px] xl:text-[5rem] text-white font-extrabold">
+              Have a Project Idea?
+            </h1>
+          </div>
+          <div className=" w-full xl:w-[50%] h-full">
+            <ProjectIdea />
+          </div>
         </div>
       </div>
     </>

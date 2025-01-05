@@ -30,8 +30,8 @@ const ServiceFaqList: React.FC<ServiceFaqListProps> = ({
   return (
     <div className="w-full bg-[#ffffff] p-4 rounded-md">
       <div
-        className="flex justify-between items-center cursor-pointer"
-        onClick={() => toggleTriangle(index)} // Pass the index to the parent function
+        className="flex justify-between items-center cursor-pointer triangle-hover"
+        onClick={() => toggleTriangle(index)}
       >
         <h4 className="text-lg font-semibold">{title}</h4>
         <div className={`triangle ${isUp ? "up" : "down"}`}></div>

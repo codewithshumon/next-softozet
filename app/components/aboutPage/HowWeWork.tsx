@@ -10,13 +10,7 @@ import userExperience from "../../asset/other-svg/howWeWork/userExperience.svg";
 import OurProcessCard from "./OurProcessCard";
 import OurProcessList from "./OurProcessList";
 
-interface ServiceTextProps {
-  title: string;
-  subTitle: string;
-  text: string;
-}
-
-const HowWeWork: React.FC<ServiceTextProps> = ({ title, subTitle, text }) => {
+const HowWeWork = () => {
   const planningItems = [
     "Workshops",
     "Consulting",
