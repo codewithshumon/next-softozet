@@ -1,4 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
+"use client";
+
 import { useEffect, useRef } from "react";
 
 import useMouse from "@/app/hooks/useMouse";
@@ -49,6 +51,7 @@ const CustomButton: React.FC<CustomButtonProps> = ({
       btn.style.setProperty("--y", mouseY + "px");
     }
   };
+
   return (
     <button
       ref={btnRef}

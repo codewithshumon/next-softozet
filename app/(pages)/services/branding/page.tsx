@@ -1,3 +1,4 @@
+import CustomButton from "@/app/components/botton/CustomButton";
 import ProjectIdea from "@/app/components/global/ProjectIdea";
 import ServiceFaq from "@/app/components/servicesPage/ServiceFaq";
 import ServiceList from "@/app/components/servicesPage/ServiceList";
@@ -29,15 +30,17 @@ const page = () => {
         </div>
       </div>
 
-      <div className="container bg-[#d3cece] ">
+      <div className="container bg-[#d3cece] relative z-0">
         <div className=" w-full h-[100vh] flex flex-row px-10 py-10 gap-5">
           <div className="w-[60%] flex items-center justify-center">
             <div className="w-[400px] h-[300px] bg-blue-400"></div>
           </div>
           <div className="w-[40%] flex flex-col items-center justify-center">
-            <div className=" flex flex-col">
-              <div>
-                <h2>Design Speaks Louder Than Words</h2>
+            <div className=" flex flex-col  gap-10">
+              <div className=" flex flex-col">
+                <h2 className=" text-[30px] font-bold">
+                  Design Speaks Louder Than Words
+                </h2>
               </div>
               <div>
                 <p>
@@ -46,8 +49,22 @@ const page = () => {
                   color psychology to design your brand to be memorable.
                 </p>
               </div>
-              <div>
-                <span>Create Your Brand Identity!</span>
+              <div className=" ">
+                <CustomButton
+                  borderColor="#03EB64"
+                  buttonArrowColor="white"
+                  buttonBgColor="#03EB64"
+                  textColor="white"
+                  bottonText="Create Your Brand Identity!"
+                  isArrow={true}
+                  arrow={{
+                    rightArrow: true,
+                    color: "white",
+                    strokeWidth: "1px",
+                    className: "",
+                    size: 15,
+                  }}
+                />
               </div>
             </div>
           </div>
@@ -60,7 +77,7 @@ const page = () => {
             <div className="w-[400px] h-[300px] bg-blue-400"></div>
           </div>
           <div className="w-[40%] flex flex-col items-center justify-center">
-            <div className=" flex flex-col">
+            <div className=" flex flex-col gap-10">
               <div>
                 <h2>Design Speaks Louder Than Words</h2>
               </div>
