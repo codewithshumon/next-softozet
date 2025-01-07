@@ -79,7 +79,9 @@ const page = () => {
           <div className="w-[40%] flex flex-col items-center justify-center">
             <div className=" flex flex-col gap-10">
               <div>
-                <h2>Design Speaks Louder Than Words</h2>
+                <h2 className=" text-[30px] font-bold">
+                  Design Speaks Louder Than Words
+                </h2>
               </div>
               <div>
                 <p>
@@ -88,8 +90,22 @@ const page = () => {
                   color psychology to design your brand to be memorable.
                 </p>
               </div>
-              <div>
-                <span>Create Your Brand Identity!</span>
+              <div className=" ">
+                <CustomButton
+                  borderColor="#03EB64"
+                  buttonArrowColor="white"
+                  buttonBgColor="#03EB64"
+                  textColor="white"
+                  bottonText="Create Your Brand Identity!"
+                  isArrow={true}
+                  arrow={{
+                    rightArrow: true,
+                    color: "white",
+                    strokeWidth: "1px",
+                    className: "",
+                    size: 15,
+                  }}
+                />
               </div>
             </div>
           </div>
@@ -112,9 +128,11 @@ const page = () => {
             <div className="w-[400px] h-[300px] bg-blue-400"></div>
           </div>
           <div className="w-[40%] flex flex-col items-center justify-center">
-            <div className=" flex flex-col">
+            <div className=" flex flex-col gap-10">
               <div>
-                <h2>Design Speaks Louder Than Words</h2>
+                <h2 className=" text-[30px] font-bold">
+                  Design Speaks Louder Than Words
+                </h2>
               </div>
               <div>
                 <p>
@@ -123,8 +141,22 @@ const page = () => {
                   color psychology to design your brand to be memorable.
                 </p>
               </div>
-              <div>
-                <span>Create Your Brand Identity!</span>
+              <div className=" ">
+                <CustomButton
+                  borderColor="#03EB64"
+                  buttonArrowColor="white"
+                  buttonBgColor="#03EB64"
+                  textColor="white"
+                  bottonText="Create Your Brand Identity!"
+                  isArrow={true}
+                  arrow={{
+                    rightArrow: true,
+                    color: "white",
+                    strokeWidth: "1px",
+                    className: "",
+                    size: 15,
+                  }}
+                />
               </div>
             </div>
           </div>
@@ -143,9 +175,11 @@ const page = () => {
             <div className="w-[400px] h-[300px] bg-blue-400"></div>
           </div>
           <div className="w-[40%] flex flex-col items-center justify-center">
-            <div className=" flex flex-col">
+            <div className=" flex flex-col gap-10">
               <div>
-                <h2>Design Speaks Louder Than Words</h2>
+                <h2 className=" text-[30px] font-bold">
+                  Design Speaks Louder Than Words
+                </h2>
               </div>
               <div>
                 <p>
@@ -154,8 +188,22 @@ const page = () => {
                   color psychology to design your brand to be memorable.
                 </p>
               </div>
-              <div>
-                <span>Create Your Brand Identity!</span>
+              <div className=" ">
+                <CustomButton
+                  borderColor="#03EB64"
+                  buttonArrowColor="white"
+                  buttonBgColor="#03EB64"
+                  textColor="white"
+                  bottonText="Create Your Brand Identity!"
+                  isArrow={true}
+                  arrow={{
+                    rightArrow: true,
+                    color: "white",
+                    strokeWidth: "1px",
+                    className: "",
+                    size: 15,
+                  }}
+                />
               </div>
             </div>
           </div>
