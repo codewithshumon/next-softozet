@@ -6,13 +6,17 @@ import ServiceProcessList from "./ServiceProcessList";
 const ServiceProcess = () => {
   return (
     <div className=" relative z-0">
-      <div>
-        <h2>Let&apos;s Walk You Through Our Brand Design Process</h2>
-        <p>
-          The process of branding and design follows a certain chronological
-          order.
-        </p>
-        <div className=" ">
+      <div className=" w-full h-full flex flex-col gap-10 relative z-0">
+        <div className=" w-[60%]">
+          <h2 className=" text-[40px] font-extrabold">
+            Let&apos;s Walk You Through Our Brand Design Process
+          </h2>
+          <p className=" text-[20px] ">
+            The process of branding and design follows a certain chronological
+            order.
+          </p>
+        </div>
+        <div className=" w-full flex flex-row justify-between ">
           <CustomButton
             borderColor="#03EB64"
             buttonArrowColor="white"
@@ -28,6 +32,7 @@ const ServiceProcess = () => {
               size: 15,
             }}
           />
+          <div>arrow</div>
         </div>
         <div>
           <ServiceProcessList />
