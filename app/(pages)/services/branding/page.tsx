@@ -1,3 +1,11 @@
+import Image from "next/image";
+
+import {
+  brandingOne,
+  brandingTwo,
+  brandingThree,
+} from "@/app/asset/service-images";
+
 import CustomButton from "@/app/components/botton/CustomButton";
 import ProjectIdea from "@/app/components/global/ProjectIdea";
 import ServiceFaq from "@/app/components/servicesPage/ServiceFaq";
@@ -33,7 +41,7 @@ const page = () => {
       <div className="container bg-[#d3cece] relative z-0">
         <div className=" w-full h-[100vh] flex flex-row px-10 py-10 gap-5">
           <div className="w-[60%] flex items-center justify-center">
-            <div className="w-[400px] h-[300px] bg-blue-400"></div>
+            <Image src={brandingTwo} alt="braning one" />
           </div>
           <div className="w-[40%] flex flex-col items-center justify-center">
             <div className=" flex flex-col  gap-10">
@@ -74,7 +82,7 @@ const page = () => {
       <div className="container bg-[#d3cece] ">
         <div className=" w-full h-[100vh] flex flex-row-reverse px-10 py-10 gap-5">
           <div className="w-[60%] flex items-center justify-center">
-            <div className="w-[400px] h-[300px] bg-blue-400"></div>
+            <Image src={brandingOne} alt="braning two" />
           </div>
           <div className="w-[40%] flex flex-col items-center justify-center">
             <div className=" flex flex-col gap-10">
@@ -125,7 +133,7 @@ const page = () => {
       <div className="container bg-[#d3cece] ">
         <div className=" w-full h-[100vh] flex flex-row px-10 py-10 gap-5">
           <div className="w-[60%] flex items-center justify-center">
-            <div className="w-[400px] h-[300px] bg-blue-400"></div>
+            <Image src={brandingThree} alt="braning Three" />
           </div>
           <div className="w-[40%] flex flex-col items-center justify-center">
             <div className=" flex flex-col gap-10">
